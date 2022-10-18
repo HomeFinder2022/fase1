@@ -618,8 +618,8 @@ a:hover {
 .navbar-default {
   transition: all 0.5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -2179,4 +2179,9 @@ footer .copyright-footer {
 
 footer .credits {
   font-size: 14px;
+}
+
+.logo-menu{
+  width: 50%;
+  height: auto;
 }
