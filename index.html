@@ -1,3 +1,4 @@
+<!-- <?php require_once 'menu.php' ?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>HomeFinder_2022</title>
+  <title>HomeFinder</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,38 +49,193 @@
         <div class="row">
           <div class="col-md-12 mb-2">
             <div class="form-group">
-              <label class="pb-2" for="Type">Keyword</label>
+              <label class="pb-2" for="Type">Pesquisar</label>
               <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
-              <label class="pb-2" for="Type">Type</label>
-              <select class="form-control form-select form-control-a" id="Type">
-                <option>All Type</option>
-                <option>For Rent</option>
-                <option>For Sale</option>
+              <label class="pb-2" for="Type">Tipo</label>
+              <select class="form-control form-select form-control-a" id="Type" onchange="escolheTipo(this.value)">
+                <option>Todos</option>
+                <option>Arrendamento</option>
+                <option>Compra</option>
                 <option>Open House</option>
               </select>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
-              <label class="pb-2" for="city">City</label>
+              <label class="pb-2" for="city">Cidade</label>
               <select class="form-control form-select form-control-a" id="city">
-                <option>All City</option>
-                <option>Alabama</option>
-                <option>Arizona</option>
-                <option>California</option>
-                <option>Colorado</option>
+                <option>Todas</option>
+                <option>Abrantes</option>
+                <option>Agualva-Cacém</option>
+                <option>Águeda</option>
+                <option>Albergaria</option>
+                <option>Albufeira</option>
+                <option>Alcacér do Sal</option>
+                <option>Alcobaça</option>
+                <option>Alfena</option>
+                <option>Almada</option>
+                <option>Almeirim</option>
+                <option>Alverca do Ribatejo</option>
+                <option>Amadora</option>
+                <option>Amarante</option>
+                <option>Amora</option>
+                <option>Anadia</option>
+                <option>Angra do Heroismo</option>
+                <option>Aveiro</option>
+                <option>Barcelos</option>
+                <option>Barreiro</option>
+                <option>Beja</option>
+                <option>Borba</option>
+                <option>Braga</option>
+                <option>Bragança</option>
+                <option>Caldas da Rainha</option>
+                <option>Câmara de Lobos</option>
+                <option>Caniço</option>
+                <option>Cantanhede</option>
+                <option>Cartaxo</option>
+                <option>Castelo Branco</option>
+                <option>Chaves</option>
+                <option>Coimbra</option>
+                <option>Costa da Caparica</option>
+                <option>Covilhã</option>
+                <option>Elvas</option>
+                <option>Entrocamento</option>
+                <option>Emesinde</option>
+                <option>Esmoriz</option>
+                <option>Espinho</option>
+                <option>Esposende</option>
+                <option>Estarreja</option>
+                <option>Évora</option>
+                <option>Fafe</option>
+                <option>Faro</option>
+                <option>Fátima</option>
+                <option>Felgueiras</option>
+                <option>Figueira da Foz</option>
+                <option>Fiães</option>
+                <option>Freamunde</option>
+                <option>Funchal</option>
+                <option>Fundão</option>
+                <option>Gafanha da Nazaré</option>
+                <option>Gandra</option>
+                <option>Gondomar</option>
+                <option>Gouveia</option>
+                <option>Guarda</option>
+                <option>Guimarães</option>
+                <option>Horta</option>
+                <option>Ílhavo</option>
+                <option>Lagoa,Açores</option>
+                <option>Lagoa,Algarve</option>
+                <option>Lagos</option>
+                <option>Lamego</option>
+                <option>Leiria</option>
+                <option>Lisboa</option>
+                <option>Lixa</option>
+                <option>Loulé</option>
+                <option>Loures</option>
+                <option>Lourosa</option>
+                <option>Macedo de Cavaleiros</option>
+                <option>Machico</option>
+                <option>Maia</option>
+                <option>Mangualde</option>
+                <option>Marco de Canaveses</option>
+                <option>Marinha Grande</option>
+                <option>Matosinhos</option>
+                <option>Mealhada</option>
+                <option>Mêda</option>
+                <option>Miranda do Douro</option>
+                <option>Mirandela</option>
+                <option>Montemor-o-Novo</option>
+                <option>Montijo</option>
+                <option>Moura</option>
+                <option>Odivelas</option>
+                <option>Olhão</option>
+                <option>Oliveira de Azeméis</option>
+                <option>Oliveira do Bairro</option>
+                <option>Oliveira do Hospital</option>
+                <option>Ourém</option>
+                <option>Ovar</option>
+                <option>Paços de Ferreira</option>
+                <option>Paredes</option>
+                <option>Penafiel</option>
+                <option>Peniche</option>
+                <option>Peso da Régua</option>
+                <option>Pinhel</option>
+                <option>Pombal</option>
+                <option>Ponta Delgada</option>
+                <option>Ponte de Sor</option>
+                <option>Portalegre</option>
+                <option>Portimão</option>
+                <option>Porto</option>
+                <option>Póvoa de Santa Iria</option>
+                <option>Póvoa de Varzim</option>
+                <option>Praia da Vitória</option>
+                <option>Quarteira</option>
+                <option>Queluz</option>
+                <option>Rebordosa</option>
+                <option>Reguengos de Monsaraz</option>
+                <option>Ribeira Grande</option>
+                <option>Rio Maior</option>
+                <option>Rio Tinto</option>
+                <option>Sabugal</option>
+                <option>Sacavém</option>
+                <option>Samora Correia</option>
+                <option>Santa Comba Dão</option>
+                <option>Santa Cruz</option>
+                <option>Santa Maria da Feira</option>
+                <option>Santana</option>
+                <option>Santarém</option>
+                <option>Santiago do Cacém</option>
+                <option>Santo Tirso</option>
+                <option>São João da Madeira</option>
+                <option>São Mamede de Infesta</option>
+                <option>São Pedro do Sul</option>
+                <option>Lordelo</option>
+                <option>Seia</option>
+                <option>Seixal</option>
+                <option>Senhora da Horta</option>
+                <option>Senhora da Hra</option>
+                <option>Serpa</option>
+                <option>Setúbal</option>
+                <option>Silves</option>
+                <option>Sines</option>
+                <option>Tarouca</option>
+                <option>Tavira</option>
+                <option>Tomar</option>
+                <option>Tondela</option>
+                <option>Torres Novas</option>
+                <option>Torres Vedras</option>
+                <option>Trancoso</option>
+                <option>Trofa</option>
+                <option>Valbom</option>
+                <option>Vale de Cambra</option>
+                <option>Valença</option>
+                <option>Valongo</option>
+                <option>Valpaços</option>
+                <option>Vendas Novas</option>
+                <option>Viana do Castelo</option>
+                <option>Vila Badeira</option>
+                <option>Vila do Conde</option>
+                <option>Vila Franca de Xira</option>
+                <option>Vila Nova de Famalição</option>
+                <option>Vila Nova da Foz Côa</option>
+                <option>Vila Nova de Gaia</option>
+                <option>Vila Nova de Santo André</option>
+                <option>Vila Real</option>
+                <option>Vila Real de Santo António</option>
+                <option>Viseu</option>
+                <option>Vizela</option>
               </select>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
-              <label class="pb-2" for="bedrooms">Bedrooms</label>
+              <label class="pb-2" for="bedrooms">Quartos</label>
               <select class="form-control form-select form-control-a" id="bedrooms">
-                <option>Any</option>
+                <option>Qualquer</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -88,9 +244,9 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
-              <label class="pb-2" for="garages">Garages</label>
+              <label class="pb-2" for="garages">Garagem</label>
               <select class="form-control form-select form-control-a" id="garages">
-                <option>Any</option>
+                <option>Qualquer</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -100,9 +256,9 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
-              <label class="pb-2" for="bathrooms">Bathrooms</label>
+              <label class="pb-2" for="bathrooms">Casas de Banho</label>
               <select class="form-control form-select form-control-a" id="bathrooms">
-                <option>Any</option>
+                <option>Qualquer</option>
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -111,18 +267,19 @@
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
-              <label class="pb-2" for="price">Min Price</label>
-              <select class="form-control form-select form-control-a" id="price">
-                <option>Unlimite</option>
-                <option>$50,000</option>
-                <option>$100,000</option>
-                <option>$150,000</option>
-                <option>$200,000</option>
-              </select>
+              <label class="pb-2" for="price">Preço Minimo</label>
+                <input type="number" class="form-control" id="precoMin" >
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="price">Preço Maximo</label>
+                <input type="number" class="form-control" id="precoMAx" >
             </div>
           </div>
           <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Search Property</button>
+            <button type="submit" class="btn btn-b">Procurar Propriedade</button>
           </div>
         </div>
       </form>
@@ -139,6 +296,7 @@
       </button>
       <a class="navbar-brand text-brand" href="index.html"><img class ="logo-menu" src="assets/img/logo3.png" alt="logo"></a>
 
+
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
 
@@ -151,22 +309,26 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="property-grid.html">Propriedades</a>
+            <a class="nav-link " href="about.html">Serviços</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anúncios</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="property-single.html">Para Venda</a>
+              <a class="dropdown-item " href="blog-single.html">Para Compra</a>
+              <a class="dropdown-item " href="agents-grid.html">Criar Anúncio</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">Gestão</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link " href="blog-grid.html">Noticias</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item " href="property-single.html">Página com uma propriedade</a>
-              <a class="dropdown-item " href="blog-single.html">Noticia</a>
-              <a class="dropdown-item " href="agents-grid.html">Agentes Imobiliários</a>
-              <a class="dropdown-item " href="agent-single.html">Agente Imobiliário</a>
-            </div>
-          </li>
           <li class="nav-item">
             <a class="nav-link " href="contact.html">Contatos</a>
           </li>
@@ -177,8 +339,13 @@
         <i class="bi bi-search"></i>
       </button>
 
+     
+
     </div>
+    <button class="btn btn-b-n" href="#">Login</button>
+    <button class="btn btn-reg ms-3" href="#">Registar</button>
   </nav><!-- End Header/Navbar -->
+
 
   <!-- ======= Intro Section ======= -->
   <div class="intro intro-carousel swiper position-relative">
@@ -193,15 +360,14 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Doral, Florida
-                      <br> 78345
-                    </p>
                     <h1 class="intro-title mb-4 ">
-                      <span class="color-b">204 </span> Mount
-                      <br> Olive Road Two
+                      <span class="color-b">Évora </span> 
+                      <br> Rua de Cima
                     </h1>
+                    <p class="intro-title-top">Herdade das Quintinhas
+                    </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | $ 12.000</span></a>
+                      <a href="#"><span class="price-a">Arrenda | € 12.000</span></a>
                     </p>
                   </div>
                 </div>
@@ -218,15 +384,14 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Doral, Florida
-                      <br> 78345
-                    </p>
                     <h1 class="intro-title mb-4">
-                      <span class="color-b">204 </span> Rino
-                      <br> Venda Road Five
+                      <span class="color-b">Covilhã </span> 
+                      <br> Rua do Cotovelo
                     </h1>
+                    <p class="intro-title-top">Bairro das Fontainhas
+                    </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | $ 12.000</span></a>
+                      <a href="#"><span class="price-a">Venda | € 15.000</span></a>
                     </p>
                   </div>
                 </div>
@@ -243,15 +408,14 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Doral, Florida
-                      <br> 78345
-                    </p>
                     <h1 class="intro-title mb-4">
-                      <span class="color-b">204 </span> Alira
-                      <br> Roan Road One
+                      <span class="color-b">Lisboa </span> 
+                      <br> Avenida da Ribeira
                     </h1>
+                    <p class="intro-title-top">Parque das Nações
+                    </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | $ 12.000</span></a>
+                      <a href="#"><span class="price-a">Venda | € 82.000</span></a>
                     </p>
                   </div>
                 </div>
@@ -273,20 +437,74 @@
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Our Services</h2>
+                <h2 class="title-a">Nossos Serviços</h2>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
+          <div class="card-box-ico">
             <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-cart"></span>
-                </div>
+              <div class="card-header-c">
+                
                 <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Lifestyle</h2>
+
+                
+                  <h2 class="title-c">Compra/vende</h2>
+                </div>
+              </div>
+
+              <div class="card-body-c">
+                <p class="content-c">
+                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
+                  convallis a pellentesque
+                  nec, egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Ler mais
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+          <div class="card-box-ico">
+            <div class="card-box-c foo">
+              <div class="card-header-c">
+                
+                  
+                
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Arrenda</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
+                  convallis a pellentesque
+                  nec, egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Ler mais
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-ico">
+            <div class="card-box-c foo">
+              <div class="card-header-c">
+                
+
+                
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Gestão</h2>
                 </div>
               </div>
               <div class="card-body-c">
@@ -297,57 +515,10 @@
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
+                <a href="#" class="link-c link-icon">Ler mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-calendar4-week"></span>
-                </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Loans</h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c">
-                  Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit
-                  aliquet elit, eget tincidunt
-                  nibh pulvinar a.
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="bi bi-calendar4-week"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                  <span class="bi bi-card-checklist"></span>
-                </div>
-                <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Sell</h2>
-                </div>
-              </div>
-              <div class="card-body-c">
-                <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="bi bi-chevron-right"></span>
-                </a>
               </div>
             </div>
           </div>
@@ -362,10 +533,10 @@
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Latest Properties</h2>
+                <h2 class="title-a">Ultimas Oportunidades</h2>
               </div>
               <div class="title-link">
-                <a href="property-grid.html">All Property
+                <a href="property-grid.html">Todos os imóveis
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -385,36 +556,38 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">206 Mount
-                          <br /> Olive Road Two</a>
+                        <a href="property-single.html">Rua do Cotovelo
+                        </a>
+                        <p class="intro-title-top">Covilhã
+                        </p>
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
+                        <span class="price-a">Venda | € 118.000</span>
                       </div>
-                      <a href="#" class="link-a">Click here to view
+                      <a href="#" class="link-a">Mais detalhes
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Area</h4>
+                          <h4 class="card-info-title">Área</h4>
                           <span>340m
                             <sup>2</sup>
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Beds</h4>
+                          <h4 class="card-info-title">Quartos</h4>
                           <span>2</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Baths</h4>
+                          <h4 class="card-info-title">WC</h4>
                           <span>4</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garages</h4>
+                          <h4 class="card-info-title">Garagem</h4>
                           <span>1</span>
                         </li>
                       </ul>
@@ -433,37 +606,39 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">157 West
-                          <br /> Central Park</a>
+                        <a href="property-single.html">Rua Almirante Reis
+                        </a>
+                        <p class="intro-title-top">Lisboa
+                        </p>
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
+                        <span class="price-a">Arrenda | € 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single.html" class="link-a">Mais detalhes
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Area</h4>
-                          <span>340m
+                          <h4 class="card-info-title">Área</h4>
+                          <span>120m
                             <sup>2</sup>
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Beds</h4>
+                          <h4 class="card-info-title">Quartos</h4>
+                          <span>5</span>
+                        </li>
+                        <li>
+                          <h4 class="card-info-title">WC</h4>
                           <span>2</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Baths</h4>
-                          <span>4</span>
-                        </li>
-                        <li>
-                          <h4 class="card-info-title">Garages</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Garagem</h4>
+                          <span>3</span>
                         </li>
                       </ul>
                     </div>
@@ -481,36 +656,38 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">245 Azabu
-                          <br /> Nishi Park let</a>
+                        <a href="property-single.html">Rua D. Sebastião
+                        </a>
+                        <p class="intro-title-top">Porto
+                        </p>
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
+                        <span class="price-a">Venda | € 222.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single.html" class="link-a">Mais detalhes
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Area</h4>
-                          <span>340m
+                          <h4 class="card-info-title">Área</h4>
+                          <span>150m
                             <sup>2</sup>
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Beds</h4>
-                          <span>2</span>
+                          <h4 class="card-info-title">Quartos</h4>
+                          <span>1</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Baths</h4>
-                          <span>4</span>
+                          <h4 class="card-info-title">WC</h4>
+                          <span>1</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garages</h4>
+                          <h4 class="card-info-title">Garagem</h4>
                           <span>1</span>
                         </li>
                       </ul>
@@ -529,15 +706,17 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">204 Montal
-                          <br /> South Bela Two</a>
+                        <a href="property-single.html">Avenida de Chafariz d'el Rei
+                        </a>
+                        <p class="intro-title-top">Beja
+                        </p>
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">rent | $ 12.000</span>
+                        <span class="price-a">Arrenda | € 18.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single.html" class="link-a">Mais detalhes
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -581,10 +760,10 @@
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Best Agents</h2>
+                <h2 class="title-a">Equipa</h2>
               </div>
               <div class="title-link">
-                <a href="agents-grid.html">All Agents
+                <a href="agents-grid.html">Toda a Equipa
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -595,14 +774,14 @@
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="assets/img/agent-4.jpg" alt="" class="img-d img-fluid">
+                <img src="assets/img/paulo.jpeg" alt="" class="img-d img-fluid foto-team">
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Margaret Sotillo
-                        <br> Escala</a>
+                      <a href="agent-single.html" class="link-two">Paulo Jorge Carreiras
+                        <br>Pedras</a>
                     </h3>
                   </div>
                 </div>
@@ -612,10 +791,10 @@
                   </p>
                   <div class="info-agents color-a">
                     <p>
-                      <strong>Phone: </strong> +54 356 945234
+                      <strong>Telémovel: </strong> +351 960 353 746
                     </p>
                     <p>
-                      <strong>Email: </strong> agents@example.com
+                      <strong>Email: </strong> PauloHomeFinder@gmail.com
                     </p>
                   </div>
                 </div>
@@ -651,14 +830,14 @@
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="assets/img/agent-1.jpg" alt="" class="img-d img-fluid">
+                <img src="assets/img/dario.jpeg" alt="" class="img-d img-fluid foto-team">
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Stiven Spilver
-                        <br> Darw</a>
+                      <a href="agent-single.html" class="link-two">Dario Romão
+                        <br> Bianchi</a>
                     </h3>
                   </div>
                 </div>
@@ -668,10 +847,10 @@
                   </p>
                   <div class="info-agents color-a">
                     <p>
-                      <strong>Phone: </strong> +54 356 945234
+                      <strong>Telémovel: </strong> +351 968 548 966
                     </p>
                     <p>
-                      <strong>Email: </strong> agents@example.com
+                      <strong>Email: </strong> DarioHomeFinder@gmail.com
                     </p>
                   </div>
                 </div>
@@ -707,14 +886,14 @@
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="assets/img/agent-5.jpg" alt="" class="img-d img-fluid">
+                <img src="assets/img/ze.jpeg" alt="" class="img-d img-fluid foto-team">
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Emma Toledo
-                        <br> Cascada</a>
+                      <a href="agent-single.html" class="link-two">José Filipe Lapa
+                        <br> Lebre</a>
                     </h3>
                   </div>
                 </div>
@@ -724,10 +903,10 @@
                   </p>
                   <div class="info-agents color-a">
                     <p>
-                      <strong>Phone: </strong> +54 356 945234
+                      <strong>Telémovel: </strong> +351 918 395 516
                     </p>
                     <p>
-                      <strong>Email: </strong> agents@example.com
+                      <strong>Email: </strong> JoseHomeFinder@gmail.com
                     </p>
                   </div>
                 </div>
@@ -771,10 +950,10 @@
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Latest News</h2>
+                <h2 class="title-a">Ultimas Noticias</h2>
               </div>
               <div class="title-link">
-                <a href="blog-grid.html">All News
+                <a href="blog-grid.html">Todas as Noticias
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -793,16 +972,16 @@
                 <div class="card-overlay">
                   <div class="card-header-b">
                     <div class="card-category-b">
-                      <a href="#" class="category-b">House</a>
+                      <a href="#" class="category-b">Casa</a>
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">House is comming
-                          <br> new</a>
+                        <a href="blog-single.html">Descubra as novas tendências do verão para a sua casa
+                           </a>
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
+                      <span class="date-b">18 Setembro 2022</span>
                     </div>
                   </div>
                 </div>
@@ -817,16 +996,16 @@
                 <div class="card-overlay">
                   <div class="card-header-b">
                     <div class="card-category-b">
-                      <a href="#" class="category-b">Travel</a>
+                      <a href="#" class="category-b">Viagens</a>
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">Travel is comming
-                          <br> new</a>
+                        <a href="blog-single.html">Portugal é o 4.º destino europeu mais procurado <br> este verão
+                          </a>
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
+                      <span class="date-b">1 Outubro 2022</span>
                     </div>
                   </div>
                 </div>
@@ -841,16 +1020,16 @@
                 <div class="card-overlay">
                   <div class="card-header-b">
                     <div class="card-category-b">
-                      <a href="#" class="category-b">Park</a>
+                      <a href="#" class="category-b">Viagens</a>
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">Park is comming
-                          <br> new</a>
+                        <a href="blog-single.html">Viagens de residentes atingem no 3.º trimestre <br> valor mais alto desde início da pandemia
+                        </a>
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
+                      <span class="date-b">25 Agosto 2022</span>
                     </div>
                   </div>
                 </div>
@@ -865,16 +1044,15 @@
                 <div class="card-overlay">
                   <div class="card-header-b">
                     <div class="card-category-b">
-                      <a href="#" class="category-b">Travel</a>
+                      <a href="#" class="category-b">Casa</a>
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="#">Travel is comming
-                          <br> new</a>
+                        <a href="#">Universitários à procura de casa: há menos quartos <br> disponíveis e estão mais caros</a>
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">18 Sep. 2017</span>
+                      <span class="date-b">7 Julho 2022</span>
                     </div>
                   </div>
                 </div>
@@ -888,84 +1066,6 @@
       </div>
     </section><!-- End Latest News Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section class="section-testimonials section-t8 nav-arrow-a">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Testimonials</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="testimonial-carousel" class="swiper">
-          <div class="swiper-wrapper">
-
-            <div class="carousel-item-a swiper-slide">
-              <div class="testimonials-box">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-img">
-                      <img src="assets/img/testimonial-1.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-ico">
-                      <i class="bi bi-chat-quote-fill"></i>
-                    </div>
-                    <div class="testimonials-content">
-                      <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                        debitis hic ber quibusdam
-                        voluptatibus officia expedita corpori.
-                      </p>
-                    </div>
-                    <div class="testimonial-author-box">
-                      <img src="assets/img/mini-testimonial-1.jpg" alt="" class="testimonial-avatar">
-                      <h5 class="testimonial-author">Albert & Erika</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-a swiper-slide">
-              <div class="testimonials-box">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-img">
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <div class="testimonial-ico">
-                      <i class="bi bi-chat-quote-fill"></i>
-                    </div>
-                    <div class="testimonials-content">
-                      <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                        debitis hic ber quibusdam
-                        voluptatibus officia expedita corpori.
-                      </p>
-                    </div>
-                    <div class="testimonial-author-box">
-                      <img src="assets/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar">
-                      <h5 class="testimonial-author">Pablo & Emma</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-          </div>
-        </div>
-        <div class="testimonial-carousel-pagination carousel-pagination"></div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
 
   </main><!-- End #main -->
 
@@ -975,9 +1075,8 @@
       <div class="row">
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
-            </div>
+              <img class="logo-footer" src="assets/img/logo3.png" alt="logo">
+            <br><br>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
                 Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
@@ -987,10 +1086,10 @@
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com
+                  <span class="color-text-a">Telémovel: </span>+351960548952
                 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234
+                  <span class="color-text-a">Email: </span> HomeFinder@gmail.com
                 </li>
               </ul>
             </div>
@@ -998,29 +1097,20 @@
         </div>
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
-            </div>
             <div class="w-body-a">
               <div class="w-body-a">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled mt-5">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Gestão de Imóveis</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Anúncios para venda</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Anúncios para compra</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Criar anúncio</a>
                   </li>
                 </ul>
               </div>
@@ -1029,28 +1119,19 @@
         </div>
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">International sites</h3>
-            </div>
             <div class="w-body-a">
-              <ul class="list-unstyled">
+              <ul class="list-unstyled mt-5">
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Sobre nós</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">China</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Serviços</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Contactos</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Argentina</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Singapore</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Philippines</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Noticias</a>
                 </li>
               </ul>
             </div>
@@ -1063,25 +1144,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <nav class="nav-footer">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">Home</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Property</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Blog</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
           <div class="socials-a">
             <ul class="list-inline">
               <li class="list-inline-item">
@@ -1109,18 +1171,18 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+              <span class="color-a">HomeFinder &reg;</span> All Rights Reserved.
             </p>
           </div>
-          <div class="credits">
+          <!-- <div class="credits"> -->
             <!--
             All the links in the footer should remain intact.
             You can delete the links only if you purchased the pro version.
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div> -->
         </div>
       </div>
     </div>
