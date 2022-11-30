@@ -33,6 +33,37 @@ a:hover {
   text-decoration: none;
 }
 
+
+/* Adicionado por ze */
+
+
+
+.btn-homefinder {
+  color: #2fcb6a;
+
+}
+
+.titulosNovos{
+  color: #2fcb6a;
+}
+
+.fontSelect{
+  font-size:  10pt;
+}
+
+.subtitulo{
+  color: white;
+}
+
+
+
+
+/* ////// */
+
+
+
+
+
 .link-two {
   color: #000000;
   transition: all 0.5s ease;
@@ -1082,7 +1113,7 @@ a:hover {
   }
 }
 
-.intro .intro-subtitle {
+.intro .intro-sbtitle {
   font-size: 1.5rem;
   font-weight: 300;
 }
