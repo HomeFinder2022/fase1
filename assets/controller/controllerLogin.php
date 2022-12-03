@@ -6,10 +6,9 @@ class Login{
 
     function validaLogin($email, $pass){
         global $conn;
-        // session_start();
-        $sql = "SELECT utilizador.* , tipoutilizador. FROM utilizador, tp_user 
-        WHERE email = '".$email."' AND pw = '".md5($pass)."' 
-        AND utilizador.idtipoutilizador = tipoutilizador.idtipoutilizador";
+        session_start();
+        $sql = "SELECT utilizador.* FROM utilizador 
+        WHERE email = '".$email."' AND pw = '".$pass."'";
         $msg = "";
         $flag = false;
 
@@ -39,8 +38,8 @@ class Login{
     }
 
     function validaLogout(){
-        // session_start();
-        // session_destroy();
+        session_start();
+        session_destroy();
 
         return ("Obrigado!");
 
