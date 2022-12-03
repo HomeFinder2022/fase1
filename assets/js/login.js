@@ -1,13 +1,20 @@
+function openmodal(){
+
+$('#modalOpenlogin').modal('show');
+
+}
+
+
 function login(){
 
-    let email = $('#email').val();
-    let pass = $('#pass').val();
+    let emailutl = $('#emailutl').val();
+    let passuti = $('#passuti').val();
 
     let dados = new FormData();
 
     dados.append('op',1);
-    dados.append('email',email);
-    dados.append('pass',pass);
+    dados.append('emailutl',emailutl);
+    dados.append('passuti',passuti);
   
     $.ajax({
       url: "assets/model/modelLogin.php",
@@ -25,7 +32,7 @@ function login(){
             sucesso(obj.msg);
    
             setTimeout(function(){ 
-                window.location.assign('index.html')
+                window.location.assign('teste1logout.php')
              }, 2000);
         }else{
             erro(obj.msg);
@@ -58,7 +65,7 @@ function login(){
     .done(function( resposta ) {
         sucesso(resposta)
         setTimeout(function(){ 
-          window.location.assign('index.html')
+          window.location.assign('teste1logout.php')
        }, 2000);
         
     })

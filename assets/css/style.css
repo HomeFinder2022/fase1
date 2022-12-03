@@ -2235,3 +2235,16 @@ footer .credits {
 .logo-footer{
   width: 75%;
 }
+
+.w-px-40{
+
+  width: 40px !important;
+}
+
+.h-auto{
+  height: auto !important;
+}
+
+.rounded-circle{
+  border-radius: 50% !important;
+}
