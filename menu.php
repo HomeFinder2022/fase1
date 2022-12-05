@@ -303,11 +303,11 @@
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link " href="index.php">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="about.html">Sobre</a>
+            <a class="nav-link " href="sobre.html">Sobre</a>
           </li>
 
           <li class="nav-item">
@@ -317,32 +317,22 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anúncios</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item " href="property-single.html">Para Venda</a>
-              <a class="dropdown-item " href="blog-single.html">Para Compra</a>
-              <a class="dropdown-item " href="agents-grid.html">Criar Anúncio</a>
+              <a class="dropdown-item " href="anuncios.html">Anúncios</a>
+              <a class="dropdown-item " href="criarAnuncio.html">Criar Anúncio</a>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="about.html">Gestão</a>
+            <a class="nav-link " href="#">Gestão</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="blog-grid.html">Noticias</a>
+            <a class="nav-link " href="noticias.html">Noticias</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="contact.html">Contatos</a>
+            <a class="nav-link " href="contactos.html">Contactos</a>
           </li>
-
-
-
-
-
-
-
-
-
         </ul>
       </div>
 
@@ -460,6 +450,13 @@
 
 
 
+
+
+
+
+
+
+  
 
 
 

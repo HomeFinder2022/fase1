@@ -2,6 +2,11 @@
 <?php require_once 'menu.php'; ?>
 
 
+
+
+
+
+  
   <!-- ======= Intro Section ======= -->
   <div class="intro intro-carousel swiper position-relative">
 
@@ -112,13 +117,11 @@
 
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  A HomeFinder tem a forma mais simples, rápida e prática de anunciar os seus imóveis.
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Ler mais
+                <a href="anuncios.html" class="link-c link-icon">Ler mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -138,13 +141,11 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  Com a HomeFinder tem a forma mais simples, rápida e prática de pesquisar imóveis.
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Ler mais
+                <a href="anuncios.html" class="link-c link-icon">Ver mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -164,13 +165,11 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  A Plataforma HomeFinder tem as melhores ferramentas para a gestão dos seus Imoveis.
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Ler mais
+                <a href="#" class="link-c link-icon">Ver mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -723,6 +722,12 @@
 
 
   </main><!-- End #main -->
+
+
+
+
+
+
 
  
 
