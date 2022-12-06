@@ -1,4 +1,9 @@
 
+ 
+
+
+
+  
   <!-- ======= Footer ======= -->
   <section class="section-footer">
     <div class="container">
@@ -9,8 +14,7 @@
             <br><br>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+                A HomeFinder junta as funcionalidades de anunicos e gestão de Imovéis numa unica plataforma que o pode ajudar com tarefas do seu dia-a-dia.
               </p>
             </div>
             <div class="w-footer-a">
@@ -34,13 +38,11 @@
                     <i class="bi bi-chevron-right"></i> <a href="#">Gestão de Imóveis</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Anúncios para venda</a>
+                    <i class="bi bi-chevron-right"></i> <a href="anuncios.html">Anúncios de Imóveis</a>
                   </li>
+                  
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Anúncios para compra</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Criar anúncio</a>
+                    <i class="bi bi-chevron-right"></i> <a href="criarAnuncio.html">Criar novo anúncio</a>
                   </li>
                 </ul>
               </div>
@@ -52,16 +54,16 @@
             <div class="w-body-a">
               <ul class="list-unstyled mt-5">
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Sobre nós</a>
+                  <i class="bi bi-chevron-right"></i> <a href="sobre.html">Sobre nós</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Serviços</a>
+                  <i class="bi bi-chevron-right"></i> <a href="servicos.html">Serviços</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Contactos</a>
+                  <i class="bi bi-chevron-right"></i> <a href="contactos.html">Contactos</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Noticias</a>
+                  <i class="bi bi-chevron-right"></i> <a href="noticias.html">Noticias</a>
                 </li>
               </ul>
             </div>
@@ -117,6 +119,14 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+
+
+
+
+
+
+
+  
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

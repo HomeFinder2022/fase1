@@ -303,11 +303,11 @@
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link " href="index.php">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="about.html">Sobre</a>
+            <a class="nav-link " href="sobre.html">Sobre</a>
           </li>
 
           <li class="nav-item">
@@ -318,32 +318,22 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Anúncios</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item " href="property-single.html">Para Venda</a>
-              <a class="dropdown-item " href="blog-single.html">Para Compra</a>
-              <a class="dropdown-item " href="agents-grid.html">Criar Anúncio</a>
+              <a class="dropdown-item " href="anuncios.html">Anúncios</a>
+              <a class="dropdown-item " href="criarAnuncio.html">Criar Anúncio</a>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="about.html">Gestão</a>
+            <a class="nav-link " href="#">Gestão</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="blog-grid.html">Noticias</a>
+            <a class="nav-link " href="noticias.html">Noticias</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="contact.html">Contatos</a>
+            <a class="nav-link " href="contactos.html">Contactos</a>
           </li>
-
-
-
-
-
-
-
-
-
         </ul>
       </div>
 
@@ -468,17 +458,11 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
   <!-- Modal -->
-   <!-- <div class="modal fade" id="modalOpenlogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+  
    <div class="modal fade" id="modalOpenlogin" tabindex="-1" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content"> 
-      <!--  <div class="modal-header">
-          <div class="w-100">
-            <h3 class="mb-4">Sign In</h3>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div> -->
-
+      
 
         <div class="login-wrap">
 	<div class="login-html">
@@ -536,12 +520,13 @@ if(isset($_SESSION['nomeUser'])){ ?>
 </div>
 
 
+  
 
-        <!-- </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-success" onclick="login()">Guardar</button>
-        </div>-->
+
+
+
+
+
         </div>
       </div>
     </div>
