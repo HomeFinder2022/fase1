@@ -32,7 +32,7 @@ function login(){
             sucesso(obj.msg);
    
             setTimeout(function(){ 
-                window.location.assign('teste1logout.php')
+                window.location.assign('index.php')
              }, 2000);
         }else{
             erro(obj.msg);
@@ -65,7 +65,7 @@ function login(){
     .done(function( resposta ) {
         sucesso(resposta)
         setTimeout(function(){ 
-          window.location.assign('teste1logout.php')
+          window.location.assign('##')
        }, 2000);
         
     })

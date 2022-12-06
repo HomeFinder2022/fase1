@@ -20,7 +20,7 @@ class Login{
         while($row = $result->fetch_assoc()) {
             $msg = "Bem-vindo ".$row['nome'];
             $flag = true;
-            // $_SESSION['nomeUser'] = $row['nome'];
+            $_SESSION['nomeUser'] = $row['nome'];
             // $_SESSION['tipo_user'] = $row['descricao'];
             // $_SESSION['tipo'] = $row['idtipoutilizador'];
         }

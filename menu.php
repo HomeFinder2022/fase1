@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +24,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/loginstyle.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: EstateAgency - v4.8.0
@@ -52,7 +50,7 @@
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label class="pb-2" for="Type">Pesquisar</label>
-              <input type="text" class="form-control form-control-lg form-control-a" >
+              <input type="text" class="form-control form-control-lg form-control-a">
             </div>
           </div>
           <div class="col-md-6 mb-2">
@@ -270,14 +268,14 @@
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
               <label class="pb-2" for="price">Preço Minimo</label>
-                <input type="number" class="form-control" id="precoMin" >
+              <input type="number" class="form-control" id="precoMin">
             </div>
           </div>
 
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
               <label class="pb-2" for="price">Preço Maximo</label>
-                <input type="number" class="form-control" id="precoMAx" >
+              <input type="number" class="form-control" id="precoMAx">
             </div>
           </div>
           <div class="col-md-12">
@@ -291,12 +289,14 @@
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html"><img class ="logo-menu" src="assets/img/logo3.png" alt="logo"></a>
+      <a class="navbar-brand text-brand ms-1" href="index.html"><img class="logo-menu" src="assets/img/logo3.png"
+          alt="logo"></a>
 
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
@@ -315,7 +315,8 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anúncios</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Anúncios</a>
             <div class="dropdown-menu">
               <a class="dropdown-item " href="property-single.html">Para Venda</a>
               <a class="dropdown-item " href="blog-single.html">Para Compra</a>
@@ -346,112 +347,113 @@
         </ul>
       </div>
 
-      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01">
         <i class="bi bi-search"></i>
       </button>
 
-     
+
 
     </div>
     <!-- Button trigger modal -->
 
 
-    <button type="button" class="btn btn-success" onclick="openmodal()">Login</button>
-    <button class="btn btn-reg ms-3" href="#">Registar</button>
+    <button type="button" class="btn btn-success me-4" onclick="openmodal()">Login</button>
 
+
+    <?php
+
+
+if(isset($_SESSION['nomeUser'])){ ?>
     <!-- User -->
 
 
+    <div class="ms-3 me-3">
 
+      <li class="button" type="button" data-toggle="left-top">
+        <a class="nav-link dropdown-toggle " href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="avatar avatar-online">
+            <img src="assets/img/apple-touch-icon.png" alt="" class="w-px-40 h-auto rounded-circle">
+          </div>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end dropleft">
+          <li>
+            <a class="dropdown-item" href="pages-account-settings-account.html">
+              <div class="d-flex">
+                <div class="flex-shrink-0 me-3">
+                  <div class="avatar avatar-online">
+                    <img src="assets/img/apple-touch-icon.png" alt="" class="w-px-40 h-auto rounded-circle">
+                  </div>
+                </div>
+                <div class="flex-grow-1">
+                  <span class="fw-semibold d-block">John Doe</span>
+                  <small class="text-muted">Admin</small>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <div class="dropdown-divider"></div>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pages-profile-user.html">
+              <i class="bx bx-user me-2"></i>
+              <span class="align-middle">My Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pages-account-settings-account.html">
+              <i class="bx bx-cog me-2"></i>
+              <span class="align-middle">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pages-account-settings-billing.html">
+              <span class="d-flex align-items-center align-middle">
+                <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                <span class="flex-grow-1 align-middle">Billing</span>
+                <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <div class="dropdown-divider"></div>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pages-help-center-landing.html">
+              <i class="bx bx-support me-2"></i>
+              <span class="align-middle">Help</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pages-faq.html">
+              <i class="bx bx-help-circle me-2"></i>
+              <span class="align-middle">FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pages-pricing.html">
+              <i class="bx bx-dollar me-2"></i>
+              <span class="align-middle">Pricing</span>
+            </a>
+          </li>
+          <li>
+            <div class="dropdown-divider"></div>
+          </li>
+          <li>
+            <button class="dropdown-item" onclick="logout()">
+              <i class="bx bx-power-off me-2"></i>
+              <span class="align-middle">Log Out</span>
 
+          </li>
+        </ul>
+      </li>
 
-   
-<div class="dropleft">
-<li class="nav-item navbar-dropdown dropdown-user dropdown " >
-  <a class="nav-link dropdown-toggle " href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" >
-    <div class="avatar avatar-online">
-      <img src="assets/img/apple-touch-icon.png" alt="" class="w-px-40 h-auto rounded-circle">
     </div>
-  </a>
-  <ul class="dropdown-menu" >
-    <li>
-      <a class="dropdown-item" href="pages-account-settings-account.html">
-        <div class="d-flex">
-          <div class="flex-shrink-0 me-3">
-            <div class="avatar avatar-online">
-              <img src="assets/img/apple-touch-icon.png" alt="" class="w-px-40 h-auto rounded-circle">
-            </div>
-          </div>
-          <div class="flex-grow-1">
-            <!-- <span class="fw-semibold d-block">John Doe</span>
-            <small class="text-muted">Admin</small> -->
-          </div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <div class="dropdown-divider"></div>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pages-profile-user.html">
-        <i class="bx bx-user me-2"></i>
-        <span class="align-middle">My Profile</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pages-account-settings-account.html">
-        <i class="bx bx-cog me-2"></i>
-        <span class="align-middle">Settings</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pages-account-settings-billing.html">
-        <span class="d-flex align-items-center align-middle">
-          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-          <span class="flex-grow-1 align-middle">Billing</span>
-          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-        </span>
-      </a>
-    </li>
-    <li>
-      <div class="dropdown-divider"></div>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pages-help-center-landing.html">
-        <i class="bx bx-support me-2"></i>
-        <span class="align-middle">Help</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pages-faq.html">
-        <i class="bx bx-help-circle me-2"></i>
-        <span class="align-middle">FAQ</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pages-pricing.html">
-        <i class="bx bx-dollar me-2"></i>
-        <span class="align-middle">Pricing</span>
-      </a>
-    </li>
-    <li>
-      <div class="dropdown-divider"></div>
-    </li>
-    <li>
-      <button class="dropdown-item" onclick="logout()" >
-        <i class="bx bx-power-off me-2"></i>
-        <span class="align-middle">Log Out</span>
-</button>
-    </li>
-  </ul>
-</li>
 
-</div>
+    <?php
 
-
-
-<!--/ User -->
-
+} ?>
 
 
   </nav><!-- End Header/Navbar -->
@@ -465,61 +467,86 @@
 
 
 
- <!-- Modal -->
- <div class="modal fade" id="modalOpenlogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Editar Filme</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-      <form class="row g-3">
-                    <div class="col-12">
-                      <label for="emailutl" class="form-label">Email</label>
-                      <div class="input-group">
-                        <input type="email" name="username" class="form-control" id="emailutl">
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="passuti" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="passuti">
-                    </div>
+  <!-- Modal -->
+   <!-- <div class="modal fade" id="modalOpenlogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+   <div class="modal fade" id="modalOpenlogin" tabindex="-1" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content"> 
+      <!--  <div class="modal-header">
+          <div class="w-100">
+            <h3 class="mb-4">Sign In</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
 
 
-      </form>
+        <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-success" onclick="login()">Guardar</button>
+
+
+        <!-- </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-success" onclick="login()">Guardar</button>
+        </div>-->
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
