@@ -7,14 +7,14 @@ $('#modalOpenlogin').modal('show');
 
 function login(){
 
-    let emailutl = $('#emailutl').val();
-    let passuti = $('#passuti').val();
+    let user = $('#user').val();
+    let pass = $('#pass').val();
 
     let dados = new FormData();
 
     dados.append('op',1);
-    dados.append('emailutl',emailutl);
-    dados.append('passuti',passuti);
+    dados.append('user',user);
+    dados.append('pass',pass);
   
     $.ajax({
       url: "assets/model/modelLogin.php",

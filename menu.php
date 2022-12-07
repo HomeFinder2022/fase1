@@ -1,3 +1,5 @@
+<?php  session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -471,8 +473,8 @@ if(isset($_SESSION['nomeUser'])){ ?>
 		<div class="login-form">
 			<div class="sign-in-htm">
 				<div class="group">
-					<label for="user" class="label">Username</label>
-					<input id="user" type="text" class="input">
+					<label for="user" class="label">Email</label>
+					<input id="user" type="email" class="input">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
@@ -483,11 +485,12 @@ if(isset($_SESSION['nomeUser'])){ ?>
 					<label for="check"><span class="icon"></span> Keep me Signed in</label>
 				</div>
 				<div class="group">
-					<input type="submit" class="button" value="Sign In">
+					<input type="submit" class="button" onclick="login()" value="Sign In">
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<a href="#forgot">Forgot Password?</a>
+					<a href="#forgot">Esqueceu-se da password?</a>
+          <a href="registo.php">Quero registar me?</a>
 				</div>
 			</div>
 			<div class="sign-up-htm">

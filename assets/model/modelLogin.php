@@ -4,7 +4,7 @@ require_once '../controller/controllerLogin.php';
 
 if($_POST['op'] == 1){
     $log = new Login();
-    $resp = $log -> validaLogin($_POST['emailutl'], $_POST['passuti']);
+    $resp = $log -> validaLogin($_POST['user'], $_POST['pass']);
     echo($resp);
     
 }else if($_POST['op'] == 2){
