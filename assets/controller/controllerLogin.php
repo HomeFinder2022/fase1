@@ -4,11 +4,11 @@ require_once 'connection.php';
 
 class Login{
 
-    function validaLogin($email, $pass){
+    function validaLogin($user, $pass){
         global $conn;
         session_start();
         $sql = "SELECT utilizador.* FROM utilizador 
-        WHERE email = '".$email."' AND pw = '".$pass."'";
+        WHERE email = '".$user."' AND pw = '".$pass."'";
         $msg = "";
         $flag = false;
 
