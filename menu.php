@@ -307,19 +307,19 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="sobre.html">Sobre</a>
+            <a class="nav-link " href="sobre.php">Sobre</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="servicos.html">Serviços</a>
+            <a class="nav-link " href="servicos.php">Serviços</a>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Anúncios</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item " href="anuncios.html">Anúncios</a>
-              <a class="dropdown-item " href="criarAnuncio.html">Criar Anúncio</a>
+              <a class="dropdown-item " href="anuncios.php">Anúncios</a>
+              <a class="dropdown-item " href="criarAnuncio.php">Criar Anúncio</a>
             </div>
           </li>
 
@@ -328,11 +328,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="noticias.html">Noticias</a>
+            <a class="nav-link " href="noticias.php">Noticias</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="contactos.html">Contactos</a>
+            <a class="nav-link " href="contactos.php">Contactos</a>
           </li>
         </ul>
       </div>
