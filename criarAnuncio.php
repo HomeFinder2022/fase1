@@ -100,7 +100,7 @@
 
                         <div class="col-sm-8">
                           <input type="number" class="form-control" id="basic-default-company"
-                            placeholder="1234 - 123" />
+                            placeholder="0000 - 000" />
                         </div>
                       </div>
 
