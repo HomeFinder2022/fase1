@@ -39,7 +39,8 @@ a:hover {
 
 
 .btn-homefinder {
-  color: #2fcb6a;
+  background-color: #2fcb6a;
+
 
 }
 
@@ -54,6 +55,9 @@ a:hover {
 .subtitulo{
   color: white;
 }
+
+
+
 
 
 /* tabela  */
