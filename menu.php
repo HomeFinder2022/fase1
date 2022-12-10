@@ -29,6 +29,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/loginstyle.css" rel="stylesheet">
+  <link href="assets/css/prettycheckbox.css" rel="stylesheet">
+
+
 
   <!-- =======================================================
   * Template Name: EstateAgency - v4.8.0

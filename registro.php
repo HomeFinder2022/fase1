@@ -139,6 +139,15 @@
 
 
 
+</body>
+
+<?php require_once 'footer.php'; ?>
+
+<script src="assets/js/registo.js"></script>
+
+</html>
+
+
 
 
 
@@ -155,5 +164,6 @@
      
 
 
-<?php require_once 'footer.php'; ?>
-<script src="assets/js/registo.js"></script>
+
+
+
