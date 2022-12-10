@@ -119,7 +119,7 @@
 
                           <div class="col-12">
                             <label for="fotoUtilizador" class="form-label">Fotografia</label>
-                            <input class="form-control" type="file" id="fotoUtilizador" multiple>
+                            <input class="form-control" type="file" id="fotoUtilizador" >
                           </div>
 
 
@@ -138,8 +138,32 @@
 
 
 
+
 </body>
 
 <?php require_once 'footer.php'; ?>
 
+<script src="assets/js/registo.js"></script>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
