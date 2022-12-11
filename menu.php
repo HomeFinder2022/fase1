@@ -370,7 +370,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
       <li class="button" type="button" data-toggle="left-top">
         <a class="nav-link dropdown-toggle " href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
           <div class="avatar avatar-online">
-            <img src="assets/img/apple-touch-icon.png" alt="" class="w-px-40 h-auto rounded-circle">
+            <img id="fotoperfil1" alt="" class="w-px-40 h-auto rounded-circle">
           </div>
         </a>
         <ul class="dropdown-menu dropdown-menu-end dropleft">
@@ -379,12 +379,12 @@ if(isset($_SESSION['nomeUser'])){ ?>
               <div class="d-flex">
                 <div class="flex-shrink-0 me-3">
                   <div class="avatar avatar-online">
-                    <img src="assets/img/apple-touch-icon.png" alt="" class="w-px-40 h-auto rounded-circle">
+                    <img id="fotoperfil" alt="" class="w-px-40 h-auto rounded-circle">
                   </div>
                 </div>
                 <div class="flex-grow-1">
-                  <span class="fw-semibold d-block">John Doe</span>
-                  <small class="text-muted">Admin</small>
+                  <span class="fw-semibold d-block" id="nomeUser1"></span>
+                  <small class="text-muted" id="tipoUser" ></small>
                 </div>
               </div>
             </a>

@@ -5,7 +5,7 @@ function registoUtilizador(){
     let nif = $('#nif').val();
     let nome = $('#nome').val();
     let apelido = $('#apelido').val();
-    let pass = $('#pass').val();
+    let pass = $('#passuti').val();
     let morada = $('#morada').val();
     let codpostal = $('#codpostal').val();
     let idade = $('#idade').val();

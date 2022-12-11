@@ -7,8 +7,9 @@ class Login{
     function validaLogin($user, $pass){
         global $conn;
         session_start();
-        $sql = "SELECT utilizador.* FROM utilizador 
-        WHERE email = '".$user."' AND pw = '".$pass."'";
+        $sql = "SELECT utilizador.*, tipoutilizador.descricao  FROM utilizador , tipoutilizador
+        WHERE utilizador.idtipoutilizador = tipoutilizador.idtipoutilizador AND 
+        email = '".$user."' AND pw = '".$pass."'";
         $msg = "";
         $flag = false;
 
@@ -21,8 +22,8 @@ class Login{
             $msg = "Bem-vindo ".$row['nome'];
             $flag = true;
             $_SESSION['nomeUser'] = $row['nome'];
-            // $_SESSION['tipo_user'] = $row['descricao'];
-            // $_SESSION['tipo'] = $row['idtipoutilizador'];
+            $_SESSION['tipoUser'] = $row['descricao'];
+            $_SESSION['fotoperfil'] = $row['foto'];
         }
         } else {
             $msg = "Login Errado! Dados Incorretos.";
