@@ -68,7 +68,7 @@
                           </div>
                           <div class="col-3">
                             <label for="pass" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="pass">
+                            <input type="password" class="form-control" id="passuti">
                           </div>
 
                           <div class="col-9">

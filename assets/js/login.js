@@ -65,7 +65,7 @@ function login(){
     .done(function( resposta ) {
         sucesso(resposta)
         setTimeout(function(){ 
-          window.location.assign('##')
+          window.location.assign('index.php')
        }, 2000);
         
     })

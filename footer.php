@@ -146,6 +146,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/login.js"></script>
+  <script src="assets/js/dados.js"></script>
 
 
  

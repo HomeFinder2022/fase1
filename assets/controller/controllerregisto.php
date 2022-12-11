@@ -4,26 +4,24 @@ require_once 'connection.php';
 
 class Utilizador{
 
-    function registaProdutos($nif, $nome , $apelido ,
-    $pass , $morada, $codpostal, $idade, $tel, 
-    $email, $tipoutilizador, $pnascimento,$img ){
+    function registaUtilizador($nif, $nome , $apelido ,$pass , $morada, $codpostal, $idade, $tel,$email, $tipoutilizador, $pnascimento,$img ){
         global $conn;
 
-        $sql = "INSERT INTO utlizador (nif,idtipoutilizador,nome,apelido,morada,codigopostal,idpais,idade,telemovel,email,pw,foto ) 
-        VALUES('".$nif."', '".$nome."', '".$apelido."',
-        '".$pass."','".$morada."','".$codpostal."','".$idade."',
+        $sql = "INSERT INTO utilizador (nif,nome,apelido,pw,morada,codigopostal,idade,telemovel,email,idtipoutilizador,idpais ) 
+        VALUES('".$nif."', '".$nome."', '".$apelido."','".$pass."','".$morada."','".$codpostal."','".$idade."',
         '".$tel."','".$email."','".$tipoutilizador."','".$pnascimento."')";
+
         $msg = "";
         
         if ($conn->query($sql) === TRUE) {
 
-          $lastID = mysqli_insert_id($conn); 
+          
 
-          $resp = $this->upload($img, $lastID);
+          $resp = $this->upload($img, $nif);
           $resp = json_decode($resp, true);
 
           if($resp['flag']){
-            $sqlImagem = "UPDATE utilizador SET foto = '".$resp['target']."' WHERE nif =".$lastID;
+            $sqlImagem = "UPDATE utilizador SET foto = '".$resp['target']."' WHERE nif =".$nif;
 
             if ($conn->query($sqlImagem) === TRUE) {
 
@@ -51,9 +49,9 @@ class Utilizador{
 
     function upload($img, $nif){
 
-        $dir = "../Imagens".$nif."/";
-        $dir2 = "assets/Imagens".$nif."/";
-        $flag = "";
+        $dir = "../teste".$nif."/";
+        $dir2 = "assets/teste".$nif."/";
+        $flag = false;
         $targetBD = "";
   
         if(!is_dir($dir)){
