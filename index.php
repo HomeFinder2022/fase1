@@ -7,6 +7,7 @@
 
 
 
+
   
   <!-- ======= Intro Section ======= -->
   <div class="intro intro-carousel swiper position-relative">
@@ -720,7 +721,6 @@
         <div class="news-carousel-pagination carousel-pagination"></div>
       </div>
     </section><!-- End Latest News Section -->
-
 
   </main><!-- End #main -->
 

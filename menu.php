@@ -448,6 +448,10 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
     </div>
 
+
+
+
+
     <?php
 
 } ?>
@@ -455,14 +459,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
   </nav><!-- End Header/Navbar -->
 
-
-
-
-
-
-
-
-
+ 
 
   <!-- Modal -->
   
