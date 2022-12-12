@@ -35,7 +35,14 @@ if($_POST['op'] == 1){
     $res = $table -> listaImoveis();
     echo($res);
 
-    }
+    }else if($_POST['op'] == 3){
+
+        $info = new Imovel();
+        $res = $info-> imovelInfo($_POST['idimovel']);
+        echo($res);
+    
+        }
+    
 
     
 

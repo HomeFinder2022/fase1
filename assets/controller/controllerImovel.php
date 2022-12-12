@@ -169,48 +169,30 @@ class Imovel{
         }
 
 
-        function listaImoveis(){
 
-          global $conn;
+        // function imovelInfo($idimovel){
+        //   global $conn;
+        //   $msg="";
         
-          $sql = "SELECT imovel.idimovel, imovel.morada, distrito.nome AS nomedistrito, concelho.nome AS nomeconcelho, freguesias.nome AS nomefreg,
-          tipologia.descricao AS tipologia , tipoimovel.descricao 
-
-             FROM imovel, distrito, concelho, 
-             freguesias, tipologia, tipoimovel 
-
-             WHERE
-          imovel.iddistrito = distrito.iddistrito AND
-          imovel.idconcelho = concelho.idconcelho AND
-          imovel.idfreguesia = freguesias.idfreguesia AND
-          imovel.idtipologia = tipologia.idtipologia AND
-          imovel.idtipoimovel = tipoimovel.idtipoimovel";
-      
-          $result = $conn->query($sql);
-      
-          $msg = "";
-
-          if ($result->num_rows > 0) {
-              // output data of each row
-              while($row = $result->fetch_assoc()) {
-                  $msg .= "<tr>";
-                  // $msg .= "<td colspan='0' style='text-align: center;'>";
-                  $msg .= "<td>".$row['idimovel']."</td>";
-                  $msg .= "<td>".$row['morada']."</td>";
-                  $msg .= "<td>".$row['nomedistrito']."</td>";
-                  $msg .= "<td>".$row['nomeconcelho']."</td>";
-                  $msg .= "<td>".$row['nomefreg']."</td>";
-                  $msg .= "<td>".$row['descricao']."</td>";
-                  $msg .= "<td>".$row['tipologia']."</td>";
-                  $msg .= "<td><button type='button' class='btn btn-danger btn-sm' onclick='deleteImovel(".$row['idimovel'].")'>Apagar</button></td>";
-                  $msg .= "</tr>";
-                  }
-                  
-                
-                }
+        //   $sql = "SELECT * FROM imovel WHERE idimovel = ".$idimovel;
         
-          $conn->close();
-          return $msg;
-      }
+        //   $result = $conn->query($sql);
+        
+        //   if ($result->num_rows > 0) {
+        //   // output data of each row
+        //   while($row = $result->fetch_assoc()) {
+        //       $msg = $row;
+        //   }
+        //   }
+        
+        //   $conn->close();
+        
+        //   return json_encode($msg);
+        
+        // }
+        
+
+
+
 
 }

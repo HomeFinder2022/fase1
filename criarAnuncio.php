@@ -366,15 +366,16 @@
 
 
 
-              <table class="table align-middle mb-0 bg-white" id="#">
+              <table class="table align-middle mb-0 bg-white" id="tabImoveis">
                 <thead class="bg-light tabelaTitulos">
                   <tr>
-                    <th>Fotografias</th>
-                    <th>Tipo de Anuncio</th>
+                    <th>Fotos</th>
                     <th>Morada</th>
-                    <th>Concelho</th>
-                    <th>Tipologia</th>
                     <th>Preço</th>
+                    <th>Concelho</th>
+                    <th>Freguesia</th>
+                    <th>Tipologia</th>
+                    <th>Ano</th>
                     <th></th>
                     <th></th>
                   </tr>
@@ -383,7 +384,7 @@
 
 
 
-                <tbody id="#">
+                <tbody id="listaImoveis2">
 
                   <tr>
                     <td></td>
@@ -395,11 +396,11 @@
                     <td>100.000 €</td>
 
                     <td>
-                      <button type="button" class="btn btn-light tabelaTitulos">Editar</button>
+                      <!-- <button type="button" class="btn btn-light tabelaTitulos">Editar</button> -->
                     </td>
 
                     <td>
-                      <button type="button" class="btn btn-outline-danger">Remover</button>
+                      <!-- <button type="button" class="btn btn-outline-danger">Remover</button> -->
                     </td>
 
                   </tr>
