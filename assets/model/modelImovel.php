@@ -31,20 +31,28 @@ if($_POST['op'] == 1){
 
     }else if($_POST['op'] == 2){
 
-    $table = new Imovel();
-    $res = $table -> listaImoveis();
+    $tabelaImoveis = new Imovel();
+    $res = $tabelaImoveis -> tabelaImoveis();
+    echo($res);
+    
+}else if($_POST['op'] == 3){
+    $desativarImovel = new Imovel();
+    $res = $desativarImovel -> desativarImovel($_POST['idimovel']);
     echo($res);
 
-    }else if($_POST['op'] == 3){
+}else if($_POST['op'] == 4){
+    $infoImovel = new Imovel();
+    $resp = $infoImovel -> infoImovel();
+    echo($resp);
 
-        $info = new Imovel();
-        $res = $info-> imovelInfo($_POST['idimovel']);
-        echo($res);
-    
-        }
-    
-
+}
     
 
     
-?>
+    
+?>   
+
+
+
+
+

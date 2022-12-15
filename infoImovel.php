@@ -23,7 +23,7 @@
                   <a href="index.html">Home</a>
                 </li>
                 <li class="breadcrumb-item">
-                  <a href="property-grid.html">Properties</a>
+                  <a href="property-grid.html">Imóveis</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   304 Blaster Up
@@ -62,7 +62,7 @@
                 <div class="property-price d-flex justify-content-center foo">
                   <div class="card-header-c d-flex">
                     <div class="card-box-ico">
-                      <span class="bi bi-cash">$</span>
+                      <span class="bi bi-cash">€</span>
                     </div>
                     <div class="card-title-c align-self-center">
                       <h5 class="title-c">15000</h5>
@@ -73,46 +73,44 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="title-box-d section-t4">
-                        <h3 class="title-d">Quick Summary</h3>
+                        <h3 class="title-d">Resumo</h3>
                       </div>
                     </div>
                   </div>
                   <div class="summary-list">
                     <ul class="list">
                       <li class="d-flex justify-content-between">
-                        <strong>Property ID:</strong>
+                        <strong>ID Imóvel:</strong>
                         <span>1134</span>
                       </li>
                       <li class="d-flex justify-content-between">
-                        <strong>Location:</strong>
+                        <strong>Morada:</strong>
                         <span>Chicago, IL 606543</span>
                       </li>
                       <li class="d-flex justify-content-between">
-                        <strong>Property Type:</strong>
-                        <span>House</span>
+                        <strong>Distrito :</strong>
+                        <span>Evora</span>
                       </li>
+
                       <li class="d-flex justify-content-between">
-                        <strong>Status:</strong>
-                        <span>Sale</span>
+                        <strong>Concelho</strong>
+                        <span>Evora</span>
                       </li>
                       <li class="d-flex justify-content-between">
                         <strong>Area:</strong>
-                        <span>340m
-                          <sup>2</sup>
-                        </span>
+                        <span>10 <sup>2</sup></span> 
                       </li>
                       <li class="d-flex justify-content-between">
-                        <strong>Beds:</strong>
-                        <span>4</span>
-                      </li>
-                      <li class="d-flex justify-content-between">
-                        <strong>Baths:</strong>
+                        <strong>Wc:</strong>
                         <span>2</span>
                       </li>
+                      
                       <li class="d-flex justify-content-between">
-                        <strong>Garage:</strong>
-                        <span>1</span>
+                        <strong>Ano:</strong>
+                        <span>2020</span>
                       </li>
+                     
+                     
                     </ul>
                   </div>
                 </div>
@@ -125,7 +123,7 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="title-box-d">
-                      <h3 class="title-d">Property Description</h3>
+                      <h3 class="title-d">Descrição do Imóvel</h3>
                     </div>
                   </div>
                 </div>
@@ -146,7 +144,7 @@
                 <div class="row section-t3">
                   <div class="col-sm-12">
                     <div class="title-box-d">
-                      <h3 class="title-d">Amenities</h3>
+                      <h3 class="title-d">Caracteristicas</h3>
                     </div>
                   </div>
                 </div>
@@ -190,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <!-- <div class="col-md-12">
             <div class="row section-t3">
               <div class="col-sm-12">
                 <div class="title-box-d">
@@ -283,7 +281,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section><!-- End Property Single-->
 
 

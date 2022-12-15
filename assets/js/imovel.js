@@ -58,7 +58,14 @@ function registoImovel() {
 
     .done(function (resposta) {
       sucesso(resposta);
+     
+      tabelaImoveis();
+
+
+
     })
+
+
 
     .fail(function (jqXHR, textStatus) {
       alert("Request failed: " + textStatus);
@@ -66,7 +73,7 @@ function registoImovel() {
 }
 
 
-function tabImoveis(){
+function tabelaImoveis(){
 
   let dados = new FormData();
 
@@ -83,9 +90,11 @@ function tabImoveis(){
   })
    
   .done(function( resposta ) {
-    $('#listaImoveis').html(resposta);
-  
-
+    if ($.fn.DataTable.isDataTable('#tabelaImoveis2')) {
+        $('#tabelaImoveis2').dataTable().fnDestroy();
+    }
+      $('#listaImoveis2').html(resposta);
+      $('#tabelaImoveis2').DataTable();
   })
    
   .fail(function( jqXHR, textStatus ) {
@@ -96,10 +105,41 @@ function tabImoveis(){
 
 
 
-function imovelInfo(idimovel){
+
+function desativarImovel(idimovel){
+
   let dados = new FormData();
-  dados.append('op',3);
-  dados.append('idimovel',idimovel);
+
+  dados.append("op",3);
+  dados.append("idimovel",idimovel);
+
+  $.ajax({
+      url: "assets/model/modelImovel.php",
+      method: "POST",
+      data: dados,
+      dataType: "html",
+      cache:false,
+      contentType:false,
+      processData:false
+    })
+     
+    .done(function( resposta ) {
+      sucesso(resposta);
+   
+    })
+     
+    .fail(function( jqXHR, textStatus ) {
+      alert( "Request failed: " + textStatus );
+    });
+}
+
+
+
+
+function infoImovel(){
+  let dados = new FormData();
+  dados.append('op',4);
+
 
   $.ajax({
     url: "assets/model/modelImovel.php",
@@ -112,27 +152,8 @@ function imovelInfo(idimovel){
   })
    
   .done(function( resposta ) {
-    let obj = JSON.parse(resposta);
-
-    $('#fotoImovelInfo').attr('src',obj.fotos);
-    $('#concelhoImovelInfo').val(obj.iddistrito);
-    $('#moradaImovelInfo').val(obj.morada);
-    $('#precoImovelInfo').val(obj.precovenda);
-    $('#tipologiaImovelInfo').val(obj.idtipologia);
-
-    $('#numWcImovelInfo').val(obj.numwc);
-
-    $('#areaBrutaImovelInfo').val(obj.areabruta);
-
-    $('#anoImovelImovelInfo').val(obj.anocontrucao);
-
- 
+    $('#infoImovel').html(resposta);
     
-    
-    
-   
-
- 
 
   })
    
@@ -141,6 +162,55 @@ function imovelInfo(idimovel){
   });
 
 }
+
+
+
+
+// function imovelInfo(idimovel){
+//   let dados = new FormData();
+//   dados.append('op',3);
+//   dados.append('idimovel',idimovel);
+
+//   $.ajax({
+//     url: "assets/model/modelImovel.php",
+//     method: "POST",
+//     data: dados,
+//     cache:false,
+//     processData:false,
+//     contentType: false,
+//     dataType: "html"
+//   })
+   
+//   .done(function( resposta ) {
+//     let obj = JSON.parse(resposta);
+
+//     $('#fotoImovelInfo').attr('src',obj.fotos);
+//     $('#concelhoImovelInfo').val(obj.iddistrito);
+//     $('#moradaImovelInfo').val(obj.morada);
+//     $('#precoImovelInfo').val(obj.precovenda);
+//     $('#tipologiaImovelInfo').val(obj.idtipologia);
+
+//     $('#numWcImovelInfo').val(obj.numwc);
+
+//     $('#areaBrutaImovelInfo').val(obj.areabruta);
+
+//     $('#anoImovelImovelInfo').val(obj.anocontrucao);
+
+ 
+    
+    
+    
+   
+
+ 
+
+//   })
+   
+//   .fail(function( jqXHR, textStatus ) {
+//     alert( "Request failed: " + textStatus );
+//   });
+
+// }
 
 
 
@@ -156,5 +226,6 @@ function imovelInfo(idimovel){
 }
 
 $(function () {
-  tabImoveis();
+ 
+  tabelaImoveis();
 });
