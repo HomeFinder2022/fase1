@@ -92,6 +92,8 @@ function getDistritos() {
       .done(function (resposta) {
         $("#tipoNegocImovel").html(resposta);
         $("#tipoNegocImovel2").html(resposta);
+        $("#tipoNegocImovel3").html(resposta);
+
 
         })
   
@@ -143,6 +145,7 @@ function getDistritos() {
       .done(function (resposta) {
         $("#certEnerg").html(resposta);
         $("#certEnerg2").html(resposta);
+        $("#certEnerg3").html(resposta);
         })
   
       .fail(function (jqXHR, textStatus) {
@@ -169,7 +172,8 @@ function getDistritos() {
       .done(function (resposta) {
         $("#tipoImovel").html(resposta);
         $("#tipoImovel2").html(resposta);
-        })
+        $("#tipoImovel3").html(resposta);
+      })
   
       .fail(function (jqXHR, textStatus) {
         alert("Request failed: " + textStatus);
@@ -194,6 +198,7 @@ function getDistritos() {
       .done(function (resposta) {
         $("#tipologiaImovel").html(resposta);
         $("#tipologiaImovel2").html(resposta);
+        $("#tipologiaImovel3").html(resposta);
         })
   
       .fail(function (jqXHR, textStatus) {
@@ -250,6 +255,7 @@ function getDistritos() {
       // if(this.value == 1 || this.value == 2 || this.value == 3){
         $("#tipologiaVenda").html(resposta);
         $("#tipologiaVenda2").html(resposta);
+  
       // }
 
     })
@@ -259,6 +265,39 @@ function getDistritos() {
     });
   
   }
+
+  function filtroTipologia2(id){
+
+    let dados = new FormData();
+
+    dados.append("op", 13);
+    dados.append("id", id);
+
+    $.ajax({
+        url: "assets/model/modelListaSelect.php",
+        method: "POST",
+        data: dados,
+        dataType: "html",
+        cache: false,
+        contentType: false,
+        processData: false
+    })
+     
+    .done(function( resposta ) {
+      // if(this.value == 1 || this.value == 2 || this.value == 3){
+        $("#tipologiaVenda3").html(resposta);
+        
+  
+      // }
+
+    })
+     
+    .fail(function( jqXHR, textStatus ) {
+      alert( "Request failed: " + textStatus );
+    });
+  
+  }
+
 
 
   function filtroDistrito(id) {

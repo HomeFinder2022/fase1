@@ -56,6 +56,7 @@
                   <div class="input-group">
                     <span class="input-group-text">Tipo de Negócio</span>
                     <select class="form-select" onchange="filtroImovel(this.value)" id="tipoNegocImovel2">
+
                     </select>
                   </div>
                 </div>
@@ -64,6 +65,7 @@
                   <div class="input-group">
                     <span class="input-group-text">Tipo de Imóvel</span>
                     <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel2">
+                    
                     </select>
                   </div>
                 </div>
@@ -92,6 +94,8 @@
                   <input type="text" placeholder="0000-000" class="form-control" id="postalImovel2">
                 </div>
 
+
+
                 <div class="col-4">
                   <div class="input-group">
                     <span class="input-group-text">Distrito</span>
@@ -100,6 +104,8 @@
                     </select>
                   </div>
                 </div>
+
+
 
                 <div class="col-4">
                   <div class="input-group">

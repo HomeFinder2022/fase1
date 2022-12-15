@@ -256,19 +256,18 @@ class Imovel{
           global $conn;
           $msg="";
         
-          $sql = "SELECT imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos,
-          concelho.nome, imoveisvenda.precovenda, tipologia.descricao,
+          $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos,
+          concelho.nome, imoveisvenda.precovenda, tipologia.descricao, tiponegocio.descricao AS tiponegocio
 
-          FROM imovel, listafotos, concelho, imoveisvenda, tipologia
+          FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio
           
           WHERE 
 
           listafotos.idimovel = imovel.idimovel AND
           imovel.idconcelho = concelho.idconcelho AND
           imoveisvenda.idimovel = imovel.idimovel AND
-          imovel.idtipologia = tipologia.idtipologia
-
-          ";
+          imovel.idtipologia = tipologia.idtipologia AND
+          imovel.idtiponegocio = tiponegocio.idtiponegocio";
         
           $result = $conn->query($sql);
         
@@ -286,12 +285,12 @@ class Imovel{
             $msg .= "<div class='card-overlay-a-content'>";
             $msg .= "<div class='card-header-a'>"; 
             $msg .= "<h2 class='card-title-a'>";            
-            $msg .= "<a >?" .$row['nome']. "<br/>".$row['morada']."</a>";            
+            $msg .= "<a >" .$row['nome']. "<br/>".$row['morada']."</a>";            
             $msg .= "</h2>";           
-            $msg .= "</div>";                        
+            $msg .= "</div>"; 
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$row['precovenda']. "€</span>";
+            $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | " .$row['precovenda']. "€</span>";
             $msg .= "</div>";
             $msg .= "<a href='infoImovel.php' class='link-a'>Mais Informações";
             $msg .= "<span  class='bi bi-chevron-right'></span>";

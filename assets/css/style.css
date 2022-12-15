@@ -37,6 +37,7 @@ a:hover {
 /* Adicionado por ze */
 
 
+
 /*==================
 	ADVANCE SEARCH SECTION
 ====================*/
@@ -47,15 +48,16 @@ a:hover {
   width: 100%;
 }
 #aa-advance-search .aa-advance-search-area {
-  background-color: #dadada;
+  background-color: #f1f1f1;
   
- 
+  border-style: outset;
+
   border-radius: 10px 10px 10px 10px;
   display: inline;
   float: left;
   margin-top: -100px;
-  min-height: 100px;
-  padding: 25px 20px;
+  /* min-height: 100px; */
+  padding: 25px 25px;
   position: relative;
   width: 100%;
 }
@@ -85,6 +87,7 @@ a:hover {
   height: 40px;
   padding: 5px;
   width: 100%;
+  font-size: 14px;
 }
 #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search .aa-search-btn {
   border: medium none;
@@ -140,6 +143,7 @@ a:hover {
 
 .btn-homefinder {
   background-color: #2fcb6a;
+  
 
 
 }
@@ -157,9 +161,6 @@ a:hover {
 }
 
 
-
-
-
 /* tabela  */
 
 
@@ -168,7 +169,14 @@ a:hover {
   color: #2fcb6a;
 }
 
+.fontTitulosPrecos{
 
+  font-size: 20pt;
+}
+.fontPrecos{
+
+  font-size: 15pt;
+}
 /* tabela end */
 
 

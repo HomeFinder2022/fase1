@@ -60,6 +60,7 @@ function registoImovel() {
       sucesso(resposta);
      
       tabelaImoveis();
+      infoImovel();
 
 
 
@@ -136,9 +137,10 @@ function desativarImovel(idimovel){
 
 
 
-function infoImovel(){
+function infoImovel(idimovel){
   let dados = new FormData();
   dados.append('op',4);
+  dados.append('idimovel',idimovel);
 
 
   $.ajax({
@@ -165,38 +167,6 @@ function infoImovel(){
 
 
 
-
-// function imovelInfo(idimovel){
-//   let dados = new FormData();
-//   dados.append('op',3);
-//   dados.append('idimovel',idimovel);
-
-//   $.ajax({
-//     url: "assets/model/modelImovel.php",
-//     method: "POST",
-//     data: dados,
-//     cache:false,
-//     processData:false,
-//     contentType: false,
-//     dataType: "html"
-//   })
-   
-//   .done(function( resposta ) {
-//     let obj = JSON.parse(resposta);
-
-//     $('#fotoImovelInfo').attr('src',obj.fotos);
-//     $('#concelhoImovelInfo').val(obj.iddistrito);
-//     $('#moradaImovelInfo').val(obj.morada);
-//     $('#precoImovelInfo').val(obj.precovenda);
-//     $('#tipologiaImovelInfo').val(obj.idtipologia);
-
-//     $('#numWcImovelInfo').val(obj.numwc);
-
-//     $('#areaBrutaImovelInfo').val(obj.areabruta);
-
-//     $('#anoImovelImovelInfo').val(obj.anocontrucao);
-
- 
     
     
     
@@ -228,4 +198,5 @@ function infoImovel(){
 $(function () {
  
   tabelaImoveis();
+  infoImovel();
 });

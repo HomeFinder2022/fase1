@@ -22,7 +22,7 @@
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
             <h1 class="title-single">Qual o Imóvel que procura?</h1>
-            <span class="color-text-a">Anúnicos de Imóveis</span>
+          
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
@@ -42,7 +42,19 @@
 
     <br><br><br><br><br><br>
 
+
   </section><!-- End Intro Single-->
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- ======= Property Grid ======= -->
   <section class="property-grid grid">
@@ -65,6 +77,8 @@
 
 
 
+  
+
 
 
 
@@ -73,18 +87,33 @@
   <section id="aa-advance-search">
     <div class="container">
       <div class="aa-advance-search-area">
+        
+      <div class="card-header d-flex align-items-center justify-content-center">
+              <h2 class="mb-0 tabelaTitulos">Porcure o Imóvel dos seus sonhos!</h2>
+            
+            </div>
+
+            <br><br>
         <div class="form">
          <div class="aa-advance-search-top">
             <div class="row">
+
+           
               <div class="col-md-4">
+
+
                 <div class="aa-single-advance-search">
-                  <input type="text" placeholder="Palavras-Chave">
+                  <input type="text" placeholder="Localização">
                 </div>
+
+
               </div>
-              <div class="col-md-2">
+
+
+              <div class="col-md-3">
                 <div class="aa-single-advance-search">
-                  <select>
-                   <option value="0" selected>Category</option>
+                  <select class="form-select" onchange="filtroImovel(this.value)" id="tipoNegocImovel3">
+                   <option value="0" selected>Procuro</option>
              
 
 
@@ -94,10 +123,10 @@
                   </select>
                 </div>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-3">
                  <div class="aa-single-advance-search">
-                  <select>
-            
+                  <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel3">
+                 
 
 
 
@@ -105,10 +134,12 @@
                   </select>
               </div>
               </div>
+
+
               <div class="col-md-2">
-                 <div class="aa-single-advance-search">
-                  <select>
-                   
+                 <div class="aa-single-advance-search " id = "tipologiaVenda3">
+                  <select >
+                 
 
 
 
@@ -116,11 +147,70 @@
                   </select>
               </div>
               </div>
+
+
+
+              </div>
+              <br>
+              <div class="row">
+
+              
+             
               <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <input type="text" placeholder="Area Útil">
+                </div>
+              </div>
+
+
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <input type="text" placeholder="Preço Minimo">
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <input type="text" placeholder="Preço Máximo">
+                </div>
+              </div>
+
+          
+
+
+
+
+
+               
+              <div class="col-md-3">
+                 <div class="aa-single-advance-search">
+                  <select id = "certEnerg3">
+                 
+
+
+
+
+                  </select>
+              </div>
+              </div>
+
+
+
+
+              </div>
+              <br>
+              <div class="row justify-content-md-end ">
+
+              <div class="col-md-2 ">
+
                 <div class="aa-single-advance-search">
                   <input class="aa-search-btn" type="submit" value="Search">
                 </div>
+
               </div>
+
+
+
             </div>
           </div>
 
@@ -163,6 +253,9 @@
         </div>
       </div>
     </div>
+
+    <br><br>
+
   </section>
   <!-- / Advance Search -->
 
@@ -173,36 +266,25 @@
 
 
 
+<br><br><br>
+  <!-- Lista Imoveis -->
+  <section>
+  <br><br><br>
+        <div class="col-md-4">
+        <div id="infoImovel">
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="col-md-4" id="infoImovel">
-
+        </div>
 
         
 
 
 
         </div>
-
+        </section>
+  <!-- /Lista Imoveis -->
 
 
 
@@ -222,7 +304,7 @@
 <?php require_once 'footer.php'; ?>
 
 <script src="assets/js/imovel.js"></script>
-
+<script src="assets/js/listaSelect.js"></script>
 
 
 
@@ -252,11 +334,11 @@
 
 
 
+<!-- 
 
 
 
-
-          <!-- <div class="card-box-a card-shadow">
+          <div class="card-box-a card-shadow">
 
             <div class="img-box-a">
               <img id="fotoImovelInfo" src="assets/img/property-1.jpg" alt="" class="img-a img-fluid">

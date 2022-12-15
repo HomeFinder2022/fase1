@@ -42,7 +42,7 @@ if($_POST['op'] == 1){
 
 }else if($_POST['op'] == 4){
     $infoImovel = new Imovel();
-    $resp = $infoImovel -> infoImovel();
+    $resp = $infoImovel -> infoImovel($_POST['idimovel']);
     echo($resp);
 
 }
