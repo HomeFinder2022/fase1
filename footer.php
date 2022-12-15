@@ -137,10 +137,11 @@
   <!-- Vendor JS Files -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" src="assets/js/datatables.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/js/sweetalert.js"></script>
-
+ 
 
   
   <!-- Template Main JS File -->

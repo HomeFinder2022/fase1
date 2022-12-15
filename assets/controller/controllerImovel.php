@@ -174,7 +174,7 @@ class Imovel{
         //   global $conn;
         //   $msg="";
         
-        //   $sql = "SELECT * FROM imovel WHERE idimovel = ".$idimovel;
+        //   $sql = "SELECT morada FROM imovel WHERE idimovel = ".$idimovel;
         
         //   $result = $conn->query($sql);
         
@@ -195,4 +195,212 @@ class Imovel{
 
 
 
+
+
+      
+          function tabelaImoveis(){
+
+            global $conn;
+          
+            $sql = "SELECT imovel.idimovel, imovel.morada, distrito.nome AS nomedistrito, concelho.nome AS nomeconcelho, freguesias.nome AS nomefreg,
+            tipologia.descricao AS tipologia , tipoimovel.descricao 
+  
+               FROM imovel, distrito, concelho, 
+               freguesias, tipologia, tipoimovel 
+  
+               WHERE
+            imovel.iddistrito = distrito.iddistrito AND
+            imovel.idconcelho = concelho.idconcelho AND
+            imovel.idfreguesia = freguesias.idfreguesia AND
+            imovel.idtipologia = tipologia.idtipologia AND
+            imovel.idtipoimovel = tipoimovel.idtipoimovel";
+        
+            $result = $conn->query($sql);
+        
+            $msg = "";
+  
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+
+
+
+
+                  
+                  $msg .= "<tr>";
+                  // $msg .= "<td colspan='0' style='text-align: center;'>";
+                  $msg .= "<td>" .$row['idimovel']. "</td>";
+
+                  $msg .= "<td>".$row['morada']."</td>";
+                  $msg .= "<td>".$row['nomedistrito']."</td>";
+                  $msg .= "<td>".$row['nomeconcelho']."</td>";
+                  $msg .= "<td>".$row['nomefreg']."</td>";
+                  $msg .= "<td>".$row['descricao']."</td>";
+                  $msg .= "<td>".$row['tipologia']."</td>";
+                  $msg .= "<td>           <button type='button' class='btn btn-danger btn-sm' onclick='desativarImovel(".$row['idimovel'].")'>            Desativar    </button>               </td>";
+                  $msg .= "</tr>";
+
+                  }
+                    
+          
+                  }
+          
+            $conn->close();
+            return $msg;
+        }
+
+
+
+
+        function infoImovel($idimovel){
+          global $conn;
+          $msg="";
+        
+          $sql = "SELECT imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos,
+          concelho.nome, imoveisvenda.precovenda, tipologia.descricao,
+
+          FROM imovel, listafotos, concelho, imoveisvenda, tipologia
+          
+          WHERE 
+
+          listafotos.idimovel = imovel.idimovel AND
+          imovel.idconcelho = concelho.idconcelho AND
+          imoveisvenda.idimovel = imovel.idimovel AND
+          imovel.idtipologia = tipologia.idtipologia
+
+          ";
+        
+          $result = $conn->query($sql);
+        
+          if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+             
+           
+
+            $msg .= "<div class='card-box-a card-shadow'>";
+            $msg .= "<div class='img-box-a'>";
+            $msg .= "<img src='".$row['fotos']."' class='img-a img-fluid'>";
+            $msg .= "</div> ";
+            $msg .= "<div class='card-overlay'>";
+            $msg .= "<div class='card-overlay-a-content'>";
+            $msg .= "<div class='card-header-a'>"; 
+            $msg .= "<h2 class='card-title-a'>";            
+            $msg .= "<a >?" .$row['nome']. "<br/>".$row['morada']."</a>";            
+            $msg .= "</h2>";           
+            $msg .= "</div>";                        
+            $msg .= "<div class='card-body-a'>";
+            $msg .= "<div class='price-box d-flex'>";
+            $msg .= "<span class='price-a' >" .$row['precovenda']. "€</span>";
+            $msg .= "</div>";
+            $msg .= "<a href='infoImovel.php' class='link-a'>Mais Informações";
+            $msg .= "<span  class='bi bi-chevron-right'></span>";
+            $msg .= "</a>";
+            $msg .= "</div>";                  
+            $msg .= "<div class='card-footer-a'>" ;
+            $msg .= "<ul class='card-info d-flex justify-content-around'>"; 
+            $msg .= "<li>";
+            $msg .= "<h4 class='card-info-title' >Tipologia</h4>";
+            $msg .= "<span >".$row['descricao']." ";
+            $msg .= "</span>";
+            $msg .= "</li>";
+            $msg .= "<li>";                  
+            $msg .= "<h4 class='card-info-title'>WC's</h4>";
+            $msg .= "<span >" .$row['numwc']."</span>";
+            $msg .= "</li>";            
+            $msg .= "<li>";
+            $msg .= "<h4 class='card-info-title' >Área Bruta</h4>";                    
+            $msg .= "<span>".$row['areabruta']."</span>";
+            $msg .= "</li>";                      
+            $msg .= "<li>";
+            $msg .= "<h4 class='card-info-title' >Ano</h4>";
+            $msg .= "<span>".$row['anoconstrucao']."</span>";
+            $msg .= "</li>";
+            $msg .= "</ul>";
+            $msg .= "</div>";
+            $msg .= "</div>";
+            $msg .= "</div>";
+            $msg .= "</div>";
+
+
+          }
+          }
+        
+          $conn->close();
+          return $msg;
+          
+        
+        }
+
+
+
 }
+
+              
+
+
+
+
+
+
+
+
+
+
+// $msg .= "<div class='card-box-a card-shadow'>";
+
+// $msg .= "<div class='img-box-a'>
+// <img src='".$row['fotos']."' class='img-a img-fluid'>
+// </div> ";
+
+// $msg .= "<div class='card-overlay'>
+
+// <div class='card-overlay-a-content'>
+//   <div class='card-header-a'>
+
+//     <h2 class='card-title-a'>
+
+//       <a >".$row['nomeconcelho']."<br/>".$row['morada']."</a>
+
+//     </h2>
+
+//   </div>";
+            
+//   $msg .= "<div class='card-body-a'>
+//     <div class='price-box d-flex'>
+//       <span class='price-a' >" .$row['precovenda']. "€</span>
+//     </div>
+//     <a href='infoImovel.php' class='link-a'>Mais Informações
+//       <span  class='bi bi-chevron-right'></span>
+//     </a>
+//   </div>";
+         
+//   $msg .= "<div class='card-footer-a'>
+//     <ul class='card-info d-flex justify-content-around'>
+//       <li>
+//         <h4 class='card-info-title' >Tipologia</h4>
+//         <span >".$row['tipologia']."
+
+//         </span>
+//       </li>";
+          
+//   $msg .= " <li>
+//         <h4 class='card-info-title'>WC's</h4>
+//         <span >" .$row['numwc']."</span>
+//       </li>";
+
+//       $msg .= "<li>
+//         <h4 class='card-info-title' >Área Bruta</h4>
+//         <span>".$row['areabruta']."</span>
+//       </li>";
+           
+//       $msg .=  "<li>
+//         <h4 class='card-info-title' >Ano</h4>
+//         <span>".$row['anoconstrucao']."</span>
+//       </li>
+//      </ul>
+//   </div>
+// </div>
+// </div>";
+
+// $msg .= "</div>";

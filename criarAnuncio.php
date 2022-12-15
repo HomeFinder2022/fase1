@@ -1,4 +1,6 @@
 <?php require_once 'menu.php'; ?>
+
+
 <body>
   
 
@@ -366,44 +368,22 @@
 
 
 
-              <table class="table align-middle mb-0 bg-white" id="tabImoveis">
+              <table class="table align-middle mb-0 bg-white" id="tabelaImoveis2">
                 <thead class="bg-light tabelaTitulos">
                   <tr>
-                    <th>Fotos</th>
+                    <th>ID</th>
                     <th>Morada</th>
-                    <th>Preço</th>
+                    <th>Distrito</th>
                     <th>Concelho</th>
                     <th>Freguesia</th>
+                    <th>Descricao</th>
                     <th>Tipologia</th>
-                    <th>Ano</th>
-                    <th></th>
                     <th></th>
                   </tr>
                 </thead>
 
-
-
-
                 <tbody id="listaImoveis2">
 
-                  <tr>
-                    <td></td>
-
-                    <td>Compra</td>
-                    <td>Avenida Tomas de Alcaide</td>
-                    <td>Estremoz</td>
-                    <td>T1</td>
-                    <td>100.000 €</td>
-
-                    <td>
-                      <!-- <button type="button" class="btn btn-light tabelaTitulos">Editar</button> -->
-                    </td>
-
-                    <td>
-                      <!-- <button type="button" class="btn btn-outline-danger">Remover</button> -->
-                    </td>
-
-                  </tr>
 
 
                 </tbody>
@@ -439,6 +419,7 @@
 
 
 <?php require_once 'footer.php'; ?>
+
 
 <script src="assets/js/listaSelect.js"></script>
 <script src="assets/js/imovel.js"></script>
