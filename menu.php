@@ -339,6 +339,11 @@
             <a class="nav-link " href="noticias.php">Noticias</a>
           </li>
 
+          
+          <li class="nav-item">
+            <a class="nav-link " href="precos.php">Subscrição</a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link " href="contactos.php">Contactos</a>
           </li>
