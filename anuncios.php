@@ -77,12 +77,6 @@
 
 
 
-  
-
-
-
-
-
       
   <section id="aa-advance-search">
     <div class="container">
@@ -116,20 +110,12 @@
                    <option value="0" selected>Procuro</option>
              
 
-
-
-
-
                   </select>
                 </div>
               </div>
               <div class="col-md-3">
                  <div class="aa-single-advance-search">
                   <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel3">
-                 
-
-
-
 
                   </select>
               </div>
@@ -139,9 +125,6 @@
               <div class="col-md-2">
                  <div class="aa-single-advance-search " id = "tipologiaVenda3">
                   <select >
-                 
-
-
 
 
                   </select>
@@ -174,28 +157,15 @@
                   <input type="text" placeholder="Preço Máximo">
                 </div>
               </div>
-
-          
-
-
-
-
-
+     
                
               <div class="col-md-3">
                  <div class="aa-single-advance-search">
                   <select id = "certEnerg3">
                  
-
-
-
-
                   </select>
               </div>
               </div>
-
-
-
 
               </div>
               <br>
