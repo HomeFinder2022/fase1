@@ -332,7 +332,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="#">Gestão</a>
+            <a class="nav-link " href="../dashboard/HomeFinder Dashboard/html/index.php">Gestão</a>
           </li>
 
           <li class="nav-item">

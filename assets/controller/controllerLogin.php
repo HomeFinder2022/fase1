@@ -9,7 +9,7 @@ class Login{
         session_start();
         $sql = "SELECT utilizador.*, tipoutilizador.descricao  FROM utilizador , tipoutilizador
         WHERE utilizador.idtipoutilizador = tipoutilizador.idtipoutilizador AND 
-        email = '".$user."' AND pw = '".$pass."'";
+        email = '".$user."' AND pwd = '".$pass."'";
         $msg = "";
         $flag = false;
 
