@@ -7,7 +7,7 @@ class Utilizador{
     function registaUtilizador($nif, $nome , $apelido ,$pass , $morada, $codpostal, $idade, $tel,$email, $tipoutilizador, $pnascimento,$img ){
         global $conn;
 
-        $sql = "INSERT INTO utilizador (nif,nome,apelido,pw,morada,codigopostal,idade,telemovel,email,idtipoutilizador,idpais ) 
+        $sql = "INSERT INTO utilizador (nif,nome,apelido,pwd,morada,codigopostal,idade,telemovel,email,idtipoutilizador,idpais ) 
         VALUES('".$nif."', '".$nome."', '".$apelido."','".$pass."','".$morada."','".$codpostal."','".$idade."',
         '".$tel."','".$email."','".$tipoutilizador."','".$pnascimento."')";
 

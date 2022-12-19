@@ -499,7 +499,9 @@ if(isset($_SESSION['nomeUser'])){ ?>
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<a href="#forgot">Esqueceu-se da password?</a><br>
+
+
+					<a href="resetPass.php">Esqueceu-se da password?</a><br>
           <a href="registro.php">Quero registar me?</a>
 				</div>
 			</div>
