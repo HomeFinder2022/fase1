@@ -359,10 +359,13 @@
 
     </div>
     <!-- Button trigger modal -->
-
-
+    <?php
+    if(!isset($_SESSION['nomeUser'])){
+      ?>
     <button type="button" class="btn btn-success me-4" onclick="openmodal()">Login</button>
-
+    <?php
+    }
+    ?>
 
     <?php
 
@@ -461,6 +464,8 @@ if(isset($_SESSION['nomeUser'])){ ?>
     <?php
 
 } ?>
+
+
 
 
   </nav><!-- End Header/Navbar -->
