@@ -30,7 +30,7 @@
   </section><!-- End Intro Single-->
 
 
-  <!-- ======= Adicrionar Anuncio ======= -->
+  <!-- ======= Adicionar Anuncio ======= -->
   <div class="container">
     <section class="agents-grid grid">
 

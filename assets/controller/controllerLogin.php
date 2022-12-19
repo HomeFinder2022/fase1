@@ -24,6 +24,7 @@ class Login{
             $_SESSION['nomeUser'] = $row['nome'];
             $_SESSION['tipoUser'] = $row['descricao'];
             $_SESSION['fotoperfil'] = $row['foto'];
+            $_SESSION['nif'] = $row['nif'];
         }
         } else {
             $msg = "Login Errado! Dados Incorretos.";
