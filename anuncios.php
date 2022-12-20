@@ -240,8 +240,13 @@
   <!-- Lista Imoveis -->
   <section>
   <br><br><br>
-        <div class="col-md-4">
-        <div id="infoImovel">
+  
+  <div class="container">
+       
+   
+  <div class="card mt-3">
+        
+        <div class="row row gy-3 g-4 mb-5" id="infoImovel">
 
 
 
@@ -253,6 +258,7 @@
 
 
         </div>
+      </div>
         </section>
   <!-- /Lista Imoveis -->
 

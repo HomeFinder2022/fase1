@@ -276,7 +276,7 @@ class Imovel{
           while($row = $result->fetch_assoc()) {
              
            
-
+            $msg .= "<div class='col-md-4'>";
             $msg .= "<div class='card-box-a card-shadow'>";
             $msg .= "<div class='img-box-a'>";
             $msg .= "<img src='".$row['fotos']."' class='img-a img-fluid'>";
@@ -320,6 +320,8 @@ class Imovel{
             $msg .= "</div>";
             $msg .= "</div>";
             $msg .= "</div>";
+            $msg .= "</div>";
+            
 
 
           }
