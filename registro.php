@@ -1,4 +1,5 @@
-<?php require_once 'menu.php'; ?>
+<?php session_destroy();
+require_once 'menu.php'; ?>
 
 <main id="main">
     <!-- =======Intro Single ======= -->
