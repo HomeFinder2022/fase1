@@ -147,7 +147,7 @@
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="anuncios.html" class="link-c link-icon">Ver mais
+                <a href="anuncios.php" class="link-c link-icon">Ver mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -171,7 +171,7 @@
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Ver mais
+                <a href="../dashboard/HomeFinder Dashboard/html/index.php" class="link-c link-icon">Ver mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>

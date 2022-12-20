@@ -104,7 +104,7 @@
                           <div class="col-6">
                             <div class="input-group">
                             <span class="input-group-text">Tipo de Utilizador</span>
-                            <select class="form-select" id="tipoutilizador">
+                            <select class="form-select" id="tipoutilizador" >
                             </select>
                             </div>
                           </div>

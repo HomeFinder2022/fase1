@@ -303,7 +303,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand ms-1" href="index.html"><img class="logo-menu" src="assets/img/logo3.png"
+      <a class="navbar-brand text-brand ms-1" href="index.php"><img class="logo-menu" src="assets/img/logo3.png"
           alt="logo"></a>
 
 
