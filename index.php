@@ -123,7 +123,7 @@
                 </p>
               </div>
               <div class="card-footer-c">
-                <a href="anuncios.html" class="link-c link-icon">Ler mais
+                <a href="anuncios.php" class="link-c link-icon">Ler mais
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
