@@ -44,6 +44,10 @@
                   <li class="item-list-a">
                     <i class="bi bi-chevron-right"></i> <a href="criarAnuncio.html">Criar novo anúncio</a>
                   </li>
+
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="precos.php">Planos de Subscrição</a>
+                  </li>
                 </ul>
               </div>
             </div>

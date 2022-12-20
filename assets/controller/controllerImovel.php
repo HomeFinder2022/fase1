@@ -279,7 +279,7 @@ class Imovel{
             $msg .= "<div class='col-md-4'>";
             $msg .= "<div class='card-box-a card-shadow'>";
             $msg .= "<div class='img-box-a'>";
-            $msg .= "<img src='".$row['fotos']."' class='img-a img-fluid'>";
+            $msg .= "<img src='".$row['fotos']."' class=' img-fluid-anuncios'>";
             $msg .= "</div> ";
             $msg .= "<div class='card-overlay'>";
             $msg .= "<div class='card-overlay-a-content'>";

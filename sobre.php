@@ -39,6 +39,7 @@
             <div class="about-img-box">
               <img src="assets/img/slide-about-1.jpg" alt="" class="img-fluid">
             </div>
+       
             <div class="sinse-box">
               <h3 class="sinse-title">HomeFinder&reg;
                 <br> Desde 2022
