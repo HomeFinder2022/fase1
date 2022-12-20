@@ -635,9 +635,16 @@ progress {
     content: "— "
 }
 
+/* .img-fluid-anuncios {
+width: 400px; 
+height: 500px; 
+} */
+
 .img-fluid {
     max-width: 100%;
     height: auto
+
+    
 }
 
 .img-thumbnail {

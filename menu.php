@@ -14,7 +14,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon_homefinder.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -31,6 +31,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/loginstyle.css" rel="stylesheet">
   <link href="assets/css/prettycheckbox.css" rel="stylesheet">
+  <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
 
 
 

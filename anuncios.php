@@ -90,6 +90,7 @@
             <br><br>
         <div class="form">
          <div class="aa-advance-search-top">
+
             <div class="row">
 
            
@@ -181,8 +182,26 @@
 
 
 
+              <div class="row">
+              <div class="col-md-2">
+
+
+              <label class="form-label" for="">Preco</label>
+              <div class="range">
+              <input type="range" class="form-range" min="0" max="1 000 000" id="" />
+              </div>
+
+
+
+
+              </div>
+              </div>
+
             </div>
           </div>
+
+
+
 
 
          <!-- <div class="aa-advance-search-bottom">
@@ -244,7 +263,7 @@
   <div class="container">
        
    
-  <div class="card mt-3">
+  <div >
         
         <div class="row row gy-3 g-4 mb-5" id="infoImovel">
 
