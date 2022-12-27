@@ -90,25 +90,25 @@ require_once 'menu.php'; ?>
                           </div>
 
                           <div class="col-3">
-                            <label for="tel" class="form-label">Numero de Telémovel</label>
+                            <label for="tel" class="form-label">Numero de Telemóvel</label>
                             <input type="number" class="form-control" id="tel">
                           </div>
 
-                          <div class="col-9">
+                          <div class="col-6">
                             <label for="email" class="form-label">Email</label>
                             <input type="text" class="form-control" id="email">
                           </div>
 
 
                           
-
+<!-- 
                           <div class="col-6">
                             <div class="input-group">
                             <span class="input-group-text">Tipo de Utilizador</span>
                             <select class="form-select" id="tipoutilizador" >
                             </select>
                             </div>
-                          </div>
+                          </div> -->
 
                           <div class="col-6">
                             <div class="input-group">

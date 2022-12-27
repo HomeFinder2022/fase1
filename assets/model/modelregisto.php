@@ -14,7 +14,6 @@ if($_POST['op'] == 1){
         $_POST['idade'],
         $_POST['tel'],
         $_POST['email'],
-        $_POST['tipoutilizador'],
         $_POST['pnascimento'],
         $_FILES
         );

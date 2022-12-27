@@ -47,7 +47,7 @@ require 'PHPMailer/src/SMTP.php';
           echo 'Não foi possível enviar o email<br>';
           echo 'Erro: ' . $mail->ErrorInfo;
       } else {
-          echo 'Verifica o teu mail!';
+          echo 'Verifica o teu email!';
       }
       }
 

@@ -495,10 +495,10 @@ if(isset($_SESSION['nomeUser'])){ ?>
 					<label for="pass" class="label">Password</label>
 					<input id="pass" type="password" class="input" data-type="password">
 				</div>
-				<div class="group">
+				<!-- <div class="group">
 					<input id="check" type="checkbox" class="check" checked>
 					<label for="check"><span class="icon"></span> Keep me Signed in</label>
-				</div>
+				</div> -->
 				<div class="group">
 					<input type="submit" class="button" onclick="login()" value="Sign In">
 				</div>

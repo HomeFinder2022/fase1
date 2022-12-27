@@ -73,7 +73,7 @@
 
 
                 <div class="col-12 mt-3">
-                  <button class="btn btn-success" type="button" onclick="sendemailResetPass()">Recuperar pwd</button>
+                  <button class="btn btn-success" type="button" onclick="sendemailResetPass()">Recuperar a palavra passe</button>
                 </div>
               </form>
 
