@@ -11,7 +11,7 @@ function registoUtilizador(){
     let idade = $('#idade').val();
     let tel = $('#tel').val();
     let email = $('#email').val();
-    let tipoutilizador = $('#tipoutilizador').val();
+    
     let pnascimento = $('#pnascimento').val();
    
     let img =  $('#fotoUtilizador').prop('files')[0]
@@ -29,7 +29,7 @@ function registoUtilizador(){
     dados.append("idade",idade);
     dados.append("tel",tel);
     dados.append("email",email);
-    dados.append("tipoutilizador",tipoutilizador);
+  
     dados.append("pnascimento",pnascimento);
     dados.append("img",img);
     dados.append("op",1);

@@ -1,7 +1,6 @@
 
 
 
-
 <!-- Font awesome -->
 
 
@@ -12,6 +11,12 @@
 <link href="assets/css/style.css" rel="stylesheet">
 
 <?php require_once 'menu.php'; ?>
+
+
+<?php
+
+
+if(isset($_SESSION['nomeUser'])){ ?>
 
 <main id="main">
 
@@ -295,6 +300,13 @@
 
 
 </body>
+<?php
+
+
+}else{
+
+  require_once 'error.php';
+} ?>
 
 <?php require_once 'footer.php'; ?>
 

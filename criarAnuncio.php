@@ -1,5 +1,11 @@
-<?php require_once 'menu.php'; ?>
 
+    
+
+<?php require_once 'menu.php'; ?>
+<?php
+
+
+if(isset($_SESSION['nomeUser'])){ ?>
 
 <body>
   
@@ -422,7 +428,13 @@
 </main><!-- End #main -->
 
 </body>
+<?php
 
+
+}else{
+
+  require_once 'error.php';
+} ?>
 
 <?php require_once 'footer.php'; ?>
 
@@ -432,3 +444,5 @@
 
 
 </html>
+
+

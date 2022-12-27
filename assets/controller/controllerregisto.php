@@ -4,12 +4,12 @@ require_once 'connection.php';
 
 class Utilizador{
 
-    function registaUtilizador($nif, $nome , $apelido ,$pass , $morada, $codpostal, $idade, $tel,$email, $tipoutilizador, $pnascimento,$img ){
+    function registaUtilizador($nif, $nome , $apelido ,$pass , $morada, $codpostal, $idade, $tel,$email, $pnascimento,$img ){
         global $conn;
 
         $sql = "INSERT INTO utilizador (nif,nome,apelido,pwd,morada,codigopostal,idade,telemovel,email,idtipoutilizador,idpais ) 
         VALUES('".$nif."', '".$nome."', '".$apelido."','".$pass."','".$morada."','".$codpostal."','".$idade."',
-        '".$tel."','".$email."','".$tipoutilizador."','".$pnascimento."')";
+        '".$tel."','".$email."',3,'".$pnascimento."')";
 
         $msg = "";
         
