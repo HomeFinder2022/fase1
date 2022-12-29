@@ -16,7 +16,7 @@ class Utilizador{
         if ($conn->query($sql) === TRUE) {
 
           
-
+          $resp = $this->insertFinancas($nif);
           $resp = $this->upload($img, $nif);
           $resp = json_decode($resp, true);
 
@@ -46,6 +46,21 @@ class Utilizador{
         return $msg;
     }
 
+    function insertFinancas($nif){
+
+      global $conn;
+      $msg="";
+
+      $sql = "INSERT INTO financas (idnif, saldo ) VALUES('".$nif."', 0)";
+
+      if ($conn->query($sql) === TRUE) {
+        $msg  = "conta criada com sucesso!";
+      } else {
+        $msg = "Error: " . $sql . "<br>" . $conn->error;
+      }
+
+      return $msg;
+    }
 
     function upload($img, $nif){
 
