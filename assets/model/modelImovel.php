@@ -45,10 +45,15 @@ if($_POST['op'] == 1){
     $resp = $infoImovel -> infoImovel($_POST['idimovel']);
     echo($resp);
 
+}else if($_POST['op'] == 5){
+    $infoImovel2 = new Imovel();
+    $resp = $infoImovel2 -> infoImovel2($_POST['idimovel']);
+    echo($resp);
+
 }
     
 
-    
+
     
 ?>   
 
