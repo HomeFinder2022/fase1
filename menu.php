@@ -389,6 +389,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
               <div class="d-flex">
                 <div class="flex-shrink-0 me-3">
                   <div class="avatar avatar-online">
+                    <!-- ajustar imagem em round  -->
                     <img id="fotoperfil" alt="" class="w-px-40 h-auto rounded-circle">
                   </div>
                 </div>
@@ -403,19 +404,19 @@ if(isset($_SESSION['nomeUser'])){ ?>
             <div class="dropdown-divider"></div>
           </li>
           <li>
-            <a class="dropdown-item" href="pages-profile-user.html">
+            <a class="dropdown-item" href="perfil.php">
               <i class="bx bx-user me-2"></i>
-              <span class="align-middle">My Profile</span>
+              <span class="align-middle">Meu perfil</span>
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="pages-account-settings-account.html">
+            <a class="dropdown-item" href="#">
               <i class="bx bx-cog me-2"></i>
               <span class="align-middle">Settings</span>
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="pages-account-settings-billing.html">
+            <a class="dropdown-item" href="#">
               <span class="d-flex align-items-center align-middle">
                 <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
                 <span class="flex-grow-1 align-middle">Billing</span>
@@ -427,21 +428,21 @@ if(isset($_SESSION['nomeUser'])){ ?>
             <div class="dropdown-divider"></div>
           </li>
           <li>
-            <a class="dropdown-item" href="pages-help-center-landing.html">
+            <a class="dropdown-item" href="contactos.php">
               <i class="bx bx-support me-2"></i>
               <span class="align-middle">Help</span>
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="pages-faq.html">
+            <a class="dropdown-item" href="sobre.php">
               <i class="bx bx-help-circle me-2"></i>
               <span class="align-middle">FAQ</span>
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="pages-pricing.html">
+            <a class="dropdown-item" href="precos.php">
               <i class="bx bx-dollar me-2"></i>
-              <span class="align-middle">Pricing</span>
+              <span class="align-middle">Subscrição</span>
             </a>
           </li>
           <li>

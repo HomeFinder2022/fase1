@@ -26,12 +26,44 @@ if($_POST['op'] == 1){
     $pespais = new Utilizador();
     $res = $pespais -> getPais();
     echo($res);
-}
-// else if($_POST['op'] == 4){
-//     $tabpr = new Produto();
-//     $res = $tabpr -> tabProdutos();
-//     echo($res);
-// }else if($_POST['op'] == 5){
+}else if($_POST['op'] == 4){
+    $getDados = new Utilizador();
+    $res = $getDados -> getdadosPerfilEdit();
+    echo($res);   
+}else if($_POST['op'] == 5){
+
+        $edit = new Utilizador();
+        $resp = $edit -> editaPerfil(
+            // $_POST['nifperfil'],
+            $_POST['nome'],
+            $_POST['apelido'],
+            $_POST['pass'],
+            $_POST['morada'],
+            $_POST['codpostal'],
+            $_POST['idade'],
+            $_POST['tel'],
+            $_POST['email'],
+            $_FILES,
+            $_POST['oldnif']
+    
+        );
+        echo($resp);
+    
+    }else if($_POST['op'] == 6){
+
+        $edit = new Utilizador();
+        $resp = $edit -> editaPerfilPass(
+
+            $_POST['passworda'],
+            $_POST['confirm_password'],
+            $_POST['oldpass']
+    
+        );
+        echo($resp);
+    
+    }
+
+// else if($_POST['op'] == 5){
 //     $removerJ = new Produto();
 //     $res = $removerJ -> removeProd($_POST['id']);
 //     echo($res);
