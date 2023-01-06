@@ -97,6 +97,9 @@ function getPais(){
     .done(function( resposta ) {
      
       $('#pnascimento').html(resposta);
+      $('#pais_id').html(resposta);
+      
+
     //   $('#estadoProdutoEdit').html(resposta);
       
     
@@ -169,94 +172,153 @@ function getPais(){
   
 // }
 
-// function getDadosEditProdutos(id){
-//   let dados = new FormData();
-//   dados.append('op',6);
-//   dados.append('id',id);
+function getDadosEditPerfil(){
+  let dados = new FormData();
+  dados.append('op',4);
+  
 
-//   $.ajax({
-//     url: "assets/model/modelProdutos.php",
-//     method: "POST",
-//     data: dados,
-//     cache:false,
-//     processData:false,
-//     contentType: false,
-//     dataType: "html"
-//   })
+  $.ajax({
+    url: "assets/model/modelregisto.php",
+    method: "POST",
+    data: dados,
+    cache:false,
+    processData:false,
+    contentType: false,
+    dataType: "html"
+  })
    
-//   .done(function( resposta ) {
-//     let obj = JSON.parse(resposta);
+  .done(function( resposta ) {
+    let obj = JSON.parse(resposta);
 
-//     $('#fotoAtual').attr('src', obj.img);
-//     $('#descrProdEdit').val(obj.descricao);
-//     $('#valorProdEdit').val(obj.valor);
-//     $('#tipoProdutoEdit').val(obj.id_type);
-//     // $('#imagemProdutoEdit').val(obj.img);
-//     $('#estadoProdutoEdit').val(obj.id_estado);
-//     $('#stockProdEdit').val(obj.stock);
+    // $('#fotoAtual').attr('src', obj.img);
+    // $('#nifPerfilEdit').val(obj.nif);
+    $('#nomePerfilEdit').val(obj.nome);
+    $('#apelidoPerfilEdit').val(obj.apelido);
+
+    $('#moradaPerfilEdit').val(obj.morada);
+    $('#codigoPostalPerfilEdit').val(obj.codigopostal);
+    $('#pais_id').val(obj.idpais);
+    $('#idadePerfilEdit').val(obj.idade);
+    $('#telemovelPerfilEdit').val(obj.telemovel);
+    $('#emailPerfilEdit').val(obj.email);
+    // ('#imagemPerfilEdit').val(obj.stock);
+
    
 
-//     $('#btnEditProduto').attr('onclick', 'guardaEdit('+id+')');
+    $('#btnEditPerfil').attr('onclick', 'guardaEdit('+obj.nif+')');
 
-//     $('#modalProdutosEdit').modal('show');
+    // $('#modalProdutosEdit').modal('show');
 
-//   })
+  })
    
-//   .fail(function( jqXHR, textStatus ) {
-//     alert( "Request failed: " + textStatus );
-//   });
+  .fail(function( jqXHR, textStatus ) {
+    alert( "Request failed: " + textStatus );
+  });
 
-// }
+}
 
-// function guardaEdit(id){
+function guardaEdit(nif){
 
-//   let descrProd = $('#descrProdEdit').val();
-//   let valorProd = $('#valorProdEdit').val();
-//   let tipoProduto = $('#tipoProdutoEdit').val();
-//   let estadoProduto = $('#estadoProdutoEdit').val();
-//   let stockProd = $('#stockProdEdit').val();
+  // let nifperfil = $('#nifPerfilEdit').val();
+  let nome = $('#nomePerfilEdit').val();
+  let apelido = $('#apelidoPerfilEdit').val();
+  let pass = $('#moradaPerfilEdit').val();
+  let morada = $('#codigoPostalPerfilEdit').val();
+  let codpostal = $('#pais_id').val();
+  let idade = $('#idadePerfilEdit').val();
+  let tel = $('#telemovelPerfilEdit').val();
+  let email = $('#emailPerfilEdit').val();
 
-
-
-//   let img = $('#imagemProdutoEdit').prop('files')[0];
-
-//   let dados = new FormData();
-//   dados.append('op',7);
-//   dados.append('descrProd', descrProd);
-//   dados.append('valorProd', valorProd);
-//   dados.append('tipoProduto', tipoProduto);
-//   dados.append('estadoProduto', estadoProduto);
-//   dados.append('stockProd', stockProd);
+  let img = $('#imagemPerfilEdit').prop('files')[0];
+  
 
 
-//   dados.append('img', img);
-//   dados.append('id', id);
+  let dados = new FormData();
+  dados.append('op',5);
+  // dados.append('nifperfil', nifperfil);
+  dados.append('nome', nome);
+  dados.append('apelido', apelido);
+  dados.append('pass', pass);
+  dados.append('morada', morada);
+  dados.append('codpostal', codpostal);
+  dados.append('idade', idade);
+  dados.append('tel', tel);
+  dados.append('email', email);
 
-//   $.ajax({
-//     url: "assets/model/modelProdutos.php",
-//     method: "POST",
-//     data: dados,
-//     cache:false,
-//     processData:false,
-//     contentType: false,
-//     dataType: "html"
-//   })
+  dados.append('img', img);
+  dados.append('oldnif',nif);
+
+  $.ajax({
+    url: "assets/model/modelregisto.php",
+    method: "POST",
+    data: dados,
+    cache:false,
+    processData:false,
+    contentType: false,
+    dataType: "html"
+  })
    
-//   .done(function( resposta ) {
-//     sucesso(resposta);
-//     getTipoProdutos();
-//     getEstadosProdutos();
+  .done(function( resposta ) {
+    sucesso(resposta);
+    
 
-//     tabProdutos();
-//     $('#modalProdutosEdit').modal('hide');
+    
 
-//   })
+  })
    
-//   .fail(function( jqXHR, textStatus ) {
-//     alert( "Request failed: " + textStatus );
-//   });
+  .fail(function( jqXHR, textStatus ) {
+    alert( "Request failed: " + textStatus );
+  });
 
-// }
+}
+
+
+
+function btnEditPassword(){
+
+  // let nifperfil = $('#nifPerfilEdit').val();
+  let passAtual = $('#passAtual').val();
+  let passworda = $('#passworda').val();
+  let confirm_password = $('#confirm_password').val();
+
+  
+
+
+  let dados = new FormData();
+  dados.append('op',6);
+
+
+  dados.append('passworda', passworda);
+  dados.append('confirm_password', confirm_password);
+
+  dados.append('oldpass',passAtual);
+
+  $.ajax({
+    url: "assets/model/modelregisto.php",
+    method: "POST",
+    data: dados,
+    cache:false,
+    processData:false,
+    contentType: false,
+    dataType: "html"
+  })
+   
+  .done(function( resposta ) {
+    if(passworda == confirm_password){
+      sucesso(resposta);
+    }else {
+      error(resposta);
+    }
+    
+    
+
+  })
+   
+  .fail(function( jqXHR, textStatus ) {
+    alert( "Request failed: " + textStatus );
+  });
+
+}
 
 // function addStock (id){
 //     let dados = new FormData();
@@ -339,14 +401,24 @@ function getPais(){
           timer: 1500
         })
       }
+      
 
+      function error(msg){
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: msg,
+          showConfirmButton: false,
+          timer: 1500
+        })
+      }
 
 
 
 $(function() {
     getTipoUtilizador();
     getPais();
-
+    getDadosEditPerfil();
    
     
   

@@ -16,7 +16,7 @@ function getNome(){
      
     .done(function( resposta ) {
        $('#nomeUser1').html(resposta);
- 
+       $('#nomeUser2').html(resposta);
         
     })
      
@@ -44,7 +44,7 @@ function getNome(){
      
     .done(function( resposta ) {
        $('#tipoUser').html(resposta);
-   
+       $('#tipoUser1').html(resposta);
         
     })
      
@@ -73,7 +73,7 @@ function getNome(){
     .done(function( resposta ) {
       $('#fotoperfil').attr('src',(resposta));
       $('#fotoperfil1').attr('src',(resposta));
-      
+      $('#fotoperfil2').attr('src',(resposta));
         
     })
      

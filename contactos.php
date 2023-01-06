@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensgaem" required></textarea>
+                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensagem" required></textarea>
                       </div>
                     </div>
                     <div class="col-md-12 my-3">
@@ -92,11 +92,11 @@
                   </div>
                   <div class="icon-box-content table-cell">
                     <div class="icon-box-title">
-                      <h4 class="icon-title">Diz Olá</h4>
+                      <h4 class="icon-title">Contacto</h4>
                     </div>
                     <div class="icon-box-content">
-                      <p class="mb-1">Email.
-                        <span class="color-a">homefinder@gmail.com</span>
+                      <p class="mb-1">Email:
+                        <span class="color-a">homefinderpt@gmail.com</span>
                       </p>
                       <!-- <p class="mb-1">Phone.
                         <span class="color-a">+54 356 945234</span>
