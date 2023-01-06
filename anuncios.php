@@ -276,15 +276,47 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
         </div>
+    </div>
+      
+  </div>
+        </section>
+  <!-- /Lista Imoveis -->
 
+
+  <section>
+  <br><br><br>
+  
+  <div class="container">
+       
+   
+  <div >
         
+        <div class="row row gy-3 g-4 mb-5" id="infoImovel2">
+
 
 
 
         </div>
-      </div>
+    </div>
+      
+  </div>
         </section>
-  <!-- /Lista Imoveis -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -294,6 +326,9 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
       </div>
   </section><!-- End Property Grid Single-->
+
+
+
 
 </main><!-- End #main -->
 

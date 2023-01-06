@@ -61,6 +61,7 @@ function registoImovel() {
      
       tabelaImoveis();
       infoImovel();
+      infoImovel2();
 
 
 
@@ -143,6 +144,7 @@ function infoImovel(idimovel){
   dados.append('idimovel',idimovel);
 
 
+
   $.ajax({
     url: "assets/model/modelImovel.php",
     method: "POST",
@@ -165,7 +167,34 @@ function infoImovel(idimovel){
 
 }
 
+function infoImovel2(idimovel){
+  let dados = new FormData();
+  dados.append('op',5);
+  dados.append('idimovel',idimovel);
 
+
+
+  $.ajax({
+    url: "assets/model/modelImovel.php",
+    method: "POST",
+    data: dados,
+    cache:false,
+    processData:false,
+    contentType: false,
+    dataType: "html"
+  })
+   
+  .done(function( resposta ) {
+    $('#infoImovel2').html(resposta);
+    
+
+  })
+   
+  .fail(function( jqXHR, textStatus ) {
+    alert( "Request failed: " + textStatus );
+  });
+
+}
 
     
     
@@ -199,4 +228,5 @@ $(function () {
  
   tabelaImoveis();
   infoImovel();
+  infoImovel2();
 });
