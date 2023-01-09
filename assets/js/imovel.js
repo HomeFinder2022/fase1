@@ -61,7 +61,7 @@ function registoImovel() {
      
       tabelaImoveis();
       infoImovel();
-      infoImovel2();
+
 
 
 
@@ -138,10 +138,10 @@ function desativarImovel(idimovel){
 
 
 
-function infoImovel(idimovel){
+function infoImovel(){
   let dados = new FormData();
   dados.append('op',4);
-  dados.append('idimovel',idimovel);
+  
 
 
 
@@ -167,10 +167,12 @@ function infoImovel(idimovel){
 
 }
 
-function infoImovel2(idimovel){
+    
+    
+function infoImovelPagina(){
   let dados = new FormData();
   dados.append('op',5);
-  dados.append('idimovel',idimovel);
+  
 
 
 
@@ -185,7 +187,7 @@ function infoImovel2(idimovel){
   })
    
   .done(function( resposta ) {
-    $('#infoImovel2').html(resposta);
+    $('#infoImovelPagina').html(resposta);
     
 
   })
@@ -195,9 +197,6 @@ function infoImovel2(idimovel){
   });
 
 }
-
-    
-    
     
    
 
@@ -228,5 +227,5 @@ $(function () {
  
   tabelaImoveis();
   infoImovel();
-  infoImovel2();
+
 });

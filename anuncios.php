@@ -88,7 +88,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
       <div class="aa-advance-search-area">
         
       <div class="card-header d-flex align-items-center justify-content-center">
-              <h2 class="mb-0 tabelaTitulos">Porcure o Imóvel dos seus sonhos!</h2>
+              <h2 class="mb-0 tabelaTitulos">Procure o Imóvel dos seus sonhos!</h2>
             
             </div>
 
@@ -281,39 +281,6 @@ if(isset($_SESSION['nomeUser'])){ ?>
   </div>
         </section>
   <!-- /Lista Imoveis -->
-
-
-  <section>
-  <br><br><br>
-  
-  <div class="container">
-       
-   
-  <div >
-        
-        <div class="row row gy-3 g-4 mb-5" id="infoImovel2">
-
-
-
-
-        </div>
-    </div>
-      
-  </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
