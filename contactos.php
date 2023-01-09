@@ -53,22 +53,22 @@
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <div class="form-group">
-                        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Nome" required>
+                        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Nome" id="nomemensagem" required>
                       </div>
                     </div>
                     <div class="col-md-6 mb-3">
                       <div class="form-group">
-                        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Email" required>
+                        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Email" id="emailenviado" required>
                       </div>
                     </div>
                     <div class="col-md-12 mb-3">
                       <div class="form-group">
-                        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Assunto" required>
+                        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Assunto" id="assuntoemail" required>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensagem" required></textarea>
+                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensagem" id="mensagemescrita" required></textarea>
                       </div>
                     </div>
                     <div class="col-md-12 my-3">
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-a">Enviar Mensagem</button>
+                      <button class="btn btn-a" type="button" onclick="btnEnviarMenagem()">Enviar Mensagem</button>
                     </div>
                   </div>
                 </form>
@@ -172,5 +172,6 @@
 </body>
   
   <?php require_once 'footer.php'; ?>
+  <script src="assets/js/contactos.js"></script>
 
 </html>

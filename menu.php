@@ -412,15 +412,15 @@ if(isset($_SESSION['nomeUser'])){ ?>
           <li>
             <a class="dropdown-item" href="#">
               <i class="bx bx-cog me-2"></i>
-              <span class="align-middle">Settings</span>
+              <span class="align-middle">Definições</span>
             </a>
           </li>
           <li>
             <a class="dropdown-item" href="#">
               <span class="d-flex align-items-center align-middle">
                 <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                <span class="flex-grow-1 align-middle">Billing</span>
-                <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                <span class="flex-grow-1 align-middle">Pagamentos</span>
+                <!-- <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span> -->
               </span>
             </a>
           </li>
@@ -430,13 +430,13 @@ if(isset($_SESSION['nomeUser'])){ ?>
           <li>
             <a class="dropdown-item" href="contactos.php">
               <i class="bx bx-support me-2"></i>
-              <span class="align-middle">Help</span>
+              <span class="align-middle">Contactos</span>
             </a>
           </li>
           <li>
             <a class="dropdown-item" href="sobre.php">
               <i class="bx bx-help-circle me-2"></i>
-              <span class="align-middle">FAQ</span>
+              <span class="align-middle">Sobre</span>
             </a>
           </li>
           <li>
