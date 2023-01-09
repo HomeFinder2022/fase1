@@ -196,6 +196,9 @@ class Imovel{
           function tabelaImoveis(){
 
             global $conn;
+
+            session_start();
+            $nifUser = $_SESSION['nif'] ;
           
             $sql = "SELECT imovel.idimovel, imovel.morada, distrito.nome AS nomedistrito, concelho.nome AS nomeconcelho, freguesias.nome AS nomefreg,
             tipologia.descricao AS tipologia , tipoimovel.descricao 
@@ -208,7 +211,8 @@ class Imovel{
             imovel.idconcelho = concelho.idconcelho AND
             imovel.idfreguesia = freguesias.idfreguesia AND
             imovel.idtipologia = tipologia.idtipologia AND
-            imovel.idtipoimovel = tipoimovel.idtipoimovel";
+            imovel.idtipoimovel = tipoimovel.idtipoimovel AND
+            imovel.nifutilizador = ".$nifUser;
         
             $result = $conn->query($sql);
         
@@ -219,9 +223,7 @@ class Imovel{
                 while($row = $result->fetch_assoc()) {
 
 
-
-
-                  
+                 
                   $msg .= "<tr>";
                   // $msg .= "<td colspan='0' style='text-align: center;'>";
                   $msg .= "<td>" .$row['idimovel']. "</td>";
@@ -232,7 +234,7 @@ class Imovel{
                   $msg .= "<td>".$row['nomefreg']."</td>";
                   $msg .= "<td>".$row['descricao']."</td>";
                   $msg .= "<td>".$row['tipologia']."</td>";
-                  $msg .= "<td>           <button type='button' class='btn btn-danger btn-sm' onclick='desativarImovel(".$row['idimovel'].")'>   Desativar  </button></td>";
+                  $msg .= "<td><button type='button' class='btn btn-danger btn-sm' onclick='desativarImovel(".$row['idimovel'].")'>   Desativar  </button></td>";
                   $msg .= "</tr>";
 
 
@@ -367,7 +369,7 @@ function infoImovel(){
         }
 
 
-      $msg .= "<a href='infoImovel.php' class='link-a'>Mais Informações";
+      $msg .= "<a href='infoImovel.php' class='link-a' onclick='infoimovelpagina(".$row['idimovel'].")'>Mais Informações";
       $msg .= "<span  class='bi bi-chevron-right'></span>";
       $msg .= "</a>";
       $msg .= "</div>";                  
@@ -546,186 +548,13 @@ function infoImovelArrendamento($idimovel){
         
                   
         
-                }
-
-
-
-
-
-
-
-
-
-
-                function infoimovelpagina(){
-
-                  global $conn;
-                
-                
-                  $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao AS tiponegocio, 
-                  imoveisvenda.precovenda 
-                  FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio 
-                
-                  WHERE listafotos.idimovel = imovel.idimovel 
-                  AND imovel.idconcelho = concelho.idconcelho 
-                  AND imoveisvenda.idimovel = imovel.idimovel 
-                  AND imovel.idtipologia = tipologia.idtipologia 
-                  AND imovel.idtiponegocio = tiponegocio.idtiponegocio 
-                  
-                  UNION 
-                  
-                  SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao 
-                  AS tiponegocio, imoveisarrendamento.precorenda 
-                 
-                  FROM imovel, listafotos, concelho, imoveisarrendamento, tipologia, tiponegocio 
-                  
-                  WHERE listafotos.idimovel = imovel.idimovel 
-                  AND imovel.idconcelho = concelho.idconcelho 
-                  AND imoveisarrendamento.idimovel = imovel.idimovel 
-                  AND imovel.idtipologia = tipologia.idtipologia 
-                  AND imovel.idtiponegocio = tiponegocio.idtiponegocio 
-                  
-                  UNION 
-                  
-                  SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao 
-                  AS tiponegocio, ferias.precopnoite 
-                  
-                  FROM imovel, listafotos, concelho, ferias, tipologia, tiponegocio 
-                 
-                  WHERE listafotos.idimovel = imovel.idimovel 
-                  AND imovel.idconcelho = concelho.idconcelho 
-                  AND ferias.idimovel = imovel.idimovel 
-                  AND imovel.idtipologia = tipologia.idtipologia 
-                  AND imovel.idtiponegocio = tiponegocio.idtiponegocio";
-                
-                
-                  $result = $conn->query($sql);
-                  
-                
-                  $msg = "";
-                
-                  if ($result->num_rows > 0) {
-                      // output data of each row
-                      while($row = $result->fetch_assoc()) {
-                
-                
-                
-                        $msg .= "<div class='col-md-4'>";
-                        $msg .= "<div class='card-box-a card-shadow'>";
-                
-                        $msg .= "<div class='img-box-a'>";
-                        $msg .= "<img src='".$row['fotos']."' class=' img-fluid-anuncios'>";
-                        $msg .= "</div> ";
-                        $msg .= "<div class='card-overlay'>";
-                        $msg .= "<div class='card-overlay-a-content'>";
-                
-                        
-                        $msg .= "<div class='card-header-a'>"; 
-                        $msg .= "<h2 class='card-title-a'>";            
-                        $msg .= "<a >" .$row['nome']. "<br/>".$row['morada']."</a>";            
-                        $msg .= "</h2>";           
-                        $msg .= "</div>"; 
-                
-                
-                        if($row ['idtiponegocio'] == 1){
-                          $query1 = $this -> infoImovelVenda();
-                 
-                
-                          $msg .= "<div class='card-body-a'>";
-                          $msg .= "<div class='price-box d-flex'>";
-                          $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | " .$row['precovenda']. "€</span>";
-                          $msg .= "</div>";
-                
-                
-                
-                
-                        }else if($row ['idtiponegocio']  == 2){
-                
-                          $resp = $this -> infoImovelArrendamento($row['idimovel'] );
-                          $resp = json_decode($resp, TRUE);
-                
-                    $msg .= "<div class='card-body-a'>";
-                    $msg .= "<div class='price-box d-flex'>";
-                    $msg .= "<span class='price-a' >" .$resp['descricao']. " | " .$resp['precorenda']. "€</span>";
-                    $msg .= "</div>";
-                          
-                
-                
-                        }else if($row ['idtiponegocio']  == 3){
-                          $resp1 = $this -> infoImovelFerias($row['idimovel']);
-                          $resp1 = json_decode($resp1, TRUE);
-                        
-                    
-                
-                    $msg .= "<div class='card-body-a'>";
-                    $msg .= "<div class='price-box d-flex'>";
-                    $msg .= "<span class='price-a' >" .$resp1['descricao']. " | " .$resp1['precopnoite']. "€</span>";
-                    $msg .= "</div>";
-                
-                
-                
-                
-                        }
-                
-                
-                      $msg .= "<a href='infoImovel.php' class='link-a'>Mais Informações";
-                      $msg .= "<span  class='bi bi-chevron-right'></span>";
-                      $msg .= "</a>";
-                      $msg .= "</div>";                  
-                      $msg .= "<div class='card-footer-a'>" ;
-                      $msg .= "<ul class='card-info d-flex justify-content-around'>"; 
-                      $msg .= "<li>";
-                      $msg .= "<h4 class='card-info-title' >Tipologia</h4>";
-                      $msg .= "<span >".$row['descricao']." ";
-                      $msg .= "</span>";
-                      $msg .= "</li>";
-                      $msg .= "<li>";                  
-                      $msg .= "<h4 class='card-info-title'>WC's</h4>";
-                      $msg .= "<span >" .$row['numwc']."</span>";
-                      $msg .= "</li>";            
-                      $msg .= "<li>";
-                      $msg .= "<h4 class='card-info-title' >Área Bruta</h4>";                    
-                      $msg .= "<span>".$row['areabruta']."</span>";
-                      $msg .= "</li>";                      
-                      $msg .= "<li>";
-                      $msg .= "<h4 class='card-info-title' >Ano</h4>";
-                      $msg .= "<span>".$row['anoconstrucao']."</span>";
-                      $msg .= "</li>";
-                      $msg .= "</ul>";
-                      $msg .= "</div>";
-                      $msg .= "</div>";
-                      $msg .= "</div>";
-                      $msg .= "</div>";
-                      $msg .= "</div>";
-                
-                
-                
-                
-                        
-                        }
-                          
-                
-                        }
-                
-                  $conn->close();
-                  return $msg;
-                }
-                
-                
-
-
-
-
-
-
-
-
 
 
 
 
 }
 
+}
 
 
 
@@ -767,8 +596,3 @@ function infoImovelArrendamento($idimovel){
 
 
         
-
-
-
-
-

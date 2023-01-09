@@ -37,40 +37,7 @@
 
 
          
-
-<div class="container-fluid">
-
-<?php
-    // Replace YOUR_API_KEY with your actual API key
-    $apiKey = 'f3b6a39ac5a54486bcb8750ec85243dc';
-
-    // Set up the API request URL
-    $url = 'https://newsapi.org/v2/everything?q=tesla&from=2022-12-07&sortBy=publishedAt&apiKey=' . $apiKey;
-
-    // Use file_get_contents to send the request and get the response
-    $response = file_get_contents($url);
-
-    // Use json_decode to parse the response into a PHP object
-    $responseData = json_decode($response);
-
-    // Access the articles array in the response data
-    $articles = $responseData->articles;
-
-    // Iterate through the articles array and print the title and description of each article
-    foreach ($articles as $article) {
-        echo '<h2>' . $article->title . '</h2>';
-        echo '<p>' . $article->description . '</p>';
-    }
-    ?>
-
-
-
-
-</div>
-
-
-                
-             
+         
 
 
 
