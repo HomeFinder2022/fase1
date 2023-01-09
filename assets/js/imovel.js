@@ -61,6 +61,7 @@ function registoImovel() {
      
       tabelaImoveis();
       infoImovel();
+      infoImovelPagina();
 
 
 
@@ -108,32 +109,32 @@ function tabelaImoveis(){
 
 
 
-function desativarImovel(idimovel){
+// function desativarImovel(idimovel){
 
-  let dados = new FormData();
+//   let dados = new FormData();
 
-  dados.append("op",3);
-  dados.append("idimovel",idimovel);
+//   dados.append("op",3);
+//   dados.append("idimovel",idimovel);
 
-  $.ajax({
-      url: "assets/model/modelImovel.php",
-      method: "POST",
-      data: dados,
-      dataType: "html",
-      cache:false,
-      contentType:false,
-      processData:false
-    })
+//   $.ajax({
+//       url: "assets/model/modelImovel.php",
+//       method: "POST",
+//       data: dados,
+//       dataType: "html",
+//       cache:false,
+//       contentType:false,
+//       processData:false
+//     })
      
-    .done(function( resposta ) {
-      sucesso(resposta);
+//     .done(function( resposta ) {
+//       sucesso(resposta);
    
-    })
+//     })
      
-    .fail(function( jqXHR, textStatus ) {
-      alert( "Request failed: " + textStatus );
-    });
-}
+//     .fail(function( jqXHR, textStatus ) {
+//       alert( "Request failed: " + textStatus );
+//     });
+// }
 
 
 
@@ -171,13 +172,13 @@ function infoImovel(){
     
 function infoImovelPagina(){
   let dados = new FormData();
-  dados.append('op',5);
+  dados.append('op',1);
   
 
 
 
   $.ajax({
-    url: "assets/model/modelImovel.php",
+    url: "assets/model/modelInfoImovel.php",
     method: "POST",
     data: dados,
     cache:false,
@@ -187,7 +188,7 @@ function infoImovelPagina(){
   })
    
   .done(function( resposta ) {
-    $('#infoImovelPagina').html(resposta);
+    $('#infoPagina').html(resposta);
     
 
   })
@@ -227,5 +228,6 @@ $(function () {
  
   tabelaImoveis();
   infoImovel();
+  infoImovelPagina();
 
 });

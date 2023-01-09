@@ -41,6 +41,12 @@ a:hover {
   width: 400px; 
   height: 500px; 
   }
+
+  .img-fluid-infoImovel{
+
+      width: 800px;
+    }
+    
   
   .img-fluid {
       max-width: 100%;
