@@ -42,18 +42,16 @@ if($_POST['op'] == 1){
 
 }else if($_POST['op'] == 4){
     $infoImovel = new Imovel();
-    $resp = $infoImovel -> infoImovel($_POST['idimovel']);
+    $resp = $infoImovel -> infoImovel();
     echo($resp);
 
 }else if($_POST['op'] == 5){
-    $infoImovel2 = new Imovel();
-    $resp = $infoImovel2 -> infoImovel2($_POST['idimovel']);
+    $infoImovel = new Imovel();
+    $resp = $infoImovel -> infoImovelPagina();
     echo($resp);
-
-}
     
 
-
+}
     
 ?>   
 
