@@ -177,7 +177,7 @@ class Utilizador{
   //       $msg .= "<td>".$row['tipo']."</td>";
   //       $msg .= "<td>".$row['estado']."</td>";
   //       $msg .= "<td>".$row['stock']."</td>";
-  //       $msg .= "<td><button type='button' class='btn btn-info' onclick='getDadosEditProdutos(".$row['id'].")'>editar</button></td>";
+        // $msg .= "<td><button type='button' class='btn btn-info' onclick='getDadosEditProdutos(".$row['id'].")'>editar</button></td>";
   //       $msg .= "<td><button type='button' class='btn btn-primary' onclick='addStock(".$row['id'].")'>Adicionar Stock</button></td>";
   //       if($row['id_estado']==2){
   //       $msg .= "<td><button type='button' class='btn btn-danger' onclick='removeProd(".$row['id'].")'>Apagar</button></td>";
