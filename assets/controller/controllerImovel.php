@@ -8,23 +8,26 @@ class Imovel{
     $listaConcelhos, $listaFreguesias, $areaUtil, $areaBruta, $numWcs, $anoImovel, $certEnerg, $estadoImovel,
     $tipoNegocImovel, $obsImovel, $preco, $renda, $preconoite, $fotos){
         global $conn; 
-        session_start();
-        $nifUser = $_SESSION['nif'];
-             
+
+              session_start();
+              $nifUser = $_SESSION['nif'];
+
             if($tipoImovel == 1 || $tipoImovel == 2 || $tipoImovel == 3){
           $sql = "INSERT INTO imovel (morada, codigopostal, idconcelho, iddistrito,
            idfreguesia, idtipoimovel, idtipologia, areautil, areabruta, numwc, idcondicao, anoconstrucao,
-            idcertificadoenergetico, idtiponegocio, descricao, nifutilizador) 
+
+            idcertificadoenergetico, idtiponegocio, descricao, nifutilizador, idestado) 
                 VALUES('".$moradaImovel."', '".$postalImovel."', '".$listaConcelhos."', '".$listaDistritos."',
                 '".$listaFreguesias."', '".$tipoImovel."', '".$tipologiaImovel."', '".$areaUtil."', '".$areaBruta."', '".$numWcs."', 
-                '".$estadoImovel."', '".$anoImovel."', '".$certEnerg."', '".$tipoNegocImovel."', '".$obsImovel."', '".$nifUser."')";
+                '".$estadoImovel."', '".$anoImovel."', '".$certEnerg."', '".$tipoNegocImovel."', '".$obsImovel."', '".$nifUser."',1)";
             }else{
               $sql = "INSERT INTO imovel (morada, codigopostal, idconcelho, iddistrito,
               idfreguesia, idtipoimovel, areautil, areabruta, numwc, idcondicao, anoconstrucao,
-               idcertificadoenergetico, idtiponegocio, descricao, nifutilizador) 
+               idcertificadoenergetico, idtiponegocio, descricao, nifutilizador,idestado) 
                    VALUES('".$moradaImovel."', '".$postalImovel."', '".$listaConcelhos."', '".$listaDistritos."',
                    '".$listaFreguesias."', '".$tipoImovel."', '".$areaUtil."', '".$areaBruta."', '".$numWcs."', 
-                   '".$estadoImovel."', '".$anoImovel."', '".$certEnerg."', '".$tipoNegocImovel."', '".$obsImovel."', '".$nifUser."')";
+                   '".$estadoImovel."', '".$anoImovel."', '".$certEnerg."', '".$tipoNegocImovel."', '".$obsImovel."', '".$nifUser."',1)";
+
             }
 
           $msg = "";
@@ -201,10 +204,10 @@ class Imovel{
             $nifUser = $_SESSION['nif'] ;
           
             $sql = "SELECT imovel.idimovel, imovel.morada, distrito.nome AS nomedistrito, concelho.nome AS nomeconcelho, freguesias.nome AS nomefreg,
-            tipologia.descricao AS tipologia , tipoimovel.descricao 
+            tipologia.descricao AS tipologia , tipoimovel.descricao , estado.descricao as estado
   
                FROM imovel, distrito, concelho, 
-               freguesias, tipologia, tipoimovel 
+               freguesias, tipologia, tipoimovel ,estado
   
                WHERE
             imovel.iddistrito = distrito.iddistrito AND
@@ -212,7 +215,9 @@ class Imovel{
             imovel.idfreguesia = freguesias.idfreguesia AND
             imovel.idtipologia = tipologia.idtipologia AND
             imovel.idtipoimovel = tipoimovel.idtipoimovel AND
-            imovel.nifutilizador = ".$nifUser;
+            imovel.idestado = estado.idestado";
+
+
         
             $result = $conn->query($sql);
         
@@ -234,8 +239,13 @@ class Imovel{
                   $msg .= "<td>".$row['nomefreg']."</td>";
                   $msg .= "<td>".$row['descricao']."</td>";
                   $msg .= "<td>".$row['tipologia']."</td>";
-                  $msg .= "<td><button type='button' class='btn btn-danger btn-sm' onclick='desativarImovel(".$row['idimovel'].")'>   Desativar  </button></td>";
+
+                  $msg .= "<td>".$row['estado']."</td>";
+                  $msg .= "<td>           <button type='button' class='btn btn-danger btn-sm' onclick='desativarImovel(".$row['idimovel'].")'>   Desativar  </button></td>";
+                  
+
                   $msg .= "</tr>";
+
 
 
 
@@ -264,40 +274,43 @@ function infoImovel(){
 
 
   $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao AS tiponegocio, 
-  imoveisvenda.precovenda 
-  FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio 
+  imoveisvenda.precovenda , imovel.idestado
+  FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio , estado
 
   WHERE listafotos.idimovel = imovel.idimovel 
   AND imovel.idconcelho = concelho.idconcelho 
   AND imoveisvenda.idimovel = imovel.idimovel 
   AND imovel.idtipologia = tipologia.idtipologia 
   AND imovel.idtiponegocio = tiponegocio.idtiponegocio 
+  AND imovel.idestado = estado.idestado
   
   UNION 
   
   SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao 
-  AS tiponegocio, imoveisarrendamento.precorenda 
+  AS tiponegocio, imoveisarrendamento.precorenda , imovel.idestado
  
-  FROM imovel, listafotos, concelho, imoveisarrendamento, tipologia, tiponegocio 
+  FROM imovel, listafotos, concelho, imoveisarrendamento, tipologia, tiponegocio , estado
   
   WHERE listafotos.idimovel = imovel.idimovel 
   AND imovel.idconcelho = concelho.idconcelho 
   AND imoveisarrendamento.idimovel = imovel.idimovel 
   AND imovel.idtipologia = tipologia.idtipologia 
   AND imovel.idtiponegocio = tiponegocio.idtiponegocio 
+  AND imovel.idestado = estado.idestado
   
   UNION 
   
   SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao 
-  AS tiponegocio, ferias.precopnoite 
+  AS tiponegocio, ferias.precopnoite ,imovel.idestado
   
-  FROM imovel, listafotos, concelho, ferias, tipologia, tiponegocio 
+  FROM imovel, listafotos, concelho, ferias, tipologia, tiponegocio , estado
  
   WHERE listafotos.idimovel = imovel.idimovel 
   AND imovel.idconcelho = concelho.idconcelho 
   AND ferias.idimovel = imovel.idimovel 
   AND imovel.idtipologia = tipologia.idtipologia 
-  AND imovel.idtiponegocio = tiponegocio.idtiponegocio";
+  AND imovel.idtiponegocio = tiponegocio.idtiponegocio
+  AND imovel.idestado = estado.idestado";
 
 
   $result = $conn->query($sql);
@@ -309,8 +322,8 @@ function infoImovel(){
       // output data of each row
       while($row = $result->fetch_assoc()) {
 
-
-
+       if($row ['idestado'] == 2){
+ 
         $msg .= "<div class='col-md-4'>";
         $msg .= "<div class='card-box-a card-shadow'>";
 
@@ -368,8 +381,9 @@ function infoImovel(){
 
         }
 
+      
+      $msg .= "<a href='infoImovel.php' class='link-a' onclick='infoimovelpagina(".$row['idimovel'].")'>Mais Informações";
 
-      $msg .= "<a href='infoImovel.php' class='link-a' onclick='infoImovelPagina(".$row['idimovel'].")'>Mais Informações";
       $msg .= "<span  class='bi bi-chevron-right'></span>";
       $msg .= "</a>";
       $msg .= "</div>";                  
@@ -407,6 +421,8 @@ function infoImovel(){
           
 
         }
+
+  }
 
   $conn->close();
   return $msg;
