@@ -46,10 +46,10 @@ function registoUtilizador(){
        
       .done(function( resposta ) {
         sucesso(resposta);
-        
-        
-   
-
+        setTimeout(function(){ 
+          window.location.assign('index.php')
+       }, 2000);
+ 
       })
        
       .fail(function( jqXHR, textStatus ) {

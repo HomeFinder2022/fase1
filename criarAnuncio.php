@@ -390,6 +390,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
                     <th>Freguesia</th>
                     <th>Descricao</th>
                     <th>Tipologia</th>
+                    <th>Estado</th>
                     <th></th>
                   </tr>
                 </thead>
