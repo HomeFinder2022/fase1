@@ -55,7 +55,12 @@ a:hover {
       
   }
 
+.imgNoticias{
+  
+  height: 400px;
+  object-fit: contain;
 
+}
   
 
 /*==================

@@ -31,6 +31,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/loginstyle.css" rel="stylesheet">
   <link href="assets/css/prettycheckbox.css" rel="stylesheet">
+  <link rel="icon" type="image" href="../dashboard/HomeFinder Dashboard/assets/img/icon-homefinder.png"/>
   <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
 
 

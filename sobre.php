@@ -56,7 +56,10 @@
                   <span>HomeFinder&reg;</span>
                 </div>
               </div>
+              
+              
               <div class="col-md-6 col-lg-5 section-md-t3">
+                
                 <div class="title-box-d">
                   <h3 class="title-d">Conheça a nossa
                     <span class="color-d">equipa</span>
@@ -71,6 +74,24 @@
                 <p class="color-text-a">
                   Assim foi criada uma plataforma que permite o anuncio de imoveis e ao mesmo tempo fazer e acompanhar toda a gestão interna dos arrendamentos.
                 </p>
+              
+                <br><br>
+
+                <div class="title-box-d">
+                  <h3 class="title-d">A nossa
+                    <span class="color-d">Missão</span>
+                  </h3>
+                </div>
+                <p class="color-text-a">
+                  A missão é ajudar os proprietários com a gestão dos seus imoveis e facilitar a partilha e anúncio
+                 
+                  
+                </p>
+              
+  </div>
+
+
+              
               </div>
             </div>
           </div>
@@ -80,6 +101,31 @@
     </section>
 
     
+
+    <div class="container">
+
+    <div class="title-box-d">
+                  <h3 class="title-d">A nossa
+                    <span class="color-d">Missão</span>
+                  </h3>
+                </div>
+                <p class="color-text-a">
+                  A HomeFinder foi criada no âmbito do projecto final do CET de Programação do IEFP. 
+                  Foi criado por três alunos com o objetivo de colmatar problemas como a pesquisa de casas em varias plataformas diferentes, dificuldades na procura para compra ou arrendamento e a sua própria gestão.
+                 
+                  
+                </p>
+                <p class="color-text-a">
+                  Assim foi criada uma plataforma que permite o anuncio de imoveis e ao mesmo tempo fazer e acompanhar toda a gestão interna dos arrendamentos.
+                </p>
+  </div>
+
+
+
+ </div>
+
+
+
 
 
     

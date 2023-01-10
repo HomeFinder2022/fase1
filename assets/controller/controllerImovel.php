@@ -8,12 +8,14 @@ class Imovel{
     $listaConcelhos, $listaFreguesias, $areaUtil, $areaBruta, $numWcs, $anoImovel, $certEnerg, $estadoImovel,
     $tipoNegocImovel, $obsImovel, $preco, $renda, $preconoite, $fotos){
         global $conn; 
+
               session_start();
               $nifUser = $_SESSION['nif'];
-             
+
             if($tipoImovel == 1 || $tipoImovel == 2 || $tipoImovel == 3){
           $sql = "INSERT INTO imovel (morada, codigopostal, idconcelho, iddistrito,
            idfreguesia, idtipoimovel, idtipologia, areautil, areabruta, numwc, idcondicao, anoconstrucao,
+
             idcertificadoenergetico, idtiponegocio, descricao, nifutilizador, idestado) 
                 VALUES('".$moradaImovel."', '".$postalImovel."', '".$listaConcelhos."', '".$listaDistritos."',
                 '".$listaFreguesias."', '".$tipoImovel."', '".$tipologiaImovel."', '".$areaUtil."', '".$areaBruta."', '".$numWcs."', 
@@ -25,6 +27,7 @@ class Imovel{
                    VALUES('".$moradaImovel."', '".$postalImovel."', '".$listaConcelhos."', '".$listaDistritos."',
                    '".$listaFreguesias."', '".$tipoImovel."', '".$areaUtil."', '".$areaBruta."', '".$numWcs."', 
                    '".$estadoImovel."', '".$anoImovel."', '".$certEnerg."', '".$tipoNegocImovel."', '".$obsImovel."', '".$nifUser."',1)";
+
             }
 
           $msg = "";
@@ -344,7 +347,7 @@ function infoImovel(){
 
           $msg .= "<div class='card-body-a'>";
           $msg .= "<div class='price-box d-flex'>";
-          $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | " .$row['precovenda']. "€</span>";
+          $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | ".number_format((string)$row['precovenda'], 0, '.', ' ')."€</span>";
           $msg .= "</div>";
 
 
@@ -357,7 +360,7 @@ function infoImovel(){
 
     $msg .= "<div class='card-body-a'>";
     $msg .= "<div class='price-box d-flex'>";
-    $msg .= "<span class='price-a' >" .$resp['descricao']. " | " .$resp['precorenda']. "€</span>";
+    $msg .= "<span class='price-a' >" .$resp['descricao']. " | ".number_format((string)$resp['precorenda'], 0, '.', ' ')."€</span>";
     $msg .= "</div>";
           
 
@@ -370,14 +373,13 @@ function infoImovel(){
 
     $msg .= "<div class='card-body-a'>";
     $msg .= "<div class='price-box d-flex'>";
-    $msg .= "<span class='price-a' >" .$resp1['descricao']. " | " .$resp1['precopnoite']. "€</span>";
+    $msg .= "<span class='price-a' >" .$resp1['descricao']. " | ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."€</span>";
     $msg .= "</div>";
 
 
 
 
         }
-
 
       
       $msg .= "<a href='infoImovel.php' class='link-a' onclick='infoimovelpagina(".$row['idimovel'].")'>Mais Informações";

@@ -9,6 +9,9 @@
 
 
 
+
+
+
     <!-- ======= Intro Single ======= -->
     <section class="intro-single">
       <div class="container">
@@ -36,38 +39,48 @@
     </section><!-- End Intro Single-->
 
 
-         
-         
+
+
+  
+             
+<?php
+
+$url = 'https://newsapi.org/v2/top-headlines?country=pt&apiKey=f3b6a39ac5a54486bcb8750ec85243dc';
+$response = file_get_contents($url);
+$NewsData = json_decode($response);
+
+
+?>
 
 
 
+<div class = "container-fluid">
+
+<?php
+
+foreach($NewsData->articles as $News){
 
 
+?>
+<div class = "row">
 
+  <div class= "col-md-3">
+    <img src="<?php echo $News->urlToImage ?>" alt="imagemcapa">
 
+  </div>
 
+  <div class= "col-md-9">
+      <h2>Titulo: <?php echo $News->title ?></h2>
+      <h5>Descrição: <?php echo $News->description ?></h5>
+      <p>Conteudo: <?php echo $News->content ?></p>
+      <h6>Autor: <?php echo $News->author ?></h6>
+      <h6>Publicado por: <?php echo $News->publishedAt ?></h6>
+    </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<?php
+}
+?>
 
 
 
@@ -84,10 +97,10 @@
 
     <!-- =======  Blog Grid ======= -->
   
-<!-- 
 
 
-    <section class="news-grid grid">
+
+    <!-- <section class="news-grid grid">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -257,9 +270,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     
-     -->
+    
 
 
 
@@ -275,5 +288,6 @@
 
 <?php require_once 'footer.php'; ?>
 
+    <script src="noticias.js"></script>
 
 </html>
