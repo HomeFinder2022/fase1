@@ -170,9 +170,10 @@ function infoImovel(){
 
     
     
-function infoImovelPagina(){
+function infoImovelPagina(idimovel){
   let dados = new FormData();
   dados.append('op',1);
+  dados.append('idimovel',idimovel);
   
 
 
