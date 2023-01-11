@@ -45,7 +45,7 @@
              
 <?php
 
-$url = 'https://newsapi.org/v2/top-headlines?country=pt&apiKey=f3b6a39ac5a54486bcb8750ec85243dc';
+$url = 'https://newsapi.org/v2/top-headlines?country=pt&category=business&apiKey=f3b6a39ac5a54486bcb8750ec85243dc';
 $response = file_get_contents($url);
 $NewsData = json_decode($response);
 
