@@ -67,28 +67,55 @@
                 </div>
                 <p class="color-text-a">
                   A HomeFinder foi criada no âmbito do projecto final do CET de Programação do IEFP. 
-                  Foi criado por três alunos com o objetivo de colmatar problemas como a pesquisa de casas em varias plataformas diferentes, dificuldades na procura para compra ou arrendamento e a sua própria gestão.
+                  Foi criado por três alunos com o objetivo de colmatar problemas como a pesquisa de casas em várias plataformas diferentes, dificuldades na procura para compra ou arrendamento e a sua própria gestão.
                  
                   
                 </p>
                 <p class="color-text-a">
-                  Assim foi criada uma plataforma que permite o anuncio de imoveis e ao mesmo tempo fazer e acompanhar toda a gestão interna dos arrendamentos.
+                  Assim foi criada uma plataforma que permite o anúncio de imóveis e ao mesmo tempo fazer e acompanhar toda a gestão interna dos arrendamentos.
                 </p>
               
                 <br><br>
 
                 <div class="title-box-d">
+                  
                   <h3 class="title-d">A nossa
                     <span class="color-d">Missão</span>
                   </h3>
-                </div>
+         
                 <p class="color-text-a">
-                  A missão é ajudar os proprietários com a gestão dos seus imoveis e facilitar a partilha e anúncio
-                 
-                  
+                  A missão é ajudar os proprietários com a gestão dos seus imoveis e facilitar a partilha e anúncio de imóveis
                 </p>
-              
-  </div>
+                </div>
+
+<br>
+
+               
+        <div class="title-box-d">
+                  
+                  <h3 class="title-d">A nossa
+                    <span class="color-d">Visão</span>
+                  </h3>
+          
+                <p class="color-text-a">
+                  A HomeFinder pretende estabelecer-se no mercado e evoluir consoante as necessidades tanto da plataforma como dos consumidores.
+                </p>
+
+                </div>
+
+<br>
+
+<div class="title-box-d">
+                  
+  <h3 class="title-d">Os nossos
+    <span class="color-d">Valores</span>
+  </h3>
+
+<p class="color-text-a">
+  Os valores presentes na HomeFinder são excelência, profissionalismo e inovação.
+</p>
+</div>
+
 
 
               
@@ -101,28 +128,6 @@
     </section>
 
     
-
-    <div class="container">
-
-    <div class="title-box-d">
-                  <h3 class="title-d">A nossa
-                    <span class="color-d">Missão</span>
-                  </h3>
-                </div>
-                <p class="color-text-a">
-                  A HomeFinder foi criada no âmbito do projecto final do CET de Programação do IEFP. 
-                  Foi criado por três alunos com o objetivo de colmatar problemas como a pesquisa de casas em varias plataformas diferentes, dificuldades na procura para compra ou arrendamento e a sua própria gestão.
-                 
-                  
-                </p>
-                <p class="color-text-a">
-                  Assim foi criada uma plataforma que permite o anuncio de imoveis e ao mesmo tempo fazer e acompanhar toda a gestão interna dos arrendamentos.
-                </p>
-  </div>
-
-
-
- </div>
 
 
 

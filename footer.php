@@ -14,7 +14,7 @@
             <br><br>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                A HomeFinder junta as funcionalidades de anunicos e gestão de Imovéis numa unica plataforma que o pode ajudar com tarefas do seu dia-a-dia.
+                A HomeFinder junta as funcionalidades de anúnicos e gestão de imovéis numa unica plataforma que o pode ajudar com tarefas do seu dia-a-dia.
               </p>
             </div>
             <div class="w-footer-a">
@@ -35,14 +35,14 @@
               <div class="w-body-a">
                 <ul class="list-unstyled mt-5">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Gestão de Imóveis</a>
+                    <i class="bi bi-chevron-right"></i> <a href="../dashboard/HomeFinder Dashboard/html/index.php">Gestão de Imóveis</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="anuncios.html">Anúncios de Imóveis</a>
+                    <i class="bi bi-chevron-right"></i> <a href="anuncios.php">Anúncios de Imóveis</a>
                   </li>
                   
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="criarAnuncio.html">Criar novo anúncio</a>
+                    <i class="bi bi-chevron-right"></i> <a href="criarAnuncio.php">Criar novo anúncio</a>
                   </li>
 
                   <li class="item-list-a">

@@ -34,7 +34,7 @@
           <div class="col-md-12 col-lg-8">
 <br><br>
             <div class=>
-              <h1 class="titulosNovos">Anuncios</h1>
+              <h1 class="titulosNovos">Anúncios</h1>
               <br>
 
             </div>
@@ -109,7 +109,7 @@
       
     
             <p class="color-text-a">
-              A Plataforma HomeFinder tem as melhores ferramentas para a gestão dos seus Imoveis.
+              A plataforma HomeFinder tem as melhores ferramentas para a gestão dos seus imóveis.
             </p>
           
     </div>

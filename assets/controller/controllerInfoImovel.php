@@ -24,7 +24,8 @@ class InfoImovel{
                     imovel.iddistrito = distrito.iddistrito AND
                     imovel.idconcelho = concelho.idconcelho AND
                     imovel.idtiponegocio = tiponegocio.idtiponegocio AND
-                    imovel.idimovel = imoveisvenda.idimovel 
+                    imovel.idimovel = imoveisvenda.idimovel AND
+                    imovel.idimovel = ".$idimovel."
 
        
                   UNION 
