@@ -37,6 +37,66 @@ a:hover {
 /* Adicionado por ze */
 
 
+
+.title-box-d-noticias {
+  padding-bottom: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.title-box-d-noticias .title-d-noticias {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.title-box-d-noticias .title-d-noticias:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background-color: #2eca6a;
+  bottom: 20px;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-noticias{
+  width: calc(100% - 20px);
+  height: 250px;
+  margin: 10px;
+}
+
+
+.newsGrind{
+  margin: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .img-fluid-anuncios{
   width: 400px; 
   height: 500px; 
@@ -46,7 +106,9 @@ a:hover {
 
       width: 800px;
     }
-    
+   
+   
+
   
   .img-fluid {
       max-width: 100%;

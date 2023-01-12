@@ -35,13 +35,8 @@
             </nav>
           </div>
         </div>
-      </div>
-    </section><!-- End Intro Single-->
-
-
-
-
   
+  <br><br>
              
 <?php
 
@@ -54,7 +49,7 @@ $NewsData = json_decode($response);
 
 
 
-<div class = "container-fluid">
+<div class = "container-fluid-noticias">
 
 <?php
 
@@ -62,21 +57,85 @@ foreach($NewsData->articles as $News){
 
 
 ?>
-<div class = "row">
+<!-- <div class = "row newsGrind">
 
   <div class= "col-md-3">
-    <img src="<?php echo $News->urlToImage ?>" alt="imagemcapa">
+    <img class = "img-noticias" src="<?php echo $News->urlToImage ?>" alt="imagemcapa">
 
   </div>
 
   <div class= "col-md-9">
-      <h2>Titulo: <?php echo $News->title ?></h2>
-      <h5>Descrição: <?php echo $News->description ?></h5>
-      <p>Conteudo: <?php echo $News->content ?></p>
-      <h6>Autor: <?php echo $News->author ?></h6>
-      <h6>Publicado por: <?php echo $News->publishedAt ?></h6>
+      <h2>Titulo: <?php echo $News->title?></h2>
+      <h5>Descrição: <?php echo $News->description?></h5>
+      <p>Conteudo: <?php echo $News->content?></p>"
+      <h6>Autor: <?php echo $News->author?></h6>
+      <h6>Publicado por: <?php echo $News->publishedAt?></h6>
     </div>
-</div>
+</div> -->
+
+
+ <!-- ======= Agent Single ======= -->
+ <section class="agent-single">
+
+      <div class="container">
+        <div class="row newsGrind">
+          <div class="col-sm-12">
+            <div class="row">
+            
+              <div class="col-md-4">
+            
+                <div class="agent-avatar-box">
+                  <img src="<?php echo $News->urlToImage ?>" alt="" class="img-noticias img-fluid">
+                </div>
+              </div>
+              <div class="col-md-8 section-md-t3">
+                <div class="agent-info-box">
+                  <div class="agent-title">
+                  <br>
+                    <div class="title-box-d">
+                      <h3 class="title-d"  style="font-size: 25px" > <?php echo $News->title?>
+                       
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="agent-content mb-8">
+                    <p class="color-text-a">
+                    <?php echo $News->description?>
+                    </p>
+
+                    <div class="info-agents color-a">
+                      <p>
+                        <strong>Autor: </strong>
+                        <span class="color-text-a"><?php echo $News->author?></span>
+                      </p>
+                      
+                  
+                      <p>
+                        <strong>Publicado por: </strong>
+                        <span class="color-text-a"><?php echo $News->publishedAt?></span>
+                      </p>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+     
+
+        </div>
+      </div>
+
+
+
+
+
+
+
 
 <?php
 }
@@ -86,6 +145,11 @@ foreach($NewsData->articles as $News){
 
 
 
+
+
+
+</div>
+    </section><!-- End Intro Single-->
 
 
 

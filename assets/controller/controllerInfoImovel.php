@@ -26,6 +26,7 @@ class InfoImovel{
                     imovel.idtiponegocio = tiponegocio.idtiponegocio AND
                     imovel.idimovel = imoveisvenda.idimovel AND
                     imovel.idimovel = ".$idimovel."
+                   
 
        
                   UNION 
@@ -42,10 +43,10 @@ class InfoImovel{
                     imovel.iddistrito = distrito.iddistrito AND
                     imovel.idconcelho = concelho.idconcelho AND
                     imovel.idtiponegocio = tiponegocio.idtiponegocio AND
-                    imovel.idimovel = imoveisarrendamento.idimovel";
+                    imovel.idimovel = imoveisarrendamento.idimovel AND
+                    imovel.idimovel = ".$idimovel;
 
                 
-                    
                 
                   $result = $conn->query($sql);
 
@@ -192,7 +193,7 @@ class InfoImovel{
                         $msg .= "  <li class='d-flex justify-content-between'>";
       
                              $msg .= " <strong>Tipo de Negócio:</strong>";
-                            $msg .= "  <span>" .$row['tiponegocio']. "</span>";
+                            $msg .= "  <span>" .$resp['tiponegocio']. "</span>";
       
                            $msg .= " </li>";
       

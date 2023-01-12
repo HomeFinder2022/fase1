@@ -382,7 +382,7 @@ function infoImovel(){
         }
 
       
-      $msg .= "<a href='infoImovel.php' class='link-a' onclick='infoimovelpagina(".$row['idimovel'].")'>Mais Informações";
+      $msg .= "<a href='infoImovel.php' class='link-a' onclick='infoImovelPagina(".$row['idimovel'].")'>Mais Informações";
 
       $msg .= "<span  class='bi bi-chevron-right'></span>";
       $msg .= "</a>";
