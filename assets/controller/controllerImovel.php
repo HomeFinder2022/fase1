@@ -328,7 +328,7 @@ function infoImovel(){
         $msg .= "<div class='card-box-a card-shadow'>";
 
         $msg .= "<div class='img-box-a'>";
-        $msg .= "<img src='".$row['fotos']."' class=' img-fluid-anuncios'>";
+        $msg .= "<img src='".$row['fotos']."' class='img-a img-fluid-anuncios'>";
         $msg .= "</div> ";
         $msg .= "<div class='card-overlay'>";
         $msg .= "<div class='card-overlay-a-content'>";

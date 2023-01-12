@@ -42,6 +42,7 @@ function getDistritos() {
       .done(function (resposta) {
         $("#listaConcelhos").html(resposta);
         $("#listaConcelhos2").html(resposta);
+        $("#listaConcelhos3").html(resposta);
         })
   
       .fail(function (jqXHR, textStatus) {
@@ -255,6 +256,7 @@ function getDistritos() {
       // if(this.value == 1 || this.value == 2 || this.value == 3){
         $("#tipologiaVenda").html(resposta);
         $("#tipologiaVenda2").html(resposta);
+        $("#tipologiaVenda3").html(resposta);
   
       // }
 
