@@ -10,6 +10,7 @@
 
 <link href="assets/css/style.css" rel="stylesheet">
 
+
 <?php require_once 'menu.php'; ?>
 
 
@@ -84,6 +85,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
       
   <section id="aa-advance-search">
+    
     <div class="container">
       <div class="aa-advance-search-area">
         
@@ -96,91 +98,137 @@ if(isset($_SESSION['nomeUser'])){ ?>
         <div class="form">
          <div class="aa-advance-search-top">
 
+
+
+
             <div class="row">
 
            
-              <div class="col-md-4">
+            <div class="col-3">
+                  <div class="input-group">
+                    <span class="input-group-text">Concelho</span>
+                    <select class="form-select" onchange="filtroConcelho(this.value)" id="listaConcelhos3">
+                    </select>
+                  </div>
+                </div>
 
 
-                <div class="aa-single-advance-search">
-                  <input type="text" placeholder="Localização">
+              <div class="col-3">
+                  <div class="input-group">
+                    <span class="input-group-text">Tipo de Negócio</span>
+                    <select class="form-select" onchange="filtroImovel(this.value)" id="tipoNegocImovel3">
+
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="input-group">
+                    <span class="input-group-text">Tipo de Imóvel</span>
+                    <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel3">
+                    
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-3" id="tipologiaVenda3">
+                  <!-- <div class="input-group"> -->
+                  <!-- <span class='input-group-text'>Tipologia do Imóvel</span>
+  <select class='form-select' id='tipologiaImovel'></select> -->
+                  <!-- </div> -->
                 </div>
 
 
               </div>
 
-
-              <div class="col-md-3">
-                <div class="aa-single-advance-search">
-                  <select class="form-select" onchange="filtroImovel(this.value)" id="tipoNegocImovel3">
-                   <option value="0" selected>Procuro</option>
-             
-
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-3">
-                 <div class="aa-single-advance-search">
-                  <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel3">
-
-                  </select>
-              </div>
-              </div>
-
-
-              <div class="col-md-2">
-                 <div class="aa-single-advance-search " id = "tipologiaVenda3">
-                  <select >
-
-
-                  </select>
-              </div>
-              </div>
-
-
-
-              </div>
               <br>
+
+
+
+
               <div class="row">
+              <div class="column">
 
-              
-             
-              <div class="col-md-2">
-                <div class="aa-single-advance-search">
-                  <input type="text" placeholder="Area Útil">
-                </div>
+              <div class="col-3">
+              <span class="input-group-text">Preço</span>
+
+
+
+              </div>
+
               </div>
 
 
-              <div class="col-md-2">
-                <div class="aa-single-advance-search">
-                  <input type="text" placeholder="Preço Minimo">
-                </div>
-              </div>
 
-              <div class="col-md-2">
-                <div class="aa-single-advance-search">
-                  <input type="text" placeholder="Preço Máximo">
-                </div>
-              </div>
-     
-               
+              <div class="column">
+              <div class="col-3">
+              <div class="priceSlider">
+
+
+
+<div class="min-max">
+ <div class="min">
+     <label>Min €</label><span id="min-value"></span>
+ </div>
+ <div class="max">
+     <label>Max €</label><span id="max-value"></span>
+ </div>     
+</div> 
+    
+<div class="min-max-range">
+<input type="range" min="0" max="500000" value="200000" class="range" id="min">
+<input type="range" min="500001" max="1000000" value="800000" class="range" id="max">      
+</div>    
+    
+<div style="clear: both;"></div>    
+</div> 
+
+
+</div>
+
+ </div>
+
+
+    
+    
+                  </div>
+    
+         
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+
+           
+
+
+<!--                
               <div class="col-md-3">
                  <div class="aa-single-advance-search">
                   <select id = "certEnerg3">
                  
                   </select>
               </div>
-              </div>
+              </div> -->
 
-              </div>
-              <br>
+             
+              
               <div class="row justify-content-md-end ">
 
               <div class="col-md-2 ">
 
                 <div class="aa-single-advance-search">
-                  <input class="aa-search-btn" type="submit" value="Search">
+                  <input class="aa-search-btn" type="button" value="Procurar">
                 </div>
 
               </div>
@@ -191,11 +239,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
               <div class="col-md-2">
 
 
-              <label class="form-label" for="">Preco</label>
-              <div class="range">
-              <input type="range" class="form-range" min="0" max="1 000 000" id="" />
-              </div>
-
+          
 
 
 
@@ -209,49 +253,53 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
 
-         <!-- <div class="aa-advance-search-bottom">
-           <div class="row">
-
-            <div class="col-md-6">
-              <div class="aa-single-filter-search">
-                <span>AREA (SQ)</span>
-                <span>FROM</span>
-                <span id="skip-value-lower" class="example-val">30.00</span>
-                <span>TO</span>
-                <span id="skip-value-upper" class="example-val">100.00</span>
-                <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                </div>                  
-              </div>
-
-            </div>
-
-            <div class="col-md-6">
-              <div class="aa-single-filter-search">
-                <span>PRICE ($)</span>
-                <span>FROM</span>
-                <span id="skip-value-lower2" class="example-val">30.00</span>
-                <span>TO</span>
-                <span id="skip-value-upper2" class="example-val">100.00</span>
-                <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                </div>      
-              </div>
-
-            </div>
-          </div> 
-         </div> -->
-
+      
 
 
          
 
         </div>
       </div>
+
+
+
+
+
+
+
+
     </div>
 
     <br><br>
 
   </section>
   <!-- / Advance Search -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -321,6 +369,9 @@ if(isset($_SESSION['nomeUser'])){ ?>
   <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+
+  
+  <script src="assets/js/scriptPreco.js"></script> 
 
 
 

@@ -57,21 +57,6 @@ foreach($NewsData->articles as $News){
 
 
 ?>
-<!-- <div class = "row newsGrind">
-
-  <div class= "col-md-3">
-    <img class = "img-noticias" src="<?php echo $News->urlToImage ?>" alt="imagemcapa">
-
-  </div>
-
-  <div class= "col-md-9">
-      <h2>Titulo: <?php echo $News->title?></h2>
-      <h5>Descrição: <?php echo $News->description?></h5>
-      <p>Conteudo: <?php echo $News->content?></p>"
-      <h6>Autor: <?php echo $News->author?></h6>
-      <h6>Publicado por: <?php echo $News->publishedAt?></h6>
-    </div>
-</div> -->
 
 
  <!-- ======= Agent Single ======= -->
