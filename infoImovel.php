@@ -73,5 +73,9 @@
   <?php require_once 'footer.php'; ?>
 
   <script src="assets/js/imovel.js"></script>
+  <script>
+    infoImovelPagina(<?php echo($_GET['idimovel']) ?>)
+
+    </script>
   
   </html>

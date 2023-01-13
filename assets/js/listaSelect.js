@@ -121,6 +121,7 @@ function getDistritos() {
       .done(function (resposta) {
         $("#estadoImovel").html(resposta);
         $("#estadoImovel2").html(resposta);
+        $("#estadoImovel3").html(resposta);
         })
   
       .fail(function (jqXHR, textStatus) {
