@@ -9,7 +9,7 @@ class Utilizador{
 
         $sql = "INSERT INTO utilizador (nif,nome,apelido,pwd,morada,codigopostal,idade,telemovel,email,idtipoutilizador,idpais ) 
         VALUES('".$nif."', '".$nome."', '".$apelido."','".$pass."','".$morada."','".$codpostal."','".$idade."',
-        '".$tel."','".$email."',3,'".$pnascimento."')";
+        '".$tel."','".$email."',1,'".$pnascimento."')";
 
         $msg = "";
         
