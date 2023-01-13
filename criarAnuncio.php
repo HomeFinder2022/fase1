@@ -169,11 +169,13 @@ if(isset($_SESSION['nomeUser'])){ ?>
                 </div>
 
                 <div class="col-6">
+
                   <div class="input-group">
                     <span class="input-group-text">Estado</span>
                     <select class="form-select" id="estadoImovel2">
                     </select>
                   </div>
+                  
                 </div>
 
 
