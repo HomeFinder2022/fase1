@@ -324,6 +324,11 @@ cursor: pointer;
 
 }
 
+
+.btn-homefinder-red{
+  background-color: #d81616;
+}
+
 .titulosNovos{
   color: #2fcb6a;
 }

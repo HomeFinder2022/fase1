@@ -397,6 +397,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
                     <th>Tipologia</th>
                     <th>Estado</th>
                     <th></th>
+                    <th></th>
                   </tr>
                 </thead>
 
