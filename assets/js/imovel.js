@@ -229,6 +229,6 @@ $(function () {
  
   tabelaImoveis();
   infoImovel();
-  infoImovelPagina();
+
 
 });

@@ -141,71 +141,99 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
               </div>
 
-              <br>
+              <br><br>
 
-
-
+              
 
               <div class="row">
-              <div class="column">
-
-              <div class="col-3">
-              <span class="input-group-text">Preço</span>
 
 
 
-              </div>
 
-              </div>
-
-
-
-              <div class="column">
-              <div class="col-3">
-              <div class="priceSlider">
+           
+                <div class="col-3">
 
 
 
-<div class="min-max">
- <div class="min">
-     <label>Min €</label><span id="min-value"></span>
- </div>
- <div class="max">
-     <label>Max €</label><span id="max-value"></span>
- </div>     
-</div> 
+                  <span class="input-group-text">Preço</span>
+
+
+
+
+                    </div>
     
-<div class="min-max-range">
-<input type="range" min="0" max="500000" value="200000" class="range" id="min">
-<input type="range" min="500001" max="1000000" value="800000" class="range" id="max">      
-</div>    
     
-<div style="clear: both;"></div>    
-</div> 
-
-
-</div>
-
- </div>
-
-
+                 
     
+             
+
+
+                    <div class="col-3">
+
+
+
+                    <div class="input-group">
+                    <span class="input-group-text">Estado</span>
+                    <select class="form-select" id="estadoImovel3">
+                    </select>
+                  </div>
+
+
+
+                    </div>
+    
+
     
                   </div>
     
-           
+                  <br>
 
 
-<!--                
-              <div class="col-md-3">
-                 <div class="aa-single-advance-search">
-                  <select id = "certEnerg3">
-                 
-                  </select>
-              </div>
-              </div> -->
 
-             
+              
+
+<div class="row">
+
+
+
+
+
+    <div class="col-3">
+
+
+
+
+      <div class="priceSlider">
+
+
+
+        <div class="min-max">
+         <div class="min">
+             <label>Min €</label><span id="min-value"></span>
+         </div>
+         <div class="max">
+             <label>Max €</label><span id="max-value"></span>
+         </div>     
+        </div> 
+            
+        <div class="min-max-range">
+        <input type="range" min="0" max="500000" value="200000" class="range" id="min">
+        <input type="range" min="500001" max="1000000" value="800000" class="range" id="max">      
+        </div>    
+            
+        <div style="clear: both;"></div>    
+        </div> 
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+
               
               <div class="row justify-content-md-end ">
 
@@ -255,7 +283,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
     </div>
 
-    <br><br>
+ 
 
   </section>
   <!-- / Advance Search -->
