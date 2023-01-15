@@ -109,33 +109,6 @@ function tabelaImoveis(){
 
 
 
-// function desativarImovel(idimovel){
-
-//   let dados = new FormData();
-
-//   dados.append("op",3);
-//   dados.append("idimovel",idimovel);
-
-//   $.ajax({
-//       url: "assets/model/modelImovel.php",
-//       method: "POST",
-//       data: dados,
-//       dataType: "html",
-//       cache:false,
-//       contentType:false,
-//       processData:false
-//     })
-     
-//     .done(function( resposta ) {
-//       sucesso(resposta);
-   
-//     })
-     
-//     .fail(function( jqXHR, textStatus ) {
-//       alert( "Request failed: " + textStatus );
-//     });
-// }
-
 
 
 
@@ -201,16 +174,65 @@ function infoImovelPagina(idimovel){
 }
     
    
+function desativarImovel(idimovel){
+  let dados = new FormData();
+  dados.append('op',3);
+  dados.append('idimovel',idimovel);
 
- 
-
-//   })
+  $.ajax({
+    url: "assets/model/modelImovel.php",
+    method: "POST",
+    data: dados,
+    cache:false,
+    processData:false,
+    contentType: false,
+    dataType: "html"
+  })
    
-//   .fail(function( jqXHR, textStatus ) {
-//     alert( "Request failed: " + textStatus );
-//   });
+  .done(function( resposta ) {
+    sucesso(resposta);
+  
 
-// }
+  })
+   
+  .fail(function( jqXHR, textStatus ) {
+    alert( "Request failed: " + textStatus );
+  });
+}
+
+
+function ativarImovel(idimovel){
+  let dados = new FormData();
+  dados.append('op',5);
+  dados.append('idimovel',idimovel);
+
+  $.ajax({
+    url: "assets/model/modelImovel.php",
+    method: "POST",
+    data: dados,
+    cache:false,
+    processData:false,
+    contentType: false,
+    dataType: "html"
+  })
+   
+  .done(function( resposta ) {
+    sucesso(resposta);
+  
+
+  })
+   
+  .fail(function( jqXHR, textStatus ) {
+    alert( "Request failed: " + textStatus );
+  });
+}
+
+
+
+
+
+
+
 
 
 

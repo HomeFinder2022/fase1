@@ -241,7 +241,8 @@ class Imovel{
                   $msg .= "<td>".$row['tipologia']."</td>";
 
                   $msg .= "<td>".$row['estado']."</td>";
-                  $msg .= "<td>           <button type='button' class='btn btn-danger btn-sm' onclick='desativarImovel(".$row['idimovel'].")'>   Desativar  </button></td>";
+                  $msg .= "<td>           <button type='button' class='btn btn-homefinder subtitulo' onclick='ativarImovel(".$row['idimovel'].")'>   Ativar  </button></td>";
+                  $msg .= "<td>           <button type='button' class='btn btn-homefinder-red subtitulo' onclick='desativarImovel(".$row['idimovel'].")'>   Desativar  </button></td>";
                   
 
                   $msg .= "</tr>";
@@ -560,15 +561,7 @@ function infoImovelArrendamento($idimovel){
         
         
                 return $resp1;
-             
-        
-                  
-        
-
-
-
-
-}
+                                    
 
 }
 
@@ -576,6 +569,52 @@ function infoImovelArrendamento($idimovel){
 
 
 
+// function desativarImovel($idimovel){
+//   global $conn;
+//   $msg="";
+
+//   $sql = "UPDATE imovel SET idestado = 3  WHERE idimovel = ".$idimovel;
+
+//   if ($conn->query($sql) === TRUE) {
+//     $msg  = "Imóvel Removido do Anúncios com sucesso!";
+//   } else {
+//     $msg = "Error: " . $sql . "<br>" . $conn->error;
+//   }
+
+//   $conn->close();
+
+//   return $msg;
+
+// }
+
+
+// function ativarImovel($idimovel){
+//   global $conn;
+//   $msg="";
+
+//   $sql = "UPDATE imovel SET idestado = 2  WHERE idimovel = ".$idimovel;
+
+//   if ($conn->query($sql) === TRUE) {
+//     $msg  = "Imóvel Adicionado do Anúncios com sucesso!";
+//   } else {
+//     $msg = "Error: " . $sql . "<br>" . $conn->error;
+//   }
+
+//   $conn->close();
+
+//   return $msg;
+
+
+
+
+
+
+// }
+
+
+
+
+}
 
 
 

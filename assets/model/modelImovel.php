@@ -46,12 +46,12 @@ if($_POST['op'] == 1){
     echo($resp);
 
 }else if($_POST['op'] == 5){
-    $infoImovel = new Imovel();
-    $resp = $infoImovel -> infoImovelPagina();
-    echo($resp);
+    $desativarImovel = new Imovel();
+    $res = $desativarImovel -> ativarImovel($_POST['idimovel']);
+    echo($res);
     
-
 }
+
     
 ?>   
 
