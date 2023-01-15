@@ -107,7 +107,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
             <div class="col-3">
                   <div class="input-group">
                     <span class="input-group-text">Concelho</span>
-                    <select class="form-select" onchange="filtroConcelho(this.value)" id="listaConcelhos3">
+                    <select class="form-select" id="listaConcelhos3">
                     </select>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
               <div class="col-3">
                   <div class="input-group">
                     <span class="input-group-text">Tipo de Negócio</span>
-                    <select class="form-select" onchange="filtroImovel(this.value)" id="tipoNegocImovel3">
+                    <select class="form-select" id="tipoNegocImovel3">
 
                     </select>
                   </div>
@@ -125,7 +125,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
                 <div class="col-3">
                   <div class="input-group">
                     <span class="input-group-text">Tipo de Imóvel</span>
-                    <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel3">
+                    <select class="form-select"  id="tipoImovel3">
                     
                     </select>
                   </div>
@@ -193,22 +193,6 @@ if(isset($_SESSION['nomeUser'])){ ?>
     
                   </div>
     
-         
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-        
-
            
 
 
@@ -228,7 +212,8 @@ if(isset($_SESSION['nomeUser'])){ ?>
               <div class="col-md-2 ">
 
                 <div class="aa-single-advance-search">
-                  <input class="aa-search-btn" type="button" value="Procurar">
+                  <!-- <button class="aa-search-btn" type="button" value="Procurar" > -->
+                  <button class="aa-search-btn" onclick="pesquisaranuncios()" type="button" value="Procurar">Pesquisar</button>
                 </div>
 
               </div>
@@ -372,7 +357,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
   
   <script src="assets/js/scriptPreco.js"></script> 
-
+  <script src="assets/js/pesquisa.js"></script> 
 
 
 
