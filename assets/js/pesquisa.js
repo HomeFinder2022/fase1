@@ -6,8 +6,10 @@ function pesquisaranuncios(){
     let tipneg = $('#tipoNegocImovel3').val();
     let tipimovel = $('#tipoImovel3').val();
     let tipologia = $('#tipologiaVenda3').val();
+    
     let precomin = $('#min-value').val();
     let precomax = $('#max-value').val();
+    let estado = $('#estadoImovel3').val();
 
 
     dados.append("concelho",concelho);
@@ -16,6 +18,7 @@ function pesquisaranuncios(){
     dados.append("tipologia",tipologia);
     dados.append("precomin",precomin);
     dados.append("precomax",precomax);
+    dados.append("estado",estado);
   
     dados.append("op",1);
   
