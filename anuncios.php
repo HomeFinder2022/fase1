@@ -131,12 +131,12 @@ if(isset($_SESSION['nomeUser'])){ ?>
                   </div>
                 </div>
 
-                <div class="col-3" id="tipologiaVenda3">
-                  <!-- <div class="input-group"> -->
+                <!-- <div class="col-3" id="tipologiaVenda3">
+                  <div class="input-group"> -->
                   <!-- <span class='input-group-text'>Tipologia do Imóvel</span>
   <select class='form-select' id='tipologiaImovel'></select> -->
                   <!-- </div> -->
-                </div>
+                <!-- </div> --> 
 
 
               </div>
@@ -150,17 +150,26 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
 
-           
+<!--            
                 <div class="col-3">
 
 
 
-                  <span class="input-group-text">Preço</span>
+                  <span class="input-group-text">Preço</span> -->
+                  <div class="col-3">
+                            <label for="precomin"  class="input-group-text">Preco MIN</label>
+                            <input type="number" class="form-control" id="precomin">
+                          </div>
+
+
+                          <div class="col-3">
+                            <label for="precomax"  class="input-group-text">Preco MAX</label>
+                            <input type="number" class="form-control" id="precomax">
+                          </div>
 
 
 
-
-                    </div>
+                    <!-- </div> -->
     
     
                  
@@ -196,7 +205,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
 
-
+<!-- 
 
     <div class="col-3">
 
@@ -231,7 +240,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
 
-    </div>
+    </div> -->
 
 
               

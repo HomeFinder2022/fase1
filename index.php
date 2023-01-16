@@ -606,7 +606,7 @@
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Ultimas Noticias</h2>
+                <h2 class="title-a">Últimas Noticias</h2>
               </div>
               <div class="title-link">
                 <a href="blog-grid.html">Todas as Noticias
