@@ -569,47 +569,47 @@ function infoImovelArrendamento($idimovel){
 
 
 
-// function desativarImovel($idimovel){
-//   global $conn;
-//   $msg="";
+function desativarImovel($idimovel){
+  global $conn;
+  $msg="";
 
-//   $sql = "UPDATE imovel SET idestado = 3  WHERE idimovel = ".$idimovel;
+  $sql = "UPDATE imovel SET idestado = 3  WHERE idimovel = ".$idimovel;
 
-//   if ($conn->query($sql) === TRUE) {
-//     $msg  = "Imóvel Removido do Anúncios com sucesso!";
-//   } else {
-//     $msg = "Error: " . $sql . "<br>" . $conn->error;
-//   }
+  if ($conn->query($sql) === TRUE) {
+    $msg  = "Imóvel Removido do Anúncios com sucesso!";
+  } else {
+    $msg = "Error: " . $sql . "<br>" . $conn->error;
+  }
 
-//   $conn->close();
+  $conn->close();
 
-//   return $msg;
+  return $msg;
 
-// }
-
-
-// function ativarImovel($idimovel){
-//   global $conn;
-//   $msg="";
-
-//   $sql = "UPDATE imovel SET idestado = 2  WHERE idimovel = ".$idimovel;
-
-//   if ($conn->query($sql) === TRUE) {
-//     $msg  = "Imóvel Adicionado do Anúncios com sucesso!";
-//   } else {
-//     $msg = "Error: " . $sql . "<br>" . $conn->error;
-//   }
-
-//   $conn->close();
-
-//   return $msg;
+}
 
 
+function ativarImovel($idimovel){
+  global $conn;
+  $msg="";
+
+  $sql = "UPDATE imovel SET idestado = 2  WHERE idimovel = ".$idimovel;
+
+  if ($conn->query($sql) === TRUE) {
+    $msg  = "Imóvel Adicionado do Anúncios com sucesso!";
+  } else {
+    $msg = "Error: " . $sql . "<br>" . $conn->error;
+  }
+
+  $conn->close();
+
+  return $msg;
 
 
 
 
-// }
+
+
+}
 
 
 
