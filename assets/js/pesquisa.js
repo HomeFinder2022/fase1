@@ -5,17 +5,17 @@ function pesquisaranuncios(){
     let concelho = $('#listaConcelhos3').val();
     let tipneg = $('#tipoNegocImovel3').val();
     let tipimovel = $('#tipoImovel3').val();
-    let tipologia = $('#tipologiaVenda3').val();
+    // let tipologia = $('#tipologiaVenda3').val();
     
-    let precomin = $('#min-value').val();
-    let precomax = $('#max-value').val();
+    let precomin = $('#precomin').val();
+    let precomax = $('#precomax').val();
     let estado = $('#estadoImovel3').val();
-
+    
 
     dados.append("concelho",concelho);
     dados.append("tipneg",tipneg);
     dados.append("tipimovel",tipimovel);
-    dados.append("tipologia",tipologia);
+    // dados.append("tipologia",tipologia);
     dados.append("precomin",precomin);
     dados.append("precomax",precomax);
     dados.append("estado",estado);
@@ -32,10 +32,12 @@ function pesquisaranuncios(){
         processData:false
       })
        
-      .done(function( resposta ) {
-        sucesso(resposta);
+      .done(function (resposta) {
+        $("#infoImovel").html(resposta);
+        
 
-      })
+
+        })
        
       .fail(function( jqXHR, textStatus ) {
         alert( "Request failed: " + textStatus );
