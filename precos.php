@@ -232,7 +232,7 @@
                   <br>
                   <h5 class="titulosNovos fontTitulosPrecos">Silver</h5>
                   <span class="display-4">49.99€</span>
-                  <span>/mês</span>
+                  <span>/ano</span>
                 </div>
                 <br>
 
@@ -271,7 +271,7 @@
                   <br>
                   <h5 class="titulosNovos fontTitulosPrecos">Gold</h5>
                   <span class="display-4">99.99€</span>
-                  <span>/mês</span>
+                  <span>/ano</span>
                 </div>
                 <br>
 
