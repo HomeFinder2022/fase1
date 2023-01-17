@@ -229,22 +229,21 @@
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>340m
-                            <sup>2</sup>
-                          </span>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T2</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
+                          <h4 class="card-info-title">WC's</h4>
                           <span>2</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>4</span>
+                          <h4 class="card-info-title">Área Bruta</h4>
+                          <span>4 m</span>
+                          <sup>2</sup>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Ano</h4>
+                          <span>2023</span>
                         </li>
                       </ul>
                     </div>
@@ -279,22 +278,23 @@
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>120m
-                            <sup>2</sup>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T5
+                           
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
+                          <h4 class="card-info-title">WC's</h4>
                           <span>5</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>2</span>
+                          <h4 class="card-info-title">Área Bruta</h4>
+                          <span>25 m</span>
+                          <sup>2</sup>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>3</span>
+                          <h4 class="card-info-title">Ano</h4>
+                          <span>2023</span>
                         </li>
                       </ul>
                     </div>
@@ -329,22 +329,23 @@
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>150m
-                            <sup>2</sup>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T4
+                           
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">WC's</h4>
+                          <span>3</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Área Bruta</h4>
+                          <span>50 m</span>
+                          <sup class="sup-sup">2</sup>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Ano</h4>
+                          <span>2019</span>
                         </li>
                       </ul>
                     </div>
@@ -599,6 +600,8 @@
       </div>
     </section><!-- End Agents Section -->
 
+
+  
     <!-- ======= Latest News Section ======= -->
     <section class="section-news section-t8">
       <div class="container">
@@ -721,6 +724,7 @@
         <div class="news-carousel-pagination carousel-pagination"></div>
       </div>
     </section><!-- End Latest News Section -->
+
 
   </main><!-- End #main -->
 
