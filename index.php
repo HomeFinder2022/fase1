@@ -229,22 +229,21 @@
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>340m
-                            <sup>2</sup>
-                          </span>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T2</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
+                          <h4 class="card-info-title">WC's</h4>
                           <span>2</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>4</span>
+                          <h4 class="card-info-title">Área Bruta</h4>
+                          <span>4 m</span>
+                          <sup>2</sup>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Ano</h4>
+                          <span>2023</span>
                         </li>
                       </ul>
                     </div>
@@ -279,22 +278,23 @@
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>120m
-                            <sup>2</sup>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T5
+                           
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
+                          <h4 class="card-info-title">WC's</h4>
                           <span>5</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>2</span>
+                          <h4 class="card-info-title">Área Bruta</h4>
+                          <span>25 m</span>
+                          <sup>2</sup>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>3</span>
+                          <h4 class="card-info-title">Ano</h4>
+                          <span>2023</span>
                         </li>
                       </ul>
                     </div>
@@ -329,22 +329,23 @@
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>150m
-                            <sup>2</sup>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T4
+                           
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">WC's</h4>
+                          <span>3</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Área Bruta</h4>
+                          <span>50 m</span>
+                          <sup class="sup-sup">2</sup>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>1</span>
+                          <h4 class="card-info-title">Ano</h4>
+                          <span>2019</span>
                         </li>
                       </ul>
                     </div>
@@ -599,128 +600,7 @@
       </div>
     </section><!-- End Agents Section -->
 
-    <!-- ======= Latest News Section ======= -->
-    <section class="section-news section-t8">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Ultimas Noticias</h2>
-              </div>
-              <div class="title-link">
-                <a href="blog-grid.html">Todas as Noticias
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="news-carousel" class="swiper">
-          <div class="swiper-wrapper">
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-2.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Casa</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="blog-single.html">Descubra as novas tendências do verão para a sua casa
-                           </a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">18 Setembro 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-5.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Viagens</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="blog-single.html">Portugal é o 4.º destino europeu mais procurado <br> este verão
-                          </a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">1 Outubro 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-7.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Viagens</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="blog-single.html">Viagens de residentes atingem no 3.º trimestre <br> valor mais alto desde início da pandemia
-                        </a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">25 Agosto 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-            <div class="carousel-item-c swiper-slide">
-              <div class="card-box-b card-shadow news-box">
-                <div class="img-box-b">
-                  <img src="assets/img/post-3.jpg" alt="" class="img-b img-fluid">
-                </div>
-                <div class="card-overlay">
-                  <div class="card-header-b">
-                    <div class="card-category-b">
-                      <a href="#" class="category-b">Casa</a>
-                    </div>
-                    <div class="card-title-b">
-                      <h2 class="title-2">
-                        <a href="#">Universitários à procura de casa: há menos quartos <br> disponíveis e estão mais caros</a>
-                      </h2>
-                    </div>
-                    <div class="card-date">
-                      <span class="date-b">7 Julho 2022</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End carousel item -->
-
-          </div>
-        </div>
-
-        <div class="news-carousel-pagination carousel-pagination"></div>
-      </div>
-    </section><!-- End Latest News Section -->
+   
 
   </main><!-- End #main -->
 

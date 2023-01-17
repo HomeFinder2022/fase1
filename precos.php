@@ -306,48 +306,68 @@
     <div class="text-center my-4">
       <h2>Questões Frequentes</h2>
     </div>
+
     <div class="row">
+
       <div class="col-sm-6">
+
         <div class="card">
           <div class="card-body">
-            <h5 class="h6 card-title">Do I need a credit card to sign up?</h5>
-            <p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-              libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
-              pulvinar, hendrerit id, lorem.</p>
+            <h5 class="h6 card-title">É preciso cartão de crédito para me inscrever?</h5>
+            <p class="mb-0">Não é necesario qualquer tipo de cartão iniciar a sua experência na HomeFinder. o acesso gratuito à plataforma, pode usufruir de todos as funcionalidades.</p>
           </div>
         </div>
+
       </div>
+
       <div class="col-sm-6">
+
         <div class="card">
           <div class="card-body">
-            <h5 class="h6 card-title">Do you offer a free trial?</h5>
-            <p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-              libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
-              pulvinar, hendrerit id, lorem.</p>
+            <h5 class="h6 card-title">Oferece uma avaliação gratuita?</h5>
+            <p class="mb-0">Qualquer utilizador depois de fazer o registo tem acesso a todas as funcionalidades da nossa plataforma.
+
+            
+            </p>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="h6 card-title">What if I decide to cancel my plan?</h5>
-            <p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-              libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
-              pulvinar, hendrerit id, lorem.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="h6 card-title">Can I cancel at anytime?</h5>
-            <p class="mb-0">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-              libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
-              pulvinar, hendrerit id, lorem.</p>
-          </div>
-        </div>
+
       </div>
     </div>
+
+    <div class="row">
+      
+      <div class="col-sm-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="h6 card-title">E se eu decidir cancelar a minha subscrição?</h5>
+            <p class="mb-0">Pode cancelar a sua subscriçao a qualquer momento, perdedo os privilégios a ela acossiados</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="h6 card-title">Para que serve a plataforma HomeFinder?</h5>
+            <p class="mb-0">A plataforma HomeFinder, esta no mercado para ajudar investidores ou inquilinos, na gestão dos 
+              seus imoveis, tudo de forma fácil, simples e intuitiva </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      
+    </div>
+
+
+
+
+
   </div>
 </div>
 </div>

@@ -44,7 +44,27 @@ class InfoImovel{
                     imovel.idconcelho = concelho.idconcelho AND
                     imovel.idtiponegocio = tiponegocio.idtiponegocio AND
                     imovel.idimovel = imoveisarrendamento.idimovel AND
+                    imovel.idimovel = ".$idimovel."
+
+                  UNION
+
+                  
+                  SELECT imovel.idimovel, imovel.idtiponegocio, utilizador.nome AS nomeProprietario, utilizador.email, listafotos.fotos, imovel.morada, distrito.nome AS distrito,
+                  concelho.nome AS concelho, imovel.areabruta, imovel.numwc, imovel.anoconstrucao,imovel.descricao, tiponegocio.descricao AS tiponegocio, ferias.precopnoite
+                  
+                    
+                    FROM imovel, listafotos, utilizador, distrito, concelho, tiponegocio, ferias
+                  
+                   
+                    WHERE imovel.nifutilizador = utilizador.nif AND
+                    listafotos.idimovel = imovel.idimovel AND
+                    imovel.iddistrito = distrito.iddistrito AND
+                    imovel.idconcelho = concelho.idconcelho AND
+                    imovel.idtiponegocio = tiponegocio.idtiponegocio AND
+                    imovel.idimovel = ferias.idimovel AND
                     imovel.idimovel = ".$idimovel;
+                  
+                  
 
                 
                 
@@ -193,7 +213,43 @@ class InfoImovel{
                         $msg .= "  <li class='d-flex justify-content-between'>";
       
                              $msg .= " <strong>Tipo de Negócio:</strong>";
-                            $msg .= "  <span>" .$resp['tiponegocio']. "</span>";
+                            $msg .= "  <span>" .$row['tiponegocio']. "</span>";
+      
+                           $msg .= " </li>";
+      
+                      
+            
+            
+                    }else if($row ['idtiponegocio']  == 3){
+
+                      $resp1 = $this -> infoImovelFerias($row['idimovel'] );
+                      $resp1 = json_decode($resp1, TRUE);
+            
+                      $msg .= " <div class='card-title-c align-self-center'>";
+                      $msg .= "<h5 class='title-c'>".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."</h5>";
+                      $msg .= " </div>";
+      
+                      $msg .= " </div>";
+                      $msg .= " </div>";
+      
+      
+                      $msg .= " <div class='property-summary'>";
+                       $msg .= " <div class='row'>";
+                         $msg .= " <div class='col-sm-12'>";
+                            $msg .= "<div class='title-box-d section-t4'>";
+                              $msg .= "<h3 class='title-d'>Resumo</h3>";
+                           $msg .= " </div>";
+                         $msg .= " </div>";
+                        $msg .= "</div>";
+      
+                       $msg .= " <div class='summary-list'>";
+                          
+                          $msg .= "<ul class='list'>";
+      
+                        $msg .= "  <li class='d-flex justify-content-between'>";
+      
+                             $msg .= " <strong>Tipo de Negócio:</strong>";
+                            $msg .= "  <span>" .$row['tiponegocio']. "</span>";
       
                            $msg .= " </li>";
       
@@ -350,6 +406,13 @@ class InfoImovel{
 
 
 
+
+
+
+
+
+
+
                 
 
 
@@ -435,6 +498,47 @@ function infoImovelArrendamento($idimovel){
 }
 
 
+
+
+function infoImovelFerias($idimovel){
+
+  global $conn;
+
+  $sql = "SELECT tiponegocio.descricao, ferias.precopnoite
+  
+  FROM ferias, imovel, tiponegocio
+ 
+  WHERE ferias.idimovel = imovel.idimovel AND
+  imovel.idtiponegocio = tiponegocio.idtiponegocio AND
+  ferias.idimovel = ".$idimovel;
+
+
+  $result = $conn->query($sql);
+
+  $msg = "";
+
+  if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+
+
+
+      $precopnoite = $row['precopnoite'];
+      $descricao = $row['descricao'];
+
+
+        }
+
+      }
+
+        $resp1 = array("precopnoite"=>$precopnoite, "descricao"=>$descricao);
+        $resp1 = json_encode($resp1);
+
+
+        return $resp1;
+     
+
+}
 
 
 
