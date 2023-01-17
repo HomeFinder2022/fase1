@@ -5,11 +5,14 @@ require_once 'connection.php';
 class Pesquisa{
 
 
-      function filtroanuncios($concelho, $tipneg,$tipimovel  , $tipologia ,  $precomin ,  $precomax){
+      function filtroanuncioss($concelho, $tipneg , $tipimovel ,  $precomin ,  $precomax, $estado){
         global $conn;
-        $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao AS tiponegocio, 
-        imoveisvenda.precovenda , imovel.idestado
-        FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio , estado
+        $msg="";
+        $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, 
+        concelho.nome, tiponegocio.idtiponegocio, tiponegocio.descricao AS tiponegocio, tipoimovel.descricao as tipimovel, 
+        imovel.idestado,imoveisvenda.precovenda, tipologia.idtipologia
+        
+        FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio , estado, tipoimovel,tipocondicao
       
         WHERE listafotos.idimovel = imovel.idimovel 
         AND imovel.idconcelho = concelho.idconcelho 
@@ -17,44 +20,18 @@ class Pesquisa{
         AND imovel.idtipologia = tipologia.idtipologia 
         AND imovel.idtiponegocio = tiponegocio.idtiponegocio 
         AND imovel.idestado = estado.idestado
+        AND imovel.idtipoimovel= tipoimovel.idtipoimovel
+        AND imovel.idcondicao = tipocondicao.idcondicao
         AND imovel.idconcelho =".$concelho."
-        AND tiponegocio.descricao =".$tipneg."
-        AND tipoimovel.descricao=".$tipimovel."
-        AND tipologia.descricao=".$tipologia."
-        AND imoveisvenda.precovenda BETWEEN ".$precomin." AND ".$precomax." 
+        AND tiponegocio.idtiponegocio =".$tipneg."
+        AND tipoimovel.idtipoimovel=".$tipimovel."
+        AND tipocondicao.idcondicao = ".$estado."
+        AND imoveisvenda.precovenda BETWEEN ".$precomin." AND ".$precomax;
         
-        UNION 
-        
-        SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao 
-        AS tiponegocio, imoveisarrendamento.precorenda , imovel.idestado
-       
-        FROM imovel, listafotos, concelho, imoveisarrendamento, tipologia, tiponegocio , estado
-        
-        WHERE listafotos.idimovel = imovel.idimovel 
-        AND imovel.idconcelho = concelho.idconcelho 
-        AND imoveisarrendamento.idimovel = imovel.idimovel 
-        AND imovel.idtipologia = tipologia.idtipologia 
-        AND imovel.idtiponegocio = tiponegocio.idtiponegocio 
-        AND imovel.idestado = estado.idestado
-        
-        
-        UNION 
-        
-        SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, concelho.nome, tipologia.descricao, tiponegocio.idtiponegocio, tiponegocio.descricao 
-        AS tiponegocio, ferias.precopnoite ,imovel.idestado
-        
-        FROM imovel, listafotos, concelho, ferias, tipologia, tiponegocio , estado
-       
-        WHERE listafotos.idimovel = imovel.idimovel 
-        AND imovel.idconcelho = concelho.idconcelho 
-        AND ferias.idimovel = imovel.idimovel 
-        AND imovel.idtipologia = tipologia.idtipologia 
-        AND imovel.idtiponegocio = tiponegocio.idtiponegocio
-        AND imovel.idestado = estado.idestado ";
-        
+    //    echo($sql);
         
         $result = $conn->query($sql);
-      
+        // echo($result)
         if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
@@ -96,7 +73,7 @@ class Pesquisa{
         
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$resp['descricao']. " | ".number_format((string)$resp['precorenda'], 0, '.', ' ')."€</span>";
+            $msg .= "<span class='price-a' >" .$resp['tiponegocio']. " | ".number_format((string)$resp['precorenda'], 0, '.', ' ')."€</span>";
             $msg .= "</div>";
                   
         
@@ -109,7 +86,7 @@ class Pesquisa{
         
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$resp1['descricao']. " | ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."€</span>";
+            $msg .= "<span class='price-a' >" .$resp1['tiponegocio']. " | ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."€</span>";
             $msg .= "</div>";
         
         
@@ -127,7 +104,7 @@ class Pesquisa{
               $msg .= "<ul class='card-info d-flex justify-content-around'>"; 
               $msg .= "<li>";
               $msg .= "<h4 class='card-info-title' >Tipologia</h4>";
-              $msg .= "<span >".$row['descricao']." ";
+              $msg .= "<span >".$row['tiponegocio']." ";
               $msg .= "</span>";
               $msg .= "</li>";
               $msg .= "<li>";                  
@@ -179,7 +156,7 @@ class Pesquisa{
         global $conn;
         $msg="";
       
-        $sql = "SELECT tiponegocio.descricao, imoveisvenda.precovenda
+        $sql = "SELECT tiponegocio.descricao as tiponegocio, imoveisvenda.precovenda
         
         FROM imoveisvenda , imovel, tiponegocio
        
@@ -253,10 +230,41 @@ class Pesquisa{
       
       }
       
+      
 
 
+ 
+      function infoImovelFerias(){
 
-
+        global $conn;
+        $msg="";
+      
+        $sql = "SELECT tiponegocio.descricao as descr, ferias.precopnoite
+        
+        FROM imovel, ferias, tiponegocio
+        
+       
+        WHERE  ferias.idimovel = imovel.idimovel
+        AND imovel.idtiponegocio = tiponegocio.idtiponegocio";
+      
+      
+      
+        
+        if ($conn->query($sql) === TRUE) {
+      
+      
+      
+          $msg  = "";
+      
+      
+      
+        } else {
+          $msg = "Error: " . $sql . "<br>" . $conn->error;
+        }
+        
+        return $msg;
+      }
+      
 
 
 
@@ -264,6 +272,7 @@ class Pesquisa{
 
 
       }
+
 
 
 
