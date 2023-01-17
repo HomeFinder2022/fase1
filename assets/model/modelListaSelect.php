@@ -50,8 +50,11 @@ if($_POST['op'] == 1){
     $filtro = new Select();
     $res = $filtro -> filtroConcelho($_POST['id']);
     echo($res);
+}else if($_POST['op'] == 14){
+    $get = new Select();
+    $resp = $get -> selectTipoUtilizador();
+    echo($resp);
+
 }
-
-
     
 ?>

@@ -265,7 +265,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="pagamentos.php">
               <span class="d-flex align-items-center align-middle">
                 <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
                 <span class="flex-grow-1 align-middle">Pagamentos</span>
