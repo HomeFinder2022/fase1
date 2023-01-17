@@ -192,7 +192,7 @@
                 <h2 class="title-a">Ultimas Oportunidades</h2>
               </div>
               <div class="title-link">
-                <a href="property-grid.html">Todos os imóveis
+                <a href="anuncios.php">Todos os imóveis
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>

@@ -43,6 +43,7 @@ function getDistritos() {
         $("#listaConcelhos").html(resposta);
         $("#listaConcelhos2").html(resposta);
         $("#listaConcelhos3").html(resposta);
+        $("#listaConcelhos4").html(resposta);
         })
   
       .fail(function (jqXHR, textStatus) {
@@ -94,7 +95,7 @@ function getDistritos() {
         $("#tipoNegocImovel").html(resposta);
         $("#tipoNegocImovel2").html(resposta);
         $("#tipoNegocImovel3").html(resposta);
-
+        $("#tipoNegocImovel4").html(resposta);
 
         })
   
@@ -122,6 +123,7 @@ function getDistritos() {
         $("#estadoImovel").html(resposta);
         $("#estadoImovel2").html(resposta);
         $("#estadoImovel3").html(resposta);
+        $("#estadoImovel4").html(resposta);
         })
   
       .fail(function (jqXHR, textStatus) {
@@ -175,6 +177,7 @@ function getDistritos() {
         $("#tipoImovel").html(resposta);
         $("#tipoImovel2").html(resposta);
         $("#tipoImovel3").html(resposta);
+        $("#tipoImovel4").html(resposta);
       })
   
       .fail(function (jqXHR, textStatus) {

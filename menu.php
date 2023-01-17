@@ -34,6 +34,9 @@
   <link rel="icon" type="image" href="../dashboard/HomeFinder Dashboard/assets/img/icon-homefinder.png"/>
   <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
 
+  
+  <!-- <script src="assets/js/listaSelect.js"></script> -->
+
 
 
   <!-- =======================================================
@@ -57,224 +60,64 @@
     <div class="box-collapse-wrap form">
       <form class="form-a">
         <div class="row">
-          <div class="col-md-12 mb-2">
+          <!-- <div class="col-md-12 mb-2">
             <div class="form-group">
               <label class="pb-2" for="Type">Pesquisar</label>
               <input type="text" class="form-control form-control-lg form-control-a">
             </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="Type">Tipo</label>
-              <select class="form-control form-select form-control-a" id="Type" onchange="escolheTipo(this.value)">
-                <option>Todos</option>
-                <option>Arrendamento</option>
-                <option>Compra</option>
-                <option>Open House</option>
+          </div> -->
+
+          <!-- <div class="col-6">
+            <div class="col-9">
+              <label for="apelido" class="form-label">sasas</label>
+              <input type="text" class="form-control" id="apelido">
+            </div>
+          </div> -->
+
+
+
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="listaConcelhos4" class="form-label">Concelho</label>
+              <select class="form-select"  id="listaConcelhos4">
+              <option selected>Sem concelhos registados</option>
               </select>
             </div>
           </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="city">Cidade</label>
-              <select class="form-control form-select form-control-a" id="city">
-                <option>Todas</option>
-                <option>Abrantes</option>
-                <option>Agualva-Cacém</option>
-                <option>Águeda</option>
-                <option>Albergaria</option>
-                <option>Albufeira</option>
-                <option>Alcacér do Sal</option>
-                <option>Alcobaça</option>
-                <option>Alfena</option>
-                <option>Almada</option>
-                <option>Almeirim</option>
-                <option>Alverca do Ribatejo</option>
-                <option>Amadora</option>
-                <option>Amarante</option>
-                <option>Amora</option>
-                <option>Anadia</option>
-                <option>Angra do Heroismo</option>
-                <option>Aveiro</option>
-                <option>Barcelos</option>
-                <option>Barreiro</option>
-                <option>Beja</option>
-                <option>Borba</option>
-                <option>Braga</option>
-                <option>Bragança</option>
-                <option>Caldas da Rainha</option>
-                <option>Câmara de Lobos</option>
-                <option>Caniço</option>
-                <option>Cantanhede</option>
-                <option>Cartaxo</option>
-                <option>Castelo Branco</option>
-                <option>Chaves</option>
-                <option>Coimbra</option>
-                <option>Costa da Caparica</option>
-                <option>Covilhã</option>
-                <option>Elvas</option>
-                <option>Entrocamento</option>
-                <option>Emesinde</option>
-                <option>Esmoriz</option>
-                <option>Espinho</option>
-                <option>Esposende</option>
-                <option>Estarreja</option>
-                <option>Évora</option>
-                <option>Fafe</option>
-                <option>Faro</option>
-                <option>Fátima</option>
-                <option>Felgueiras</option>
-                <option>Figueira da Foz</option>
-                <option>Fiães</option>
-                <option>Freamunde</option>
-                <option>Funchal</option>
-                <option>Fundão</option>
-                <option>Gafanha da Nazaré</option>
-                <option>Gandra</option>
-                <option>Gondomar</option>
-                <option>Gouveia</option>
-                <option>Guarda</option>
-                <option>Guimarães</option>
-                <option>Horta</option>
-                <option>Ílhavo</option>
-                <option>Lagoa,Açores</option>
-                <option>Lagoa,Algarve</option>
-                <option>Lagos</option>
-                <option>Lamego</option>
-                <option>Leiria</option>
-                <option>Lisboa</option>
-                <option>Lixa</option>
-                <option>Loulé</option>
-                <option>Loures</option>
-                <option>Lourosa</option>
-                <option>Macedo de Cavaleiros</option>
-                <option>Machico</option>
-                <option>Maia</option>
-                <option>Mangualde</option>
-                <option>Marco de Canaveses</option>
-                <option>Marinha Grande</option>
-                <option>Matosinhos</option>
-                <option>Mealhada</option>
-                <option>Mêda</option>
-                <option>Miranda do Douro</option>
-                <option>Mirandela</option>
-                <option>Montemor-o-Novo</option>
-                <option>Montijo</option>
-                <option>Moura</option>
-                <option>Odivelas</option>
-                <option>Olhão</option>
-                <option>Oliveira de Azeméis</option>
-                <option>Oliveira do Bairro</option>
-                <option>Oliveira do Hospital</option>
-                <option>Ourém</option>
-                <option>Ovar</option>
-                <option>Paços de Ferreira</option>
-                <option>Paredes</option>
-                <option>Penafiel</option>
-                <option>Peniche</option>
-                <option>Peso da Régua</option>
-                <option>Pinhel</option>
-                <option>Pombal</option>
-                <option>Ponta Delgada</option>
-                <option>Ponte de Sor</option>
-                <option>Portalegre</option>
-                <option>Portimão</option>
-                <option>Porto</option>
-                <option>Póvoa de Santa Iria</option>
-                <option>Póvoa de Varzim</option>
-                <option>Praia da Vitória</option>
-                <option>Quarteira</option>
-                <option>Queluz</option>
-                <option>Rebordosa</option>
-                <option>Reguengos de Monsaraz</option>
-                <option>Ribeira Grande</option>
-                <option>Rio Maior</option>
-                <option>Rio Tinto</option>
-                <option>Sabugal</option>
-                <option>Sacavém</option>
-                <option>Samora Correia</option>
-                <option>Santa Comba Dão</option>
-                <option>Santa Cruz</option>
-                <option>Santa Maria da Feira</option>
-                <option>Santana</option>
-                <option>Santarém</option>
-                <option>Santiago do Cacém</option>
-                <option>Santo Tirso</option>
-                <option>São João da Madeira</option>
-                <option>São Mamede de Infesta</option>
-                <option>São Pedro do Sul</option>
-                <option>Lordelo</option>
-                <option>Seia</option>
-                <option>Seixal</option>
-                <option>Senhora da Horta</option>
-                <option>Senhora da Hra</option>
-                <option>Serpa</option>
-                <option>Setúbal</option>
-                <option>Silves</option>
-                <option>Sines</option>
-                <option>Tarouca</option>
-                <option>Tavira</option>
-                <option>Tomar</option>
-                <option>Tondela</option>
-                <option>Torres Novas</option>
-                <option>Torres Vedras</option>
-                <option>Trancoso</option>
-                <option>Trofa</option>
-                <option>Valbom</option>
-                <option>Vale de Cambra</option>
-                <option>Valença</option>
-                <option>Valongo</option>
-                <option>Valpaços</option>
-                <option>Vendas Novas</option>
-                <option>Viana do Castelo</option>
-                <option>Vila Badeira</option>
-                <option>Vila do Conde</option>
-                <option>Vila Franca de Xira</option>
-                <option>Vila Nova de Famalição</option>
-                <option>Vila Nova da Foz Côa</option>
-                <option>Vila Nova de Gaia</option>
-                <option>Vila Nova de Santo André</option>
-                <option>Vila Real</option>
-                <option>Vila Real de Santo António</option>
-                <option>Viseu</option>
-                <option>Vizela</option>
+
+
+
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="tipoNegocImovel4" class="form-label">Tipo de Negócio</label>
+              <select class="form-select"  id="tipoNegocImovel4">
+              <option selected>Sem tipos registados</option>
               </select>
             </div>
           </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="bedrooms">Quartos</label>
-              <select class="form-control form-select form-control-a" id="bedrooms">
-                <option>Qualquer</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
+
+
+
+
+
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="tipoImovel4" class="form-label">Tipo de Imóvel</label>
+              <select class="form-select"  id="tipoImovel4">
+              <option selected>Sem imóveis registados</option>
               </select>
             </div>
           </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="garages">Garagem</label>
-              <select class="form-control form-select form-control-a" id="garages">
-                <option>Qualquer</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
+
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="tipoImovel4" class="form-label">Estado</label>
+              <select class="form-select" id="estadoImovel4">
+              <option selected>Sem estados registados</option>
               </select>
             </div>
           </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="bathrooms">Casas de Banho</label>
-              <select class="form-control form-select form-control-a" id="bathrooms">
-                <option>Qualquer</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-              </select>
-            </div>
-          </div>
+
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
               <label class="pb-2" for="price">Preço Minimo</label>
@@ -288,13 +131,18 @@
               <input type="number" class="form-control" id="precoMAx">
             </div>
           </div>
+
+          <br>
+          <br>
+
           <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Procurar Propriedade</button>
+            <button class="btn btn-b" onclick="pesquisarAnu()" type="button">Procurar Propriedade</button>
           </div>
         </div>
       </form>
     </div>
-  </div><!-- End Property Search Section -->>
+  </div>
+  <!-- End Property Search Section -->>
 
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
@@ -555,6 +403,6 @@ if(isset($_SESSION['nomeUser'])){ ?>
     </div>
 
 
- 
-
+    <!-- <script src="assets/js/listaSelect.js"></script>
+    <script src="assets/js/pesquisa.js"></script> -->
 
