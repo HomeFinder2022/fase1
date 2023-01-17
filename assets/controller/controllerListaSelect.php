@@ -4,6 +4,33 @@ require_once 'connection.php';
 
 class Select{
 
+
+  function selectTipoUtilizador(){
+    global $conn;
+    $sql = "SELECT idtipoutilizador, descricao FROM tipoutilizador";
+    $msg = "<option value='-1'>Escolha o tipo de negócio</option>";
+    
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      $msg .= "<option value='".$row['idtipoutilizador']."'>".$row['descricao']."</option>";
+    }
+    } else {
+      $msg = "Sem Resultados";
+    
+    }
+
+    $conn->close();
+
+    return $msg;
+
+  }
+
+
+
+
        function selectDistritos(){
         global $conn;
         $sql = "SELECT iddistrito, nome FROM distrito";
@@ -27,6 +54,8 @@ class Select{
     
       }
     
+
+
       function selectConcelhos(){
         global $conn;
         $sql = "SELECT idconcelho, nome FROM concelho";
@@ -49,6 +78,8 @@ class Select{
         return $msg;
     
       }
+
+      
 
       function selectFreguesias(){
         global $conn;

@@ -333,6 +333,46 @@ function getDistritos() {
   }
 
 
+
+
+  function selectTipoUtilizador() {
+    let dados = new FormData();
+  
+    dados.append("op", 14);
+  
+    $.ajax({
+      url: "assets/model/modelListaSelect.php",
+      method: "POST",
+      data: dados,
+      dataType: "html",
+      cache: false,
+      contentType: false,
+      processData: false,
+    })
+  
+      .done(function (resposta) {
+        $("#listaSubscricoes").html(resposta);
+      
+
+        })
+  
+      .fail(function (jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+      });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   function filtroConcelho(id) {
     let dados = new FormData();
   
