@@ -119,10 +119,10 @@
                               
                               <div class="d-flex flex-column px-md-5 px-4 mb-4"> 
                            
-                    <span>Tipo de Pagamento</span>
+                    <span>Plano</span>
                     
                     <select class="form-select-pagamentos" id="">
-                      <option selected> Escolha uma opção</option>
+                      <option selected> Escolha um plano</option>
                       <option>Anual</option>
                       <option>Mensal</option>
                     </select>

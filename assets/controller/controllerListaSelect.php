@@ -8,7 +8,7 @@ class Select{
   function selectTipoUtilizador(){
     global $conn;
     $sql = "SELECT idtipoutilizador, descricao FROM tipoutilizador";
-    $msg = "<option value='-1'>Escolha o tipo de negócio</option>";
+    $msg = "<option value='-1'>Escolha uma Subcrição</option>";
     
     $result = $conn->query($sql);
 
