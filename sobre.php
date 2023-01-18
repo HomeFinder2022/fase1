@@ -164,14 +164,14 @@
                   <div class="card-header-d">
                     <div class="card-title-d align-self-center">
                       <h3 class="title-d">
-                        <a href="agent-single.html" class="link-two">Paulo Jorge Carreiras
+                        <a href="paulo_pedras.php" class="link-two">Paulo Jorge Carreiras
                           <br>Pedras</a>
                       </h3>
                     </div>
                   </div>
                   <div class="card-body-d">
                     <p class="content-d color-text-a">
-                      Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                      Web Developer
                     </p>
                     <div class="info-agents color-a">
                       <p>
@@ -220,14 +220,14 @@
                   <div class="card-header-d">
                     <div class="card-title-d align-self-center">
                       <h3 class="title-d">
-                        <a href="agent-single-two.html" class="link-two">Dario Romão
+                        <a href="dario_bianchi.php" class="link-two">Dario Romão
                           <br> Bianchi</a>
                       </h3>
                     </div>
                   </div>
                   <div class="card-body-d">
                     <p class="content-d color-text-a">
-                      Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                    Web Developer
                     </p>
                     <div class="info-agents color-a">
                       <p>
@@ -276,14 +276,14 @@
                   <div class="card-header-d">
                     <div class="card-title-d align-self-center">
                       <h3 class="title-d">
-                        <a href="agent-single-three.html" class="link-two">José Filipe Lapa
+                        <a href="jose_lebre.php" class="link-two">José Filipe Lapa
                           <br> Lebre</a>
                       </h3>
                     </div>
                   </div>
                   <div class="card-body-d">
                     <p class="content-d color-text-a">
-                      Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                    Web Developer
                     </p>
                     <div class="info-agents color-a">
                       <p>

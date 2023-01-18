@@ -420,7 +420,7 @@
                 <h2 class="title-a">Equipa</h2>
               </div>
               <div class="title-link">
-                <a href="agents-grid.html">Toda a Equipa
+                <a href="servicos.php">Toda a Equipa
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -437,14 +437,15 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Paulo Jorge Carreiras
+                      <a href="paulo_pedras.php" class="link-two">Paulo Jorge Carreiras
                         <br>Pedras</a>
                     </h3>
                   </div>
                 </div>
                 <div class="card-body-d">
                   <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                    Web Developer
+
                   </p>
                   <div class="info-agents color-a">
                     <p>
@@ -493,14 +494,14 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single-two.html" class="link-two">Dario Romão
+                      <a href="dario_bianchi.php" class="link-two">Dario Romão
                         <br> Bianchi</a>
                     </h3>
                   </div>
                 </div>
                 <div class="card-body-d">
                   <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                  Web Developer
                   </p>
                   <div class="info-agents color-a">
                     <p>
@@ -549,14 +550,14 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single-three.html" class="link-two">José Filipe Lapa
+                      <a href="jose_lebre.php" class="link-two">José Filipe Lapa
                         <br> Lebre</a>
                     </h3>
                   </div>
                 </div>
                 <div class="card-body-d">
                   <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                  Web Developer
                   </p>
                   <div class="info-agents color-a">
                     <p>
@@ -612,7 +613,7 @@
                 <h2 class="title-a">Últimas Noticias</h2>
               </div>
               <div class="title-link">
-                <a href="blog-grid.html">Todas as Noticias
+                <a href="noticias.php">Todas as Noticias
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -640,7 +641,7 @@
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">18 Setembro 2022</span>
+                      <span class="date-b">27 Janeiro 2023</span>
                     </div>
                   </div>
                 </div>
@@ -664,7 +665,7 @@
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">1 Outubro 2022</span>
+                      <span class="date-b">26 Janeiro 2023</span>
                     </div>
                   </div>
                 </div>
@@ -688,7 +689,7 @@
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">25 Agosto 2022</span>
+                      <span class="date-b">23 Janeiro 2023</span>
                     </div>
                   </div>
                 </div>
@@ -711,7 +712,7 @@
                       </h2>
                     </div>
                     <div class="card-date">
-                      <span class="date-b">7 Julho 2022</span>
+                      <span class="date-b">25 Janeiro 2023</span>
                     </div>
                   </div>
                 </div>
