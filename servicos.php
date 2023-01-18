@@ -49,13 +49,19 @@
           
         
                 <p class="color-text-a">
-                  Quer anunciar os seus imóveis de forma rápida e fácil para vender melhor. Crie os seus anúncios grátis agora! 
+                  Quer anunciar os seus imóveis de forma rápida e fácil para vender melhor?
              
                 </p>
+
                 <p class="color-text-a">
                   
                   A HomeFinder tem a forma mais simples, rápida e prática de anunciar os seus imóveis.
                 </p>   
+
+                <p class="color-text-a">
+                Crie os seus anúncios grátis agora!
+             
+                </p>  
             
         </div>
       </div>

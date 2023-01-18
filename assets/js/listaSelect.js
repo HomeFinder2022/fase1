@@ -408,6 +408,7 @@ function getDistritos() {
     getCertEnerg();
     getTipoImovel();
     getTipologia();
+    selectTipoUtilizador();
     // $('#tipoNegocImovel').select2();
     // $('#tipoImovel').select2();
     // $('#listaDistritos').select2();
