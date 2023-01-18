@@ -35,10 +35,10 @@
               <div class="w-body-a">
                 <ul class="list-unstyled mt-5">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="../dashboard/HomeFinder Dashboard/html/index.php">Gestão de Imóveis</a>
+                    <i class="bi bi-chevron-right"></i> <a href="../dashboard/HomeFinder Dashboard/html/index.php">Gestão de imóveis</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="anuncios.php">Anúncios de Imóveis</a>
+                    <i class="bi bi-chevron-right"></i> <a href="anuncios.php">Anúncios de imóveis</a>
                   </li>
                   
                   <li class="item-list-a">
@@ -46,7 +46,7 @@
                   </li>
 
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="precos.php">Planos de Subscrição</a>
+                    <i class="bi bi-chevron-right"></i> <a href="precos.php">Subscrição</a>
                   </li>
                 </ul>
               </div>

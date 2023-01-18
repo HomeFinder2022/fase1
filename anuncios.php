@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
-            <h1 class="title-single">Qual o Imóvel que procura?</h1>
+            <h1 class="title-single">Qual o imóvel que procura?</h1>
 
           </div>
         </div>
@@ -52,7 +52,7 @@
           <div class="container">
             <div class="aa-advance-search-area">
               <div class="card-header d-flex align-items-center justify-content-center">
-                <h2 class="mb-0 tabelaTitulos">Procure o Imóvel dos seus sonhos!</h2>
+                <h2 class="mb-0 tabelaTitulos">Procure o imóvel dos seus sonhos!</h2>
               </div>
 
               <br><br>
@@ -89,7 +89,7 @@
 
                     <div class="col-5">
                       <div class="input-group">
-                        <span class="input-group-text">Tipo de Imóvel</span>
+                        <span class="input-group-text">Tipo de imóvel</span>
                         <select class="form-select" onchange="filtroTipologia(this.value)" id="tipoImovel3"></select>
                       </div>
                     </div>
