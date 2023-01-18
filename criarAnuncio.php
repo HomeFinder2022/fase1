@@ -374,7 +374,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
         <div class="col-xxl">
           <div class="card mb-4">
             <div class="card-header d-flex align-items-center justify-content-between">
-              <h5 class="mb-0 tabelaTitulos">Anuncios</h5>
+              <h5 class="mb-0 tabelaTitulos">Anúncios</h5>
               <small class="text-muted float-end"></small>
 
             </div>
@@ -393,7 +393,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
                     <th>Distrito</th>
                     <th>Concelho</th>
                     <th>Freguesia</th>
-                    <th>Descricao</th>
+                    <th>Descrição</th>
                     <th>Tipologia</th>
                     <th>Estado</th>
                     <th></th>

@@ -84,7 +84,7 @@
                   </h3>
          
                 <p class="color-text-a">
-                  A missão é ajudar os proprietários com a gestão dos seus imoveis e facilitar a partilha e anúncio de imóveis
+                  A missão é ajudar os proprietários com a gestão dos seus imóveis e facilitar a partilha e anúncio de imóveis
                 </p>
                 </div>
 
