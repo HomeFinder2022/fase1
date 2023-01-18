@@ -23,7 +23,7 @@
             <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <a href="index.php">Home</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   Pagamentos
@@ -128,19 +128,9 @@
                     </select>
                   </div>
 
-
-
-
-
                                 </div>
-
-
-
-
                 
                 </div>
-
-
                              <div class="col-12 px-md-5 px-4 mt-3">
                                  <div class="btn btn-primary-pagamentos w-100 subtitulo">Pagar
 
@@ -151,13 +141,6 @@
                                  </div>
                                  </div>
                                  </div>
-
-
-
-
-
-
-
 
 
     </section><!-- End Intro Single-->

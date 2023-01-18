@@ -97,10 +97,10 @@ class InfoImovel{
             $msg .= "<nav aria-label='breadcrumb' class='breadcrumb-box d-flex justify-content-lg-end'>";
               $msg .= "<ol class='breadcrumb'>";
                 $msg .= "<li class='breadcrumb-item'>";
-                  $msg .= "<a href='index.html'>Home</a>";
+                  $msg .= "<a href='index.php'>Home</a>";
                 $msg .= "</li>";
                $msg .= " <li class='breadcrumb-item'>";
-                  $msg .= "<a href='property-grid.html'>Imóveis</a>";
+                  $msg .= "<a href='anuncios.php'>Imóveis</a>";
                 $msg .= "</li>";
                $msg .= " <li class='breadcrumb-item active' aria-current='page'>" .$row['concelho']. "</li>";
                $msg .= "</ol>";
