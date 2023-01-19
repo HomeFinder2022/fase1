@@ -186,6 +186,56 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
                   <div class="form-check form-check-inline">
 
+
+                             <div class="pretty p-icon p-round p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                        <label>Garagem</label>
+                        <i class="icon mdi mdi-check"></i>
+                      </div>
+                    </div>
+
+                       <div class="pretty p-icon p-round p-smooth mt-3">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                        <label>Terraço</label>
+                        <i class="icon mdi mdi-check"></i>
+                      </div>
+                    </div>
+
+
+                     <div class="pretty p-icon p-round p-smooth mt-3">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                        <label>Varanda</label>
+                        <i class="icon mdi mdi-check"></i>
+                      </div>
+                    </div>
+
+                      <div class="pretty p-icon p-round p-smooth mt-3">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                        <label>Estacionamento</label>
+                        <i class="icon mdi mdi-check"></i>
+                      </div>
+                    </div>
+
+                                       <div class="pretty p-icon p-round p-smooth mt-3">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                        <label>Alarme Incêndio</label>
+                        <i class="icon mdi mdi-check"></i>
+                      </div>
+                    </div>
+
+                                <div class="pretty p-icon p-round p-smooth mt-3">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                        <label>Sistema de Segurança</label>
+                        <i class="icon mdi mdi-check"></i>
+                      </div>
+                    </div>
+
                     <div class="pretty p-icon p-round p-smooth">
                       <input type="checkbox" />
                       <div class="state p-success">
@@ -218,13 +268,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
                       </div>
                     </div>
 
-                    <div class="pretty p-icon p-round p-smooth">
-                      <input type="checkbox" />
-                      <div class="state p-success">
-                        <label>Garagem</label>
-                        <i class="icon mdi mdi-check"></i>
-                      </div>
-                    </div>
+         
 
                     <div class="pretty p-icon p-round p-smooth mt-3">
                       <input type="checkbox" />
@@ -262,29 +306,11 @@ if(isset($_SESSION['nomeUser'])){ ?>
                       </div>
                     </div>
 
-                    <div class="pretty p-icon p-round p-smooth mt-3">
-                      <input type="checkbox" />
-                      <div class="state p-success">
-                        <label>Sistema de Segurança</label>
-                        <i class="icon mdi mdi-check"></i>
-                      </div>
-                    </div>
+        
 
-                    <div class="pretty p-icon p-round p-smooth mt-3">
-                      <input type="checkbox" />
-                      <div class="state p-success">
-                        <label>Estacionamento</label>
-                        <i class="icon mdi mdi-check"></i>
-                      </div>
-                    </div>
+                  
 
-                    <div class="pretty p-icon p-round p-smooth mt-3">
-                      <input type="checkbox" />
-                      <div class="state p-success">
-                        <label>Alarme Incêndio</label>
-                        <i class="icon mdi mdi-check"></i>
-                      </div>
-                    </div>
+ 
 
                     <div class="pretty p-icon p-round p-smooth mt-3">
                       <input type="checkbox" />
@@ -310,21 +336,9 @@ if(isset($_SESSION['nomeUser'])){ ?>
                       </div>
                     </div>
 
-                    <div class="pretty p-icon p-round p-smooth mt-3">
-                      <input type="checkbox" />
-                      <div class="state p-success">
-                        <label>Terraço</label>
-                        <i class="icon mdi mdi-check"></i>
-                      </div>
-                    </div>
+                 
 
-                    <div class="pretty p-icon p-round p-smooth mt-3">
-                      <input type="checkbox" />
-                      <div class="state p-success">
-                        <label>Varanda</label>
-                        <i class="icon mdi mdi-check"></i>
-                      </div>
-                    </div>
+
 
                     <div class="pretty p-icon p-round p-smooth mt-3">
                       <input type="checkbox" />

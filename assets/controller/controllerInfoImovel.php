@@ -141,10 +141,10 @@ class InfoImovel{
                 $msg .= " <div class='col-md-5 col-lg-4'>";
                 $msg .= "<div class='property-price d-flex justify-content-center foo'>";
                 $msg .= "  <div class='card-header-c d-flex'>";
-                $msg .= "   <div class='card-box-ico'>";
+                // $msg .= "   <div class='card-box-ico'>";
                 
-                $msg .= "  <span class='bi bi-cash'>€</span>";
-                $msg .= "  </div>";
+                // $msg .= "  <span class='mt-2 bi bi-currency-euro'></span>";
+                // $msg .= "  </div>";
 
 
 
@@ -155,7 +155,7 @@ class InfoImovel{
 
 
                 $msg .= " <div class='card-title-c align-self-center'>";
-                $msg .= "<h5 class='title-c'>".number_format((string)$row['precovenda'], 0, '.', ' ')."</h5>";
+                $msg .= "<h5 class='title-c fs-2'>".number_format((string)$row['precovenda'], 0, '.', ' ')." €</h5>";
                 $msg .= " </div>";
 
                 $msg .= " </div>";
@@ -332,7 +332,7 @@ class InfoImovel{
 
                  $msg .= " <div class='col-sm-12'>";
                    $msg .= " <div class='title-box-d'>";
-                    $msg .= "  <h3 class='title-d'>Descrição do Imóvel</h3>";
+                    $msg .= "<a href='mailto:".$row['email']."'><button type='button' class='ms-4 btn-lg btn btn-homefinder subtitulo'>Contactar Proprietário</button></a>";
                    $msg .= " </div>";
                  $msg .= " </div>";
 
@@ -357,15 +357,13 @@ class InfoImovel{
               $msg .= "  </div>";
                 $msg .= "<div class='amenities-list color-text-a'>";
                  $msg .= " <ul class='list-a no-margin'>";
-                    $msg .= "<li>Balcony</li>";
-                    $msg .= "<li>Outdoor Kitchen</li>";
-                    $msg .= "<li>Cable Tv</li>";
-                   $msg .= " <li>Deck</li>";
-                    $msg .= "<li>Tennis Courts</li>";
-                    $msg .= "<li>Internet</li>";
-                    $msg .= "<li>Parking</li>";
-                   $msg .= " <li>Sun Room</li>";
-                   $msg .= " <li>Concrete Flooring</li>";
+                    $msg .= "<li>Garagem</li>";
+                    $msg .= "<li>Terraço</li>";
+                    $msg .= "<li>Varanda</li>";
+                   $msg .= " <li>Estacionamento</li>";
+                    $msg .= "<li>Alarme de Incêndio</li>";
+                    $msg .= "<li>Sistema de Segurança</li>";
+                    $msg .= "<li>Aquecimento Central</li>";
                  $msg .= " </ul>";
               $msg .= "  </div>";
 
