@@ -10,7 +10,7 @@ class Pesquisa{
         $msg="";
         $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, 
         concelho.nome, tiponegocio.idtiponegocio, tiponegocio.descricao AS tiponegocio, tipoimovel.descricao as tipimovel, 
-        imovel.idestado,imoveisvenda.precovenda, tipologia.idtipologia
+        imovel.idestado,imoveisvenda.precovenda, tipologia.idtipologia, tipologia.descricao as tiposss
         
         FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio , estado, tipoimovel,tipocondicao
       
@@ -104,7 +104,7 @@ class Pesquisa{
               $msg .= "<ul class='card-info d-flex justify-content-around'>"; 
               $msg .= "<li>";
               $msg .= "<h4 class='card-info-title' >Tipologia</h4>";
-              $msg .= "<span >".$row['tiponegocio']." ";
+              $msg .= "<span >".$row['tiposss']." ";
               $msg .= "</span>";
               $msg .= "</li>";
               $msg .= "<li>";                  
@@ -159,7 +159,7 @@ class Pesquisa{
         $msg="";
         $sql = "SELECT imovel.idimovel, imovel.morada, imovel.numwc, imovel.areabruta, imovel.anoconstrucao,listafotos.fotos, 
         concelho.nome, tiponegocio.idtiponegocio, tiponegocio.descricao AS tiponegocio, tipoimovel.descricao as tipimovel, 
-        imovel.idestado,imoveisvenda.precovenda, tipologia.idtipologia
+        imovel.idestado,imoveisvenda.precovenda, tipologia.idtipologia, tipologia.descricao 
         
         FROM imovel, listafotos, concelho, imoveisvenda, tipologia, tiponegocio , estado, tipoimovel,tipocondicao
       
@@ -253,7 +253,7 @@ class Pesquisa{
               $msg .= "<ul class='card-info d-flex justify-content-around'>"; 
               $msg .= "<li>";
               $msg .= "<h4 class='card-info-title' >Tipologia</h4>";
-              $msg .= "<span >".$row['tiponegocio']." ";
+              $msg .= "<span >".$row['descricao']." ";
               $msg .= "</span>";
               $msg .= "</li>";
               $msg .= "<li>";                  

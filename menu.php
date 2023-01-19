@@ -50,9 +50,9 @@
 <body>
 
   <!-- ======= Property Search Section ======= -->
-  <div class="click-closed"></div>
+  <!-- <div class="click-closed"></div> -->
   <!--/ Form Search Star /-->
-  <div class="box-collapse">
+  <!-- <div class="box-collapse">
     <div class="title-box-d">
       <h3 class="title-d">Procurar Propriedade</h3>
     </div>
@@ -60,19 +60,7 @@
     <div class="box-collapse-wrap form">
       <form class="form-a">
         <div class="row">
-          <!-- <div class="col-md-12 mb-2">
-            <div class="form-group">
-              <label class="pb-2" for="Type">Pesquisar</label>
-              <input type="text" class="form-control form-control-lg form-control-a">
-            </div>
-          </div> -->
 
-          <!-- <div class="col-6">
-            <div class="col-9">
-              <label for="apelido" class="form-label">sasas</label>
-              <input type="text" class="form-control" id="apelido">
-            </div>
-          </div> -->
 
 
 
@@ -141,7 +129,7 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> -->
   <!-- End Property Search Section -->>
 
   <!-- ======= Header/Navbar ======= -->
@@ -197,13 +185,19 @@
           <li class="nav-item">
             <a class="nav-link " href="contactos.php">Contactos</a>
           </li>
+          
+          
+          <li>
+
+          </li>
+          <a  class="btn btn-b-n "  href="anuncios.php">
+        <i class="bi bi-search"></i></a>
+
         </ul>
       </div>
 
-      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo01">
-        <i class="bi bi-search"></i>
-      </button>
+      <!-- <a  class="btn btn-b-n navbar-toggle-box navbar-toggle" data-bs-toggle="collapse" href="anuncios.php">
+        <i class="bi bi-search"></i></a> -->
 
 
 

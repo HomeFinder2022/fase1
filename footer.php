@@ -58,16 +58,16 @@
             <div class="w-body-a">
               <ul class="list-unstyled mt-5">
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="sobre.html">Sobre nós</a>
+                  <i class="bi bi-chevron-right"></i> <a href="sobre.php">Sobre nós</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="servicos.html">Serviços</a>
+                  <i class="bi bi-chevron-right"></i> <a href="servicos.php">Serviços</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="contactos.html">Contactos</a>
+                  <i class="bi bi-chevron-right"></i> <a href="contactos.php">Contactos</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="noticias.html">Noticias</a>
+                  <i class="bi bi-chevron-right"></i> <a href="noticias.php">Noticias</a>
                 </li>
               </ul>
             </div>
