@@ -78,7 +78,7 @@
                     </div>
 
 
-                    <div class="col-5">
+                    <div class="col-4">
                       <div class="input-group">
                         <span class="input-group-text">Tipo de Negócio</span>
                         <select class="form-select" onchange="filtroImovel(this.value)" id="tipoNegocImovel3"></select>
@@ -105,6 +105,7 @@
 
                     <br><br><br>
 
+                    
 
                 <div class="col-4">
                   <label for="precomin" class="form-label">Preco Min.</label>
@@ -123,7 +124,7 @@
                   </div>
                 </div>
 
-
+  
 
   
 
@@ -133,15 +134,21 @@
 
                   </div>
 
+                 
+
                   <br>
 
 
 
-
-
                   <div class="row">
+                    
                     <div class="row justify-content-md-end ">
+                      
                       <div class="col-md-2 ">
+
+                      
+               
+
                         <div class="aa-single-advance-search">
                           <!-- <button class="aa-search-btn" type="button" value="Procurar" > -->
                           <button class="btn btn-homefinder subtitulo" onclick="pesquisaranuncios()" type="button">Pesquisar</button>

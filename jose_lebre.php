@@ -58,7 +58,7 @@
                   </div>
                   <div class="agent-content mb-3">
                     <p class="content-d color-text-a">
-                      Nascido em Portugal, com 31 anos de idade, aulo do curso de Programação de Sistemas de Informacao do IEFP de Évora.
+                      Nascido em Portugal, com 31 anos de idade, aluno do curso de Programação de Sistemas de Informação do IEFP de Évora.
                     </p>
                     <div class="info-agents color-a">
                       <p>
