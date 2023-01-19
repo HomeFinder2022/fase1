@@ -10,7 +10,7 @@
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
               <h1 class="title-single">Contacte-nos</h1>
-              <span class="color-text-a">A HomeFinder combina duas funcionalidades a possibilidade de anunciar os seus imoveis e fazer toda a sua gestão dentro da plataforma.</span>
+              <span class="color-text-a">A HomeFinder combina duas funcionalidades a possibilidade de anunciar os seus imóveis e fazer toda a sua gestão dentro da plataforma.</span>
             </div>
           </div>
           <div class="col-md-12 col-lg-4">

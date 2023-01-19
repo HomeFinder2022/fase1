@@ -147,7 +147,7 @@
                   <h2 class="title-a">Equipa</h2>
                 </div>
                 <div class="title-link">
-                  <a href="agents-grid.html">Toda a Equipa
+                  <a >Toda a Equipa
                     <span class="bi bi-chevron-right"></span>
                   </a>
                 </div>
