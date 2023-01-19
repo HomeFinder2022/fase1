@@ -124,31 +124,22 @@ A homeFinder disponibliza filtros de pesquisa que atendem aos a critérios espec
 
 <br>
 
- 
 <div class="title-box-d">
-    
     <h3 class="title-d">Gestão
       <span class="color-d"></span>
     </h3>
-
-  <p class="color-text-a">
-    A HomeFinder pretende estabelecer-se no mercado e evoluir consoante as necessidades tanto da plataforma como dos consumidores.
-  </p>
-
   </div>
 
+  <p class="color-text-a">
+ 
+A HomeFinder é uma plataforma que oferece ferramentas de otimização de processos que são comuns a quem tem a seu encargo arrendamentos de imóveis ou até uma casa de ferias.
 
-
-
-
+</p>
 
 
 
 
 </div>
-
-
-
 
 
 
