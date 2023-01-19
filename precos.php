@@ -103,7 +103,7 @@
                 <br><br>
                 
                 <div class="mt-auto">
-                  <a href="#" class="btn btn-lg btn-homefinder subtitulo">Sign up</a>
+                  <a href="registro.php" class="btn btn-lg btn-homefinder subtitulo">Registar</a>
                 </div>
               </div>
 
@@ -213,7 +213,7 @@
                   </li>
                 </ul>
                 <div class="mt-auto">
-                  <a href="#" class="btn btn-lg btn-homefinder subtitulo">Sign up</a>
+                  <a href="registro.php" class="btn btn-lg btn-homefinder subtitulo">Registar</a>
                 </div>
               </div>
 
@@ -304,7 +304,7 @@
 <br>
 
     <div class="text-center my-4">
-      <h2>Questões Frequentes</h2>
+      <h2>Questões Frequentes ?</h2>
     </div>
 
     <div class="row">

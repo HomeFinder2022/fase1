@@ -225,7 +225,9 @@
                       <div class="price-box d-flex">
                         <span class="price-a">Venda | € 118.000</span>
                       </div>
+
                       <a class="link-a">Mais Informações
+
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -426,7 +428,7 @@
                 <h2 class="title-a">Equipa</h2>
               </div>
               <div class="title-link">
-                <a href="servicos.php">Toda a Equipa
+                <a href="sobre.php">Toda a Equipa
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
