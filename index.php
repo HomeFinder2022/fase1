@@ -29,7 +29,7 @@
                     <p class="intro-title-top">Herdade das Quintinhas
                     </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">Arrenda | € 212.000</span></a>
+                      <a href="#"><span class="price-a">Arrenda | € 400</span></a>
                     </p>
                   </div>
                 </div>
@@ -53,7 +53,7 @@
                     <p class="intro-title-top">Bairro das Fontainhas
                     </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">Venda | € 150.000</span></a>
+                      <a href="#"><span class="price-a">Venda | € 150 000</span></a>
                     </p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                     <p class="intro-title-top">Parque das Nações
                     </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">Venda | € 420.000</span></a>
+                      <a href="#"><span class="price-a">Venda | € 420 000</span></a>
                     </p>
                   </div>
                 </div>
@@ -223,7 +223,7 @@
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">Venda | € 118.000</span>
+                        <span class="price-a">Venda | € 150 000</span>
                       </div>
 
                       <a class="link-a">Mais Informações
@@ -317,15 +317,15 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a >Rua D. Sebastião
+                        <a >Rua de cima
                         </a>
-                        <p class="intro-title-top">Porto
+                        <p class="intro-title-top">Évora
                         </p>
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">Venda | € 222.000</span>
+                        <span class="price-a">Arrenda | € 400 </span>
                       </div>
                       <a  class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>
