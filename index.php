@@ -182,6 +182,9 @@
       </div>
     </section><!-- End Services Section -->
 
+
+
+
     <!-- ======= Latest Properties Section ======= -->
     <section class="section-property section-t8">
       <div class="container">
@@ -212,7 +215,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">Rua do Cotovelo
+                        <a >Rua do Cotovelo
                         </a>
                         <p class="intro-title-top">Covilhã
                         </p>
@@ -222,7 +225,9 @@
                       <div class="price-box d-flex">
                         <span class="price-a">Venda | € 118.000</span>
                       </div>
-                      <a class="link-a">Mais detalhes
+
+                      <a class="link-a">Mais Informações
+
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -238,8 +243,8 @@
                         </li>
                         <li>
                           <h4 class="card-info-title">Área Bruta</h4>
-                          <span>4 m</span>
-                          <sup>2</sup>
+                          <span>40 </span>
+                        
                         </li>
                         <li>
                           <h4 class="card-info-title">Ano</h4>
@@ -261,7 +266,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">Rua Almirante Reis
+                        <a>Rua Almirante Reis
                         </a>
                         <p class="intro-title-top">Lisboa
                         </p>
@@ -271,7 +276,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">Arrenda | € 520</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Mais detalhes
+                      <a class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -289,8 +294,8 @@
                         </li>
                         <li>
                           <h4 class="card-info-title">Área Bruta</h4>
-                          <span>25 m</span>
-                          <sup>2</sup>
+                          <span>25 </span>
+                   
                         </li>
                         <li>
                           <h4 class="card-info-title">Ano</h4>
@@ -312,7 +317,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">Rua D. Sebastião
+                        <a >Rua D. Sebastião
                         </a>
                         <p class="intro-title-top">Porto
                         </p>
@@ -322,7 +327,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">Venda | € 222.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Mais detalhes
+                      <a  class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -335,13 +340,15 @@
                           </span>
                         </li>
                         <li>
+
                           <h4 class="card-info-title">WC's</h4>
                           <span>3</span>
+
                         </li>
                         <li>
                           <h4 class="card-info-title">Área Bruta</h4>
-                          <span>50 m</span>
-                          <sup class="sup-sup">2</sup>
+                          <span>50 </span>
+                       
                         </li>
                         <li>
                           <h4 class="card-info-title">Ano</h4>
@@ -373,29 +380,30 @@
                       <div class="price-box d-flex">
                         <span class="price-a">Arrenda | € 450</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Mais detalhes
+                      <a class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
                     <div class="card-footer-a">
                       <ul class="card-info d-flex justify-content-around">
                         <li>
-                          <h4 class="card-info-title">Área</h4>
-                          <span>340m
-                            <sup>2</sup>
+                          <h4 class="card-info-title">Tipologia</h4>
+                          <span>T4
+
                           </span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">Quartos</h4>
-                          <span>2</span>
+                         <h4 class="card-info-title">WC's</h4>
+                          <span>3</span>
                         </li>
                         <li>
-                          <h4 class="card-info-title">WC</h4>
-                          <span>4</span>
+                        <h4 class="card-info-title">Área Bruta</h4>
+                          <span>50 </span>
+                      
                         </li>
                         <li>
-                          <h4 class="card-info-title">Garagem</h4>
-                          <span>1</span>
+                        <h4 class="card-info-title">Ano</h4>
+                          <span>2019</span>
                         </li>
                       </ul>
                     </div>

@@ -342,7 +342,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="h6 card-title">E se eu decidir cancelar a minha subscrição?</h5>
-            <p class="mb-0">Pode cancelar a sua subscriçao a qualquer momento, perdedo os privilégios a ela associados</p>
+            <p class="mb-0">Pode cancelar a sua subscriçao a qualquer momento, perdedo os privilégios a ela associados, para os recuperar terá de fazer nova subscrição.</p>
           </div>
         </div>
 

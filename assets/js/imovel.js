@@ -90,11 +90,13 @@ function tabelaImoveis(){
       cache: false,
       contentType: false,
       processData: false
+      
   })
    
   .done(function( resposta ) {
     if ($.fn.DataTable.isDataTable('#tabelaImoveis2')) {
         $('#tabelaImoveis2').dataTable().fnDestroy();
+        
     }
       $('#listaImoveis2').html(resposta);
       $('#tabelaImoveis2').DataTable();
@@ -246,6 +248,8 @@ function ativarImovel(idimovel){
     timer: 2000,
   });
 }
+
+
 
 $(function () {
  
