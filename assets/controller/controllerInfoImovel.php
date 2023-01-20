@@ -190,7 +190,7 @@ class InfoImovel{
                       $resp = json_decode($resp, TRUE);
             
                       $msg .= " <div class='card-title-c align-self-center'>";
-                      $msg .= "<h5 class='title-c'>".number_format((string)$resp['precorenda'], 0, '.', ' ')."</h5>";
+                      $msg .= "<h5 class='title-c'>".number_format((string)$resp['precorenda'], 0, '.', ' ')." €</h5>";
                       $msg .= " </div>";
       
                       $msg .= " </div>";
@@ -226,7 +226,7 @@ class InfoImovel{
                       $resp1 = json_decode($resp1, TRUE);
             
                       $msg .= " <div class='card-title-c align-self-center'>";
-                      $msg .= "<h5 class='title-c'>".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."</h5>";
+                      $msg .= "<h5 class='title-c'>".number_format((string)$resp1['precopnoite'], 0, '.', ' ')." €</h5>";
                       $msg .= " </div>";
       
                       $msg .= " </div>";

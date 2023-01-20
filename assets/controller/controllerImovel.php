@@ -215,7 +215,8 @@ class Imovel{
             imovel.idfreguesia = freguesias.idfreguesia AND
             imovel.idtipologia = tipologia.idtipologia AND
             imovel.idtipoimovel = tipoimovel.idtipoimovel AND
-            imovel.idestado = estado.idestado";
+            imovel.idestado = estado.idestado AND
+            imovel.nifutilizador=".$nifUser;
 
 
         
