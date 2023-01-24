@@ -352,7 +352,7 @@ if(isset($_SESSION['nomeUser'])){ ?>
 
 
 					<a href="resetPass.php">Esqueceu-se da password?</a><br>
-          <a href="registro.php">Quero registar me?</a>
+          <a href="registro.php">Quer registar se?</a>
 				</div>
 			</div>
 			<!-- <div class="sign-up-htm">
