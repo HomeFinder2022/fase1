@@ -606,14 +606,7 @@ function ativarImovel($idimovel){
   return $msg;
 
 
-
-
-
-
-}
-
-
-
+  }
 
 }
 
