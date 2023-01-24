@@ -577,7 +577,7 @@ function desativarImovel($idimovel){
   $sql = "UPDATE imovel SET idestado = 3  WHERE idimovel = ".$idimovel;
 
   if ($conn->query($sql) === TRUE) {
-    $msg  = "Imóvel Removido do Anúncios com sucesso!";
+    $msg  = "Imóvel removido dos anúncios com sucesso!";
   } else {
     $msg = "Error: " . $sql . "<br>" . $conn->error;
   }
@@ -596,7 +596,7 @@ function ativarImovel($idimovel){
   $sql = "UPDATE imovel SET idestado = 2  WHERE idimovel = ".$idimovel;
 
   if ($conn->query($sql) === TRUE) {
-    $msg  = "Imóvel Adicionado do Anúncios com sucesso!";
+    $msg  = "Imóvel adicionado aos anúncios com sucesso!";
   } else {
     $msg = "Error: " . $sql . "<br>" . $conn->error;
   }
