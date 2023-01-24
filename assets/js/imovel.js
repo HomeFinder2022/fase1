@@ -60,8 +60,8 @@ function registoImovel() {
       sucesso(resposta);
      
       tabelaImoveis();
-      infoImovel();
-      infoImovelPagina();
+      // infoImovel();
+      // infoImovelPagina();
 
 
 
@@ -99,7 +99,10 @@ function tabelaImoveis(){
         
     }
       $('#listaImoveis2').html(resposta);
-      $('#tabelaImoveis2').DataTable();
+      $('#tabelaImoveis2').DataTable({
+        language: {
+        url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese.json"
+      }});
   })
    
   .fail(function( jqXHR, textStatus ) {
@@ -232,17 +235,14 @@ function ativarImovel(idimovel){
 
 
 
-
-function sucesso(msg){
+function sucesso(msg) {
   Swal.fire({
-    position: 'center',
-    icon: 'success',
+    position: "center",
+    icon: "success",
     title: msg,
     showConfirmButton: false,
-    timer: 2000
-  //   width: 400,
-  // padding: '1em'
-  })
+    timer: 2000,
+  });
 }
 
 
