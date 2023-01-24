@@ -193,7 +193,8 @@ function desativarImovel(idimovel){
    
   .done(function( resposta ) {
     sucesso(resposta);
-  
+    tabelaImoveis();
+
 
   })
    
@@ -220,7 +221,7 @@ function ativarImovel(idimovel){
    
   .done(function( resposta ) {
     sucesso(resposta);
-  
+    tabelaImoveis();
 
   })
    
@@ -237,8 +238,8 @@ function sucesso(msg){
     position: 'center',
     icon: 'success',
     title: msg,
-    showConfirmButton: true
-    // timer: 2000,
+    showConfirmButton: false,
+    timer: 2000
   //   width: 400,
   // padding: '1em'
   })
