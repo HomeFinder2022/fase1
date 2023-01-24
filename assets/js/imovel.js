@@ -232,21 +232,27 @@ function ativarImovel(idimovel){
 
 
 
-
-
-
-
-
-
-
-  function sucesso(msg) {
+function sucesso(msg){
   Swal.fire({
-    position: "center",
-    icon: "success",
+    position: 'center',
+    icon: 'success',
+    title: msg,
+    showConfirmButton: true
+    // timer: 2000,
+  //   width: 400,
+  // padding: '1em'
+  })
+}
+
+
+function error(msg){
+  Swal.fire({
+    position: 'center',
+    icon: 'error',
     title: msg,
     showConfirmButton: false,
-    timer: 2000,
-  });
+    timer: 1500
+  })
 }
 
 
