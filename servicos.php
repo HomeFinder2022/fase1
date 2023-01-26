@@ -103,7 +103,7 @@ Crie os seus anúncios grátis agora!
 </p>
 
 <p class="color-text-a">
-A homeFinder disponibliza filtros de pesquisa que atendem aos a critérios específicos, como localização, tamanho e comodidades.
+A HomeFinder disponibliza filtros de pesquisa que atendem aos critérios específicos, como localização, tamanho e comodidades.
 
 </p>
 
