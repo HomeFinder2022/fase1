@@ -57,8 +57,8 @@ function registoImovel() {
   })
 
     .done(function (resposta) {
-      sucesso(resposta);
-     
+      let obj = JSON.parse(resposta);
+    sucesso(obj.msg);
       tabelaImoveis();
       // infoImovel();
       // infoImovelPagina();
@@ -195,7 +195,8 @@ function desativarImovel(idimovel){
   })
    
   .done(function( resposta ) {
-    sucesso(resposta);
+    let obj = JSON.parse(resposta);
+    sucesso(obj.msg);
     tabelaImoveis();
 
 
@@ -223,8 +224,12 @@ function ativarImovel(idimovel){
   })
    
   .done(function( resposta ) {
-    sucesso(resposta);
-    tabelaImoveis();
+    // console.log(resposta);
+    // alert(resposta);
+    // sucesso(resposta);
+    let obj = JSON.parse(resposta);
+    sucesso(obj.msg);
+        tabelaImoveis();
 
   })
    
