@@ -61,7 +61,11 @@ class Imovel{
           
           $conn->close();
     
-          return $msg;
+          $resp1 = array("msg"=>$msg);
+          $resp1 = json_encode($resp1);
+
+
+          return $resp1;
       }
 
        
@@ -584,7 +588,11 @@ function desativarImovel($idimovel){
 
   $conn->close();
 
-  return $msg;
+  $resp1 = array("msg"=>$msg);
+  $resp1 = json_encode($resp1);
+
+
+  return $resp1;
 
 }
 
@@ -596,6 +604,7 @@ function ativarImovel($idimovel){
   $sql = "UPDATE imovel SET idestado = 2  WHERE idimovel = ".$idimovel;
 
   if ($conn->query($sql) === TRUE) {
+
     $msg  = "Imóvel adicionado aos anúncios com sucesso!";
   } else {
     $msg = "Error: " . $sql . "<br>" . $conn->error;
@@ -603,7 +612,13 @@ function ativarImovel($idimovel){
 
   $conn->close();
 
-  return $msg;
+  // return $msg;
+
+  $resp1 = array("msg"=>$msg);
+  $resp1 = json_encode($resp1);
+
+
+  return $resp1;
 
 
   }
