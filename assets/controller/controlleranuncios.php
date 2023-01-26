@@ -60,7 +60,7 @@ class Pesquisa{
         
                   $msg .= "<div class='card-body-a'>";
                   $msg .= "<div class='price-box d-flex'>";
-                  $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | ".number_format((string)$row['precovenda'], 0, '.', ' ')."€</span>";
+                  $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | € ".number_format((string)$row['precovenda'], 0, '.', ' ')."</span>";
                   $msg .= "</div>";
         
         
@@ -73,7 +73,7 @@ class Pesquisa{
         
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$resp['tiponegocio']. " | ".number_format((string)$resp['precorenda'], 0, '.', ' ')."€</span>";
+            $msg .= "<span class='price-a' >" .$resp['tiponegocio']. " | € ".number_format((string)$resp['precorenda'], 0, '.', ' ')."</span>";
             $msg .= "</div>";
                   
         
@@ -86,7 +86,7 @@ class Pesquisa{
         
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$resp1['tiponegocio']. " | ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."€</span>";
+            $msg .= "<span class='price-a' >" .$resp1['tiponegocio']. " |€ ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."</span>";
             $msg .= "</div>";
         
         
@@ -209,7 +209,7 @@ class Pesquisa{
         
                   $msg .= "<div class='card-body-a'>";
                   $msg .= "<div class='price-box d-flex'>";
-                  $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | ".number_format((string)$row['precovenda'], 0, '.', ' ')."€</span>";
+                  $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | €".number_format((string)$row['precovenda'], 0, '.', ' ')."</span>";
                   $msg .= "</div>";
         
         
@@ -222,7 +222,7 @@ class Pesquisa{
         
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$resp['tiponegocio']. " | ".number_format((string)$resp['precorenda'], 0, '.', ' ')."€</span>";
+            $msg .= "<span class='price-a' >" .$resp['tiponegocio']. " | €".number_format((string)$resp['precorenda'], 0, '.', ' ')."</span>";
             $msg .= "</div>";
                   
         
@@ -235,7 +235,7 @@ class Pesquisa{
         
             $msg .= "<div class='card-body-a'>";
             $msg .= "<div class='price-box d-flex'>";
-            $msg .= "<span class='price-a' >" .$resp1['tiponegocio']. " | ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."€</span>";
+            $msg .= "<span class='price-a' >" .$resp1['tiponegocio']. " | €".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."</span>";
             $msg .= "</div>";
         
         

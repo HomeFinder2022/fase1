@@ -29,7 +29,7 @@
                     <p class="intro-title-top">Herdade das Quintinhas
                     </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">Arrenda | € 400</span></a>
+                      <a href="#"><span class="price-a">Arrendar | € 400</span></a>
                     </p>
                   </div>
                 </div>
@@ -53,7 +53,7 @@
                     <p class="intro-title-top">Bairro das Fontainhas
                     </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">Venda | € 150 000</span></a>
+                      <a href="#"><span class="price-a">Vender | € 150 000</span></a>
                     </p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                     <p class="intro-title-top">Parque das Nações
                     </p>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">Venda | € 420 000</span></a>
+                      <a href="#"><span class="price-a">Vender | € 420 000</span></a>
                     </p>
                   </div>
                 </div>
@@ -215,15 +215,16 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
+                      <p class="intro-title-top">Covilhã
+                        </p>
                         <a >Rua do Cotovelo
                         </a>
-                        <p class="intro-title-top">Covilhã
-                        </p>
+                        
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">Venda | € 150 000</span>
+                        <span class="price-a">Vender | € 150 000</span>
                       </div>
 
                       <a class="link-a">Mais Informações
@@ -266,15 +267,16 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
+                      <p class="intro-title-top">Lisboa
+                        </p>
                         <a>Rua Almirante Reis
                         </a>
-                        <p class="intro-title-top">Lisboa
-                        </p>
+                        
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">Arrenda | € 520</span>
+                        <span class="price-a">Arrendar | € 520</span>
                       </div>
                       <a class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>
@@ -317,15 +319,16 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
+                      <p class="intro-title-top">Évora
+                        </p>
                         <a >Rua de cima
                         </a>
-                        <p class="intro-title-top">Évora
-                        </p>
+                        
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">Arrenda | € 400 </span>
+                        <span class="price-a">Arrendar | € 400 </span>
                       </div>
                       <a  class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>
@@ -370,15 +373,14 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
+                      <p class="intro-title-top">Beja</p>
                         <a href="property-single.html">Avenida de Chafariz d'el Rei
                         </a>
-                        <p class="intro-title-top">Beja
-                        </p>
                       </h2>
                     </div>
                     <div class="card-body-a">
                       <div class="price-box d-flex">
-                        <span class="price-a">Arrenda | € 450</span>
+                        <span class="price-a">Arrendar | € 450</span>
                       </div>
                       <a class="link-a">Mais Informações
                         <span class="bi bi-chevron-right"></span>

@@ -353,7 +353,7 @@ function infoImovel(){
 
           $msg .= "<div class='card-body-a'>";
           $msg .= "<div class='price-box d-flex'>";
-          $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | ".number_format((string)$row['precovenda'], 0, '.', ' ')."€</span>";
+          $msg .= "<span class='price-a' >" .$row['tiponegocio']. " | €".number_format((string)$row['precovenda'], 0, '.', ' ')."</span>";
           $msg .= "</div>";
 
 
@@ -366,7 +366,7 @@ function infoImovel(){
 
     $msg .= "<div class='card-body-a'>";
     $msg .= "<div class='price-box d-flex'>";
-    $msg .= "<span class='price-a' >" .$resp['descricao']. " | ".number_format((string)$resp['precorenda'], 0, '.', ' ')."€</span>";
+    $msg .= "<span class='price-a' >" .$resp['descricao']. " | €".number_format((string)$resp['precorenda'], 0, '.', ' ')."</span>";
     $msg .= "</div>";
           
 
@@ -379,7 +379,7 @@ function infoImovel(){
 
     $msg .= "<div class='card-body-a'>";
     $msg .= "<div class='price-box d-flex'>";
-    $msg .= "<span class='price-a' >" .$resp1['descricao']. " | ".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."€</span>";
+    $msg .= "<span class='price-a' >" .$resp1['descricao']. " | €".number_format((string)$resp1['precopnoite'], 0, '.', ' ')."</span>";
     $msg .= "</div>";
 
 
