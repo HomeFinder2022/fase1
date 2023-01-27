@@ -58,8 +58,8 @@
 
 <div class="row mt-n3">
   <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto position-relative">
-    <h1 class="text-center header-title">A medida da necessidade de cada um</h1>
-    <p class="lead text-center mb-4 header-subtitle">Tenha um ou mais imoveis, pode começar já a usar a HomeFinder.</p>
+    <h1 class="text-center header-title">Á medida da necessidade de cada um</h1>
+    <p class="lead text-center mb-4 header-subtitle">Tenha um ou mais imóveis, pode começar já a usar a HomeFinder.</p>
 
     <div class="row justify-content-center mt-3 mb-2">
       <div class="col-auto">
@@ -314,7 +314,8 @@
         <div class="card">
           <div class="card-body">
             <h5 class="h6 card-title">É preciso cartão de crédito para me inscrever?</h5>
-            <p class="mb-0">Não é necesario qualquer tipo de cartão iniciar a sua experência na HomeFinder. o acesso gratuito à plataforma, pode usufruir de todos as funcionalidades.</p>
+            <p class="mb-0">Não é necessário qualquer tipo de cartão para iniciar a sua experência na HomeFinder. 
+              </p>
           </div>
         </div>
 
@@ -342,7 +343,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="h6 card-title">E se eu decidir cancelar a minha subscrição?</h5>
-            <p class="mb-0">Pode cancelar a sua subscriçao a qualquer momento, perdedo os privilégios a ela associados, para os recuperar terá de fazer nova subscrição.</p>
+            <p class="mb-0">Pode cancelar a sua subscrição a qualquer momento, perdendo os privilégios a ela associados, para os recuperar terá de fazer nova subscrição.</p>
           </div>
         </div>
 
@@ -353,8 +354,8 @@
         <div class="card">
           <div class="card-body">
             <h5 class="h6 card-title">Para que serve a plataforma HomeFinder?</h5>
-            <p class="mb-0">A plataforma HomeFinder, esta no mercado para ajudar investidores ou inquilinos, na gestão dos 
-              seus imoveis, tudo de forma fácil, simples e intuitiva </p>
+            <p class="mb-0">A plataforma HomeFinder, está no mercado para ajudar investidores ou inquilinos, na gestão dos 
+              seus imóveis, tudo de forma fácil, simples e intuitiva </p>
           </div>
         </div>
 
