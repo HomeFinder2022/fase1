@@ -27,7 +27,7 @@ class Login{
             $_SESSION['nif'] = $row['nif'];
         }
         } else {
-            $msg = "Login Errado! Dados Incorretos.";
+            $msg = "Login errado! Dados incorretos!";
         
         }
 

@@ -25,12 +25,12 @@ class Utilizador{
 
             if ($conn->query($sqlImagem) === TRUE) {
 
-                $msg = "Utilizador Registado com Sucesso";
+                $msg = "Utilizador registado com sucesso!";
             }else{
                 $msg = "Error: " . $sqlImagem . "<br>" . $conn->error;
             }
         }else{
-            $msg = "A imagem nao foi colocada no servidor! Mas foi registado em base de dados";
+            $msg = "A imagem nao foi colocada no servidor! Mas foi registado em base de dados!";
 
         }
 
@@ -54,7 +54,7 @@ class Utilizador{
       $sql = "INSERT INTO financas (idnif, saldo ) VALUES('".$nif."', 0)";
 
       if ($conn->query($sql) === TRUE) {
-        $msg  = "conta criada com sucesso!";
+        $msg  = "Conta criada com sucesso!";
       } else {
         $msg = "Error: " . $sql . "<br>" . $conn->error;
       }
@@ -284,7 +284,7 @@ function getdadosPerfilEdit(){
     }
   
     if ($conn->query($sql) === TRUE) {
-      $msg  = "Perfil Editado com Sucesso!";
+      $msg  = "Perfil editado com sucesso!";
     } else {
       $msg = "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -316,13 +316,13 @@ function getdadosPerfilEdit(){
               WHERE pwd = ".$oldpass;
 
               if ($conn->query($sql) === TRUE) {
-                $msg  = "Password Editado com Sucesso!";
+                $msg  = "Password editada com sucesso!";
               } else {
                 $msg = "Error: " . $sql . "<br>" . $conn->error;
               }
       } else {
         // passwords do not match, display error message
-        $msg = "Passwords do not match. Please try again.";
+        $msg = "Passwords inseridas não são iguais. Por favor tente novamente!";
       }
 
     

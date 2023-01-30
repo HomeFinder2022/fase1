@@ -37,10 +37,10 @@ require 'PHPMailer/src/SMTP.php';
 
 
         if(!$mail->send()) {
-          echo 'Não foi possível enviar o email<br>';
+          echo 'Não foi possível enviar o email!<br>';
           echo 'Erro: ' . $mail->ErrorInfo;
       } else {
-          echo 'Email Enviado com sucesso!';
+          echo 'Email enviado com sucesso!';
       }
       }
 

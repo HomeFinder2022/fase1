@@ -53,7 +53,7 @@ class Imovel{
               $msg = $this -> insertFotos($resp['target'], $lastID);
             }else{
            
-              $msg = "Imóvel registado sem fotos";
+              $msg = "Imóvel registado sem fotos!";
             }
           } else {
             $msg = "Error: " . $sql . "<br>" . $conn->error;
@@ -77,7 +77,7 @@ class Imovel{
         $sql = "INSERT INTO ferias (precopnoite, idimovel) VALUES('".$preconoite."', '".$idimovel."')";
     
         if ($conn->query($sql) === TRUE) {
-          $msg  = "Imóvel para venda registado com sucesso!";
+          $msg  = "Imóvel registado com sucesso!";
         } else {
           $msg = "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -93,7 +93,7 @@ class Imovel{
         $sql = "INSERT INTO imoveisvenda (precovenda, idimovel) VALUES('".$preco."', '".$idimovel."')";
     
         if ($conn->query($sql) === TRUE) {
-          $msg  = "Imóvel para venda registado com sucesso!";
+          $msg  = "Imóvel registado com sucesso!";
         } else {
           $msg = "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -109,7 +109,7 @@ class Imovel{
         $sql = "INSERT INTO imoveisarrendamento (precorenda, idimovel) VALUES('".$renda."', '".$idimovel."')";
     
         if ($conn->query($sql) === TRUE) {
-          $msg  = "Imóvel para venda registado com sucesso!";
+          $msg  = "Imóvel registado com sucesso!";
         } else {
           $msg = "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -126,7 +126,7 @@ class Imovel{
         $sql = "INSERT INTO listafotos (fotos, idimovel) VALUES('".$diretorio."', '".$id."')";
     
         if ($conn->query($sql) === TRUE) {
-          $msg  = "Registo Efetuado com Sucesso!";
+          $msg  = "Registo efetuado com sucesso!";
         } else {
           $msg = "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -342,7 +342,8 @@ function infoImovel(){
         
         $msg .= "<div class='card-header-a'>"; 
         $msg .= "<h2 class='card-title-a'>";            
-        $msg .= "<a >" .$row['nome']. "<br/>".$row['morada']."</a>";            
+        $msg .= "<p class='intro-title-top'>".$row['nome']."</p>";
+        $msg .= "<a>".$row['morada']."</a>";        
         $msg .= "</h2>";           
         $msg .= "</div>"; 
 
