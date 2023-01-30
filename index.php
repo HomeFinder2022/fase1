@@ -26,7 +26,7 @@
                       <span class="color-b">Évora </span> 
                       <br> Rua de Cima
                     </h1>
-                    <p class="intro-title-top">Herdade das Quintinhas
+                    <p class="intro-title-top">
                     </p>
                     <p class="intro-subtitle intro-price">
                       <a href="#"><span class="price-a">Arrendar | € 400</span></a>
@@ -50,7 +50,7 @@
                       <span class="color-b">Covilhã </span> 
                       <br> Rua do Cotovelo
                     </h1>
-                    <p class="intro-title-top">Bairro das Fontainhas
+                    <p class="intro-title-top">
                     </p>
                     <p class="intro-subtitle intro-price">
                       <a href="#"><span class="price-a">Vender | € 150 000</span></a>
@@ -74,7 +74,7 @@
                       <span class="color-b">Lisboa </span> 
                       <br> Avenida da Ribeira
                     </h1>
-                    <p class="intro-title-top">Parque das Nações
+                    <p class="intro-title-top">
                     </p>
                     <p class="intro-subtitle intro-price">
                       <a href="#"><span class="price-a">Vender | € 420 000</span></a>
@@ -195,7 +195,7 @@
                 <h2 class="title-a">Últimas Oportunidades</h2>
               </div>
               <div class="title-link">
-                <a href="anuncios.php">Todos os imóveis
+                <a href="anuncios.php">Todos os Imóveis
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -373,8 +373,8 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                      <p class="intro-title-top">Beja</p>
-                        <a href="property-single.html">Avenida de Chafariz d'el Rei
+                      <p class="intro-title-top">Lisboa</p>
+                        <a >Avenida de Chafariz del Rei
                         </a>
                       </h2>
                     </div>

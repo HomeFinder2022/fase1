@@ -62,7 +62,28 @@ function registoImovel() {
       tabelaImoveis();
       // infoImovel();
       // infoImovelPagina();
-
+      setTimeout(function() {
+        $("#tipoImovel2").val("");
+        $("#tipologiaImovel2").val("");
+        $("#moradaImovel2").val("");
+        $("#postalImovel2").val("");
+        $("#listaDistritos2").val("");
+        $("#listaConcelhos2").val("");
+        $("#listaFreguesias2").val("");
+        $("#areaUtil2").val("");
+        $("#areaBruta2").val("");
+        $("#numWcs2").val("");
+        $("#anoImovel2").val("");
+        $("#certEnerg2").val("");
+        $("#estadoImovel2").val("");
+        $("#tipoNegocImovel2").val("");
+        $("#obsImovel2").val("");
+        $("#pImovel2").val("");
+        $("#rendaImovel2").val("");
+        $("#precoNoite2").val("");
+        $("#fotosImovel2").val("");
+        $('input[type="checkbox"]').prop('checked', false);
+    }, 1000);
 
 
 

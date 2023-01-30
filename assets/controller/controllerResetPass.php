@@ -32,7 +32,7 @@ require 'PHPMailer/src/SMTP.php';
         // $mail->addCC('dario_bianchi_@hotmail.com', 'Cópia');
 
         $mail->isHTML(true);
-        $mail->Subject ="Recupera a plavra passe de ".$nome." para a HomeFinder";
+        $mail->Subject ="Recupera a palavra passe de ".$nome." para a HomeFinder";
         $mail->Body    = 
         '<h1>HomeFinder</h1>
         <h2>Olá, '.$nome.' </h2>
@@ -44,7 +44,7 @@ require 'PHPMailer/src/SMTP.php';
 
 
         if(!$mail->send()) {
-          echo 'Não foi possível enviar o email<br>';
+          echo 'Não foi possível enviar o email!<br>';
           echo 'Erro: ' . $mail->ErrorInfo;
       } else {
           echo 'Verifica o teu email!';
@@ -110,7 +110,7 @@ require 'PHPMailer/src/SMTP.php';
           
       
         if ($conn->query($sql) === TRUE) {
-          $msg  = "Nova-palavra passe aceite!";
+          $msg  = "Nova palavra-passe aceite!";
         } else {
           $msg = "Error: " . $sql . "<br>" . $conn->error;
         }
