@@ -293,8 +293,8 @@ class InfoImovel{
 
 
                      $msg .= " <li class='d-flex justify-content-between'>";
-                     $msg .= "   <strong>Area:</strong>";
-                     $msg .= "   <span>" .$row['areabruta']. "<sup>2</sup></span> ";
+                     $msg .= "   <strong>Área:</strong>";
+                     $msg .= "   <span>" .$row['areabruta']. "m<sup>2</sup></span> ";
                     $msg .= "  </li>";
 
 
